@@ -2,7 +2,7 @@
 @import "fonts.scss";
 @import "utils/reset";
 @import "utils/vars";
-@import "modal-video";
+@import "vendors/modal-video";
 
 html {
   line-height: $mainLineHeight;
@@ -31,7 +31,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
+  &.gray {
+    background-color: #323233;
+  }
 }
 
 *,
@@ -67,23 +70,6 @@ li {
   padding: 0;
 }
 
-// section,
-// .section {
-//   position: relative;
-
-//   @media screen and (max-width: $desktopWidth) {
-//     padding: 36px 0;
-//   }
-
-//   @media screen and (max-width: $desktopWidth) {
-//     padding: 28px 0;
-//   }
-
-//   @media screen and (max-width: $desktopWidth) {
-//     padding: 20px 0;
-//   }
-// }
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -114,11 +100,11 @@ li {
   }
 
   @media screen and (max-width: $tableWidth) {
-    max-width: $phoneWidth;
+    max-width: 98%;
   }
 
   @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
+    max-width: 100%;
   }
 }
 
@@ -128,11 +114,6 @@ li {
 .header {
   padding-top: 32px;
   position: relative;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // z-index: 10;
 }
 
 .header__wrapper {
@@ -175,11 +156,11 @@ li {
   .menu__burger {
     margin-left: 12px;
     span {
-      background-color: #a8cf45;
+      background-color: $brand-green;
       height: 2px;
       width: 18px;
-      margin: 2px 0px;
-      border: radius 2px;
+      margin: 3px 0px;
+      border-radius: 2px;
       &:last-child {
         width: 10px;
         margin-left: auto;
@@ -253,10 +234,6 @@ li {
   overflow: hidden;
   position: relative;
   width: 100%;
-  // z-index: 2;
-  // top: 0;
-  // left: 0;
-  // height: 100vh;
   .swiper-slide {
     height: 100%;
     height: 100%;
@@ -265,8 +242,6 @@ li {
     padding-top: 13vh;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // height: 100vh;
   }
 
   .slide__title {
@@ -277,10 +252,9 @@ li {
     text-transform: uppercase;
     line-height: 120%;
     color: #fff;
-    // margin-bottom: -40px;
     span {
       color: transparent;
-      -webkit-text-stroke: 2px #f58634;
+      -webkit-text-stroke: 2px $brand-orange;
       font-style: italic;
     }
   }
@@ -291,9 +265,8 @@ li {
     color: #fff;
     line-height: 140%;
     padding-left: 16px;
-    border-left: 2px solid #a8cf45;
+    border-left: 2px solid $brand-green;
     margin-bottom: 60px;
-    // margin-right: 10px;
   }
 }
 .slide__advantages {
@@ -313,16 +286,16 @@ li {
       transform: translateY(-50%) skewX(-30deg);
       height: 6px;
       width: 12px;
-      background-color: #9da3a5;
+      background-color: $brand-gray;
     }
     &:nth-child(1)::after {
-      background-color: #f58634;
+      background-color: $brand-orange;
     }
     &:nth-child(2)::after {
-      background-color: #a8cf45;
+      background-color: $brand-green;
     }
     &:nth-child(3)::after {
-      background-color: #245990;
+      background-color: $brand-blue;
     }
   }
 }
@@ -330,9 +303,6 @@ li {
   display: inline-block;
   position: relative;
   height: 48px;
-  // z-index: 3;
-  // bottom: 85px;
-  // min-width: 230px;
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -371,7 +341,7 @@ li {
     line-height: 100%;
     &.swiper-pagination-bullet-active {
       font-size: 32px;
-      color: #f58634;
+      color: $brand-orange;
     }
   }
 }
@@ -449,7 +419,6 @@ li {
 .slide__more {
   text-align: center;
   max-width: 142px;
-  // display: none;
   margin-top: 3vh;
 }
 
@@ -457,9 +426,6 @@ li {
   .header__breadcrumbs {
     display: none;
   }
-  // .slide__more {
-  //   display: block;
-  // }
   .header__schedule,
   .header__login {
     span {
@@ -472,6 +438,7 @@ li {
   .main-screen__bg {
     height: 100%;
     max-height: 970px;
+    min-height: inherit;
   }
   .header__menu {
     margin-left: 30px;
@@ -479,17 +446,70 @@ li {
   .main__slider {
     height: auto;
     .slide__content {
-      padding-top: 970px;
+      padding-top: 923px;
     }
     .slide__title {
-      padding-top: 30px;
-      color: #000;
+      font-size: 90px;
+      color: #fff;
+      margin-bottom: 70px;
     }
   }
   .slide__play-btn {
-    top: 38%;
+    top: 25%;
     left: 50%;
     right: inherit;
     transform: translate(-50%, -50%);
+  }
+  .main__slider-nav {
+    position: absolute;
+    left: 0;
+    top: 800px;
+    z-index: 2;
+  }
+}
+@media (max-width: 576px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__logo {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .header__nav {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header__menu {
+    margin-left: auto;
+  }
+  .header__nav .btn {
+    margin: 0 10px;
+  }
+  .header__nav .btn {
+    padding: 0.78em 1.2em;
+  }
+  .main-screen__bg {
+    max-height: 490px;
+  }
+  .slide__play-btn {
+    top: 17%;
+  }
+  .main__slider .slide__content {
+    padding-top: 370px;
+  }
+  .main__slider .slide__title {
+    font-size: 10vw;
+    margin-bottom: 30px;
+  }
+  .header {
+    padding-top: 20px;
+  }
+  .main__slider-nav {
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
