@@ -1,6 +1,8 @@
 'use strict';
 
 import * as baseFunction from './modules/functions.js';
+
+import './vendors/vendors.js';
 import ModalVideo from 'modal-video';
 import Swiper, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
 
@@ -36,6 +38,54 @@ const firstScreenSlider = new Swiper('.main__slider', {
 
 //модалки с видео в слайдере на главной  
 new ModalVideo('.js-modal-btn', { theme: 'dark' });
+
+
+// Календарь на странице Расписание
+$(function () {
+    // региональные настройки
+    $.datepicker.regional['ru'] = {
+        closeText: 'Закрыть',
+        prevText: 'Предыдущий',
+        nextText: 'Следующий',
+        currentText: 'Сегодня',
+        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+        dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+        dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        weekHeader: 'Не',
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+    $(".shedule__datepicker").datepicker();
+});
+
+
+
+
+
+$("body").click(function (event) {
+    let target = event.target;
+    if (target.closest('.select__name')) {
+        let openedContentBlock = $('.select__content.show');
+        let showBlockTitle = $('.select__name.show');
+        if (showBlockTitle && openedContentBlock && !target.classList.contains('show')) {
+            openedContentBlock.removeClass('show');
+            showBlockTitle.removeClass('show');
+            openedContentBlock.slideToggle(300);
+        }
+
+        $(target).toggleClass('show');
+        let slideContent = $(target).parent().find('.select__content');
+        slideContent.slideToggle(300);
+        slideContent.toggleClass('show');
+    }
+});
 
 //слайдер расписания
 // const sheduleSlider = new Swiper('.shedule__slider', {
