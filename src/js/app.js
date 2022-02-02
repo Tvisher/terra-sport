@@ -62,7 +62,13 @@ $(function () {
     };
     $.datepicker.setDefaults($.datepicker.regional['ru']);
 
-    $(".shedule__datepicker").datepicker();
+    $(".shedule__datepicker").datepicker({
+        // событие при выборе даты
+        onSelect: function (dateText) {
+            let datapickerValue = $(this).parent().find(".shedule__datepicker-value");
+            datapickerValue.text(dateText);
+        }
+    });
 });
 
 
@@ -86,6 +92,8 @@ $("body").click(function (event) {
         slideContent.toggleClass('show');
     }
 });
+
+
 
 //слайдер расписания
 // const sheduleSlider = new Swiper('.shedule__slider', {

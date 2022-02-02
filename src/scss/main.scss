@@ -613,9 +613,22 @@ li {
   max-width: 110px;
   font-size: 14px;
 }
+.shedule__datepicker-value {
+  position: absolute !important;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  color: #fff !important;
+  background-color: $brand-orange !important;
+}
+.shedule__filters-date input[type="radio"]:checked + .shedule__datepicker-value {
+  z-index: 1;
+}
 
 .shedule__filters {
-  margin-bottom: 80px;
+  margin-bottom: 38px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -689,9 +702,9 @@ html .ui-button.ui-state-disabled:active {
         margin-left: 10px;
         content: "";
         display: inline-block;
-        width: 32px;
-        height: 32px;
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z' fill='%23FAFAFA'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.7071 10.2929C24.0976 10.6834 24.0976 11.3166 23.7071 11.7071L13.7071 21.7071C13.3166 22.0976 12.6834 22.0976 12.2929 21.7071L8.29289 17.7071C7.90237 17.3166 7.90237 16.6834 8.29289 16.2929C8.68342 15.9024 9.31658 15.9024 9.70711 16.2929L13 19.5858L22.2929 10.2929C22.6834 9.90237 23.3166 9.90237 23.7071 10.2929Z' fill='%23E1E1E1'/%3e%3cpath d='M8 2H24V-2H8V2ZM30 8V24H34V8H30ZM24 30H8V34H24V30ZM2 24V8H-2V24H2ZM8 30C4.68629 30 2 27.3137 2 24H-2C-2 29.5228 2.47715 34 8 34V30ZM30 24C30 27.3137 27.3137 30 24 30V34C29.5228 34 34 29.5228 34 24H30ZM24 2C27.3137 2 30 4.68629 30 8H34C34 2.47715 29.5228 -2 24 -2V2ZM8 -2C2.47715 -2 -2 2.47715 -2 8H2C2 4.68629 4.68629 2 8 2V-2Z' fill='%23E1E1E1'/%3e%3c/svg%3e ");
+        width: 22px;
+        height: 22px;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z' fill='%23E1E1E1'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.7071 10.2929C24.0976 10.6834 24.0976 11.3166 23.7071 11.7071L13.7071 21.7071C13.3166 22.0976 12.6834 22.0976 12.2929 21.7071L8.29289 17.7071C7.90237 17.3166 7.90237 16.6834 8.29289 16.2929C8.68342 15.9024 9.31658 15.9024 9.70711 16.2929L13 19.5858L22.2929 10.2929C22.6834 9.90237 23.3166 9.90237 23.7071 10.2929Z' fill='white'/%3e%3c/svg%3e ");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -701,7 +714,7 @@ html .ui-button.ui-state-disabled:active {
         opacity: 0;
         z-index: -1;
         &[type="checkbox"]:checked + span:after {
-          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z' fill='%23FAFAFA'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.7071 10.2929C24.0976 10.6834 24.0976 11.3166 23.7071 11.7071L13.7071 21.7071C13.3166 22.0976 12.6834 22.0976 12.2929 21.7071L8.29289 17.7071C7.90237 17.3166 7.90237 16.6834 8.29289 16.2929C8.68342 15.9024 9.31658 15.9024 9.70711 16.2929L13 19.5858L22.2929 10.2929C22.6834 9.90237 23.3166 9.90237 23.7071 10.2929Z' fill='%23FF6600'/%3e%3cpath d='M8 2H24V-2H8V2ZM30 8V24H34V8H30ZM24 30H8V34H24V30ZM2 24V8H-2V24H2ZM8 30C4.68629 30 2 27.3137 2 24H-2C-2 29.5228 2.47715 34 8 34V30ZM30 24C30 27.3137 27.3137 30 24 30V34C29.5228 34 34 29.5228 34 24H30ZM24 2C27.3137 2 30 4.68629 30 8H34C34 2.47715 29.5228 -2 24 -2V2ZM8 -2C2.47715 -2 -2 2.47715 -2 8H2C2 4.68629 4.68629 2 8 2V-2Z' fill='%23FF6600'/%3e%3c/svg%3e ");
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z' fill='%23F58634'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.7071 10.2929C24.0976 10.6834 24.0976 11.3166 23.7071 11.7071L13.7071 21.7071C13.3166 22.0976 12.6834 22.0976 12.2929 21.7071L8.29289 17.7071C7.90237 17.3166 7.90237 16.6834 8.29289 16.2929C8.68342 15.9024 9.31658 15.9024 9.70711 16.2929L13 19.5858L22.2929 10.2929C22.6834 9.90237 23.3166 9.90237 23.7071 10.2929Z' fill='white'/%3e%3c/svg%3e ");
         }
       }
     }
@@ -720,21 +733,23 @@ html .ui-button.ui-state-disabled:active {
 .shedule {
   position: relative;
   margin-top: 38px;
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #999eab;
-  }
+  padding-bottom: 100px;
+  // .swiper-button-next,
+  // .swiper-button-prev {
+  //   color: #999eab;
+  // }
 }
-.shedule__nav-btns {
-  .swiper-button-next,
-  .swiper-rtl .swiper-button-prev {
-    right: -5%;
-  }
-  .swiper-button-prev,
-  .swiper-rtl .swiper-button-next {
-    left: -5%;
-  }
-}
+
+// .shedule__nav-btns {
+//   .swiper-button-next,
+//   .swiper-rtl .swiper-button-prev {
+//     right: -5%;
+//   }
+//   .swiper-button-prev,
+//   .swiper-rtl .swiper-button-next {
+//     left: -5%;
+//   }
+// }
 
 .shedule__blocks {
   position: relative;
@@ -745,43 +760,30 @@ html .ui-button.ui-state-disabled:active {
   flex-wrap: wrap;
 }
 .shedule__blocks-time {
+  font-weight: 700;
   position: absolute;
   left: 0;
   top: 0;
   width: 7%;
   padding-bottom: 5px;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .shedule__blocks:nth-of-type(3n) .shedule__blocks-time {
   color: $brand-orange;
-  border-bottom: 1px solid $brand-orange;
+  border-color: $brand-orange;
 }
 .shedule__blocks:nth-of-type(3n + 1) .shedule__blocks-time {
   color: $brand-green;
-  border-bottom: 1px solid $brand-green;
+  border-color: $brand-green;
 }
 .shedule__blocks:nth-of-type(3n + 2) .shedule__blocks-time {
   color: $brand-blue;
-  border-bottom: 1px solid $brand-blue;
+  border-color: $brand-blue;
 }
 
-// .shedule__blocks-time:nth-child(2) {
-//   color: $brand-green;
-//   border-bottom: 1px solid $brand-green;
-// }
-
-// .shedule__blocks-time:nth-child(3) {
-//   color: $brand-green;
-//   border-bottom: 1px solid $brand-green;
-// }
-
-// .shedule__blocks-time:nth-child(4) {
-//   color: $brand-green;
-//   border-bottom: 1px solid $brand-green;
-// }
-
 .shedule__block {
+  min-height: 300px;
   margin: 3px;
   padding: 20px;
   border-radius: 2px;
@@ -866,5 +868,171 @@ html .ui-button.ui-state-disabled:active {
   span {
     font-size: 24px;
     color: $brand-gray;
+  }
+}
+
+.adresses {
+  background-color: #27272d;
+  padding: 85px 0;
+}
+.adresses__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  .list__ittem {
+    display: flex;
+    flex-direction: column;
+    transition: background 0.4s ease;
+    width: 31%;
+    margin: 15px;
+    background-color: #3c3c46;
+    color: #fff;
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .location__title {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 30px;
+    max-width: 95%;
+  }
+  .location__shedule-title,
+  .location__contacts-title {
+    transition: color 0.4s ease;
+    font-weight: 400;
+  }
+  .location__shedule {
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+  .location__contacts a {
+    color: #fff;
+  }
+
+  .location.orange {
+    .location__shedule-title,
+    .location__contacts-title {
+      color: $brand-orange;
+    }
+    svg path {
+      fill: $brand-orange;
+    }
+    &:hover {
+      background-color: $brand-orange;
+      .location__shedule-title,
+      .location__contacts-title {
+        color: #fff;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .location.green {
+    .location__shedule-title,
+    .location__contacts-title {
+      color: $brand-green;
+    }
+    svg path {
+      fill: $brand-green;
+    }
+    &:hover {
+      background-color: $brand-green;
+      .location__shedule-title,
+      .location__contacts-title {
+        color: #fff;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
+  .location.blue {
+    .location__shedule-title,
+    .location__contacts-title {
+      color: $brand-blue;
+    }
+    svg path {
+      fill: $brand-blue;
+    }
+    &:hover {
+      background-color: $brand-blue;
+      .location__shedule-title,
+      .location__contacts-title {
+        color: #fff;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
+  .social-list__link {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    text-transform: uppercase;
+    .link-ico {
+      margin-right: 15px;
+      width: 24px;
+      height: 24px;
+      overflow: hidden;
+    }
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      path {
+        transition: fill 0.4s ease;
+      }
+    }
+  }
+}
+
+#footer {
+  padding: 100px 0px 30px 0px;
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $brand-orange;
+  }
+  .footer__col {
+    flex: 0 0 25%;
+    &.wide {
+      flex: 0 0 50%;
+      .footer__menu-list .menu-list__item {
+        width: 50%;
+      }
+    }
+  }
+  .footer__col-title {
+    a {
+      font-size: 20px;
+      color: $mainFontColor;
+      font-weight: 700;
+      font-family: "Gilroy";
+      font-style: normal;
+    }
+    margin-bottom: 15px;
+  }
+  .footer__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    .menu-list__item {
+      margin-bottom: 8px;
+      width: 100%;
+      a {
+        color: $desc-color;
+      }
+    }
   }
 }
