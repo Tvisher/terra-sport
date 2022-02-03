@@ -628,6 +628,7 @@ li {
 }
 
 .shedule__filters {
+  flex-wrap: wrap;
   margin-bottom: 38px;
   display: flex;
   align-items: center;
@@ -1034,5 +1035,235 @@ html .ui-button.ui-state-disabled:active {
         color: $desc-color;
       }
     }
+  }
+  .footer__info {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: $mainFontColor;
+    }
+  }
+  .footer__development {
+    text-align: right;
+  }
+  .footer__logo {
+    max-width: 221px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .shedule__block {
+    flex: 0 0 32%;
+  }
+  .adresses__list .list__ittem {
+    width: 46%;
+  }
+  #footer {
+    li {
+      padding-right: 5px;
+    }
+    padding-top: 60px;
+    .footer__wrapper {
+      flex-wrap: wrap;
+    }
+    .footer__col {
+      flex: 0 0 25%;
+      &.wide {
+        flex: 0 0 75%;
+      }
+    }
+  }
+}
+@media (max-width: 980px) {
+  .shedule__block {
+    flex: 0 0 48%;
+  }
+  .adresses {
+    padding: 35px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    .footer__info {
+      padding-top: 20px;
+    }
+    .footer__col {
+      flex: 0 0 50%;
+
+      &.wide {
+        order: 3;
+        flex: 0 0 100%;
+      }
+    }
+  }
+  .shedule__filters-categories {
+    .categories__select:nth-child(1) {
+      .select__content {
+        right: inherit;
+        left: 0;
+      }
+    }
+  }
+  .main-page-desc {
+    max-width: 100%;
+  }
+  .shedule__filters-date {
+    margin-bottom: 10px;
+  }
+  .shedule__blocks-time {
+    font-size: 2vw;
+  }
+  .adresses__list .list__ittem {
+    width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  #footer .footer__info {
+    flex-wrap: wrap;
+  }
+  .footer__info > div {
+    flex: 0 0 100%;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    text-align: center;
+  }
+  #footer .footer__development {
+    text-align: center;
+  }
+  #footer .footer__logo {
+    margin: auto;
+  }
+  .footer__logo-wrapper {
+    order: -1;
+  }
+  .footer__privacy,
+  .footer__development {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .city-map iframe {
+    height: 45vh;
+  }
+  .adresses {
+    padding: 25px 0;
+  }
+  .adresses__list .location__title {
+    font-size: 5vw;
+  }
+  .adresses__list .location__shedule-title,
+  .adresses__list .location__contacts-title {
+    font-size: 4vw;
+  }
+  .adresses__list .social-list__link {
+    justify-content: flex-end;
+    font-size: 4vw;
+    .link-ico {
+      margin-right: 0;
+      order: 1;
+      margin-left: 15px;
+    }
+  }
+  .location__contacts a,
+  .location__shedule span {
+    font-size: 4vw;
+  }
+  .adresses__list .list__ittem {
+    width: 93%;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    .location__title {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    .location__shedule {
+      margin-bottom: 15px;
+    }
+  }
+  .first-section {
+    padding-top: 35px;
+  }
+  .shedule {
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+  .shedule__block {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .categories__select .select__name::before {
+    right: 5px;
+  }
+  .shedule__blocks {
+    margin-bottom: 15px;
+    padding-left: 0%;
+  }
+  .shedule__blocks-time {
+    margin-bottom: 5px;
+    position: relative;
+    right: inherit;
+    left: inherit;
+    top: inherit;
+    width: 100%;
+    font-size: 5.5vw;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .shedule__filters {
+    margin-bottom: 25px;
+  }
+
+  .categories__select .select__content {
+    max-width: 85vw;
+  }
+  .main-page-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer {
+    padding-top: 30px;
+    .footer__wrapper {
+      padding-bottom: 20px;
+    }
+    .footer__col.wide .footer__menu-list .menu-list__item {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .shedule__filters-date label {
+    margin-right: 0;
+  }
+  .shedule__filters-date,
+  .shedule__filters-categories {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .categories__select:not(:last-child) {
+    margin-right: 0;
+  }
+  .categories__select .select__name {
+    font-size: 14px;
+  }
+  #footer {
+    padding-bottom: 10px;
   }
 }

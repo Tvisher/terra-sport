@@ -70,6 +70,11 @@
                     <div class="shedule__filters">
                         <div class="shedule__filters-date">
                             <label>
+                                <input type="radio" name="date" class="shedule__datepicker">
+                                <span class="shedule__datepicker-value">Выбрать дату</span>
+                                <span class="shedule__datepicker-placeholder">Выбрать дату</span>
+                            </label>
+                            <label>
                                 <input type="radio" name="date" checked>
                                 <span>Сегодня</span>
                             </label>
@@ -77,13 +82,34 @@
                                 <input type="radio" name="date">
                                 <span>Завтра</span>
                             </label>
-                            <label>
-                                <input type="radio" name="date" class="shedule__datepicker">
-                                <span class="shedule__datepicker-value">Выбрать дату</span>
-                                <span class="shedule__datepicker-placeholder">Выбрать дату</span>
-                            </label>
                         </div>
                         <div class="shedule__filters-categories categories">
+                            <div class="categories__select select">
+                                <span class="select__name">Выбор клуба</span>
+                                <form class="select__content">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span>Все</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Серикбаева, 7/5</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Потанина, 17</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Крылова, 106</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>пр. Нурсултана Назарбаева, 5/3</span>
+                                    </label>
+                                    <button type="submit" class="select__submit">Применить</button>
+                                </form>
+                            </div>
                             <div class="categories__select select">
                                 <span class="select__name">Программа</span>
                                 <form class="select__content">
@@ -120,32 +146,6 @@
                                     <label>
                                         <input type="checkbox">
                                         <span>Зал №4</span>
-                                    </label>
-                                    <button type="submit" class="select__submit">Применить</button>
-                                </form>
-                            </div>
-                            <div class="categories__select select">
-                                <span class="select__name">Выбор клуба</span>
-                                <form class="select__content">
-                                    <label>
-                                        <input type="checkbox" checked>
-                                        <span>Все</span>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Серикбаева, 7/5</span>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Потанина, 17</span>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Крылова, 106</span>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>пр. Нурсултана Назарбаева, 5/3</span>
                                     </label>
                                     <button type="submit" class="select__submit">Применить</button>
                                 </form>

@@ -63,7 +63,7 @@ $(function () {
     $.datepicker.setDefaults($.datepicker.regional['ru']);
 
     $(".shedule__datepicker").datepicker({
-        // событие при выборе даты
+        // событие при выборе даты (сюда можно повешать get запрос )
         onSelect: function (dateText) {
             let datapickerValue = $(this).parent().find(".shedule__datepicker-value");
             datapickerValue.text(dateText);
@@ -72,20 +72,19 @@ $(function () {
 });
 
 
-
-
-
+// Принцип работы выпадающих списков секции расписания
 $("body").click(function (event) {
     let target = event.target;
     if (target.closest('.select__name')) {
         let openedContentBlock = $('.select__content.show');
         let showBlockTitle = $('.select__name.show');
+        //Если есть открытий блок, закрываем
         if (showBlockTitle && openedContentBlock && !target.classList.contains('show')) {
             openedContentBlock.removeClass('show');
             showBlockTitle.removeClass('show');
             openedContentBlock.slideToggle(300);
         }
-
+        // Окрываем таргетный блок
         $(target).toggleClass('show');
         let slideContent = $(target).parent().find('.select__content');
         slideContent.slideToggle(300);
