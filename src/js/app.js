@@ -93,6 +93,24 @@ $("body").click(function (event) {
 });
 
 
+//Табы на странице личного кабинета
+function tabsSwitch(e) {
+    const target = e.target;
+    if (target.hasAttribute('data-tabs-switch')) {
+        e.preventDefault();
+        const activeTabsBtn = document.querySelector('.active[data-tabs-switch]');
+        activeTabsBtn.classList.remove('active');
+        target.classList.add('active');
+        const tabId = target.getAttribute('href');
+        const showingTab = document.querySelector('.manage__tabs-content.show');
+        showingTab && showingTab.classList.remove('show');
+        document.querySelector(`${tabId}`).classList.add('show');
+    }
+}
+
+document.body.addEventListener('click', tabsSwitch);
+
+
 
 //слайдер расписания
 // const sheduleSlider = new Swiper('.shedule__slider', {

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('./html/head.html',{
+    "title": "Личный кабинет"
+    })
+</head>
+
+<body class="">
+    @@include('./html/header-login.html')
+    <main class="main" id="main">
+        <section class="personal first-section" id='personal'>
+            <div class="container">
+                <div class="personal__wrapper">
+                    <div class="porsonal__manage">
+                        <h1 class="main-page-title personal__title">
+                            Личный кабинет
+                        </h1>
+                        <div class="manage__tabs-btns">
+                            <a href="#personal-data" class="tabs-btn active" data-tabs-switch="">Личные данные</a>
+                            <a href="#purchase-history" class="tabs-btn" data-tabs-switch="">История покупок</a>
+                        </div>
+                    </div>
+                    <p class="main-page-desc">
+                        Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="manage__tabs-wrapper">
+                    <div class="manage__tabs-content tabs-content show" id="personal-data">
+                        <div class="my-subscription">
+                            <h3 class="tabs-content__title">Мой абонимент</h3>
+                            <div class="my-subscription__wrapper">
+                                <div class="my-subscription__img">
+                                    <img src="@img/lk-image.jpg" alt="">
+                                </div>
+                                <div class="my-subscription__info">
+                                    <h4 class="my-subscription__name">Общий безлимит</h4>
+                                    <div class="my-subscription__status">
+                                        Статус: <span>Активен до 28.05.22</span>
+                                    </div>
+                                    <div class="my-subscription__status overdue">
+                                        Статус: <span>Неактивен, закончился 21.06.21</span>
+                                    </div>
+                                    <div class="my-subscription__data">
+                                        Назарбаева, 5/3 + Крылова, 106 + Серикбаева 7/5 без ограничений по времени и кол-ву тренировок
+                                    </div>
+                                    <a href="#" class="my-subscription__extend btn btnOrange">Продлить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-data">
+                            <h3 class="tabs-content__title">Личные данные</h3>
+                            <div class="personal-data__wrapper">
+                                <form action="#" class="personal-data__content">
+                                    <label>
+                                        <span>Фамилия</span>
+                                        <input type="text" name="surname" placeholder="Громов" readonly>
+                                    </label>
+                                    <label>
+                                        <span>Имя</span>
+                                        <input type="text" name="name" placeholder="Илья" readonly>
+                                    </label>
+                                    <label>
+                                        <span>Отчество</span>
+                                        <input type="text" name="patronymic" placeholder="Анатольевич" readonly>
+                                    </label>
+                                    <label>
+                                        <span>Телефон</span>
+                                        <input type="text" name="phone" placeholder="+7 777 535 52 85" readonly>
+                                    </label>
+                                    <label>
+                                        <span>Email</span>
+                                        <input type="text" name="email" placeholder="gromov7404@mail.ru" readonly>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="personal-data">
+                            <h3 class="tabs-content__title">Смена пароля</h3>
+                            <div class="personal-data__wrapper">
+                                <form action="#" class="personal-data__content">
+                                    <label>
+                                        <span>Пароль</span>
+                                        <input type="password" name="password" placeholder="Введите новый пароль">
+                                    </label>
+                                    <label>
+                                        <span>Подтвердить пароль</span>
+                                        <input type="password" name="check-password" placeholder="Подтвердите новый пароль">
+                                    </label>
+                                    <div class="personal-data__submit__wrapper">
+                                        <button type="submit" class="personal-data__submit">Сохранить изменения</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="personal-data">
+                            <h3 class="tabs-content__title">Настройки подписки</h3>
+                            <div class="personal-data__wrapper">
+                                <form action="#" class="personal-data__content">
+                                    <label>
+                                        <span>Ваш e-mail *</span>
+                                        <input type="email" name="email" placeholder="gromov7404@mail.ru">
+                                    </label>
+                                    <label class="custom__checkbox">
+                                        <input type="checkbox" checked>
+                                        <span>Даю согласие на обработку персональных данных.</span>
+                                    </label>
+                                    <div class="personal-data__submit__wrapper">
+                                        <button type="submit" class="personal-data__submit">Сохранить изменения</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" manage__tabs-content tabs-content" id="purchase-history">
+                        <div class="purchase-history">
+                            <h3 class="tabs-content__title">Исторя покупок</h3>
+                            <ul class="purchase-history__list">
+                                <li class="list__item-purchase paid">
+                                    <div class="purchase__data">
+                                        <div class="purchase__info">Отгрузка №5320/2, стоимость доставки 0 ₸</div>
+                                        <div class="purchase__price">Сумма к оплате по счету: 102 032 ₸</div>
+                                        <div class="purchase__date">23.06.21</div>
+                                    </div>
+                                    <div class="purchase__status">Оплачен</div>
+                                </li>
+                                <li class="list__item-purchase canceled">
+                                    <div class="purchase__data">
+                                        <div class="purchase__info">Отгрузка №5320/2, стоимость доставки 0 ₸</div>
+                                        <div class="purchase__price">Сумма к оплате по счету: 102 032 ₸</div>
+                                        <div class="purchase__date">23.06.21</div>
+                                    </div>
+                                    <div class="purchase__status">Отменен</div>
+                                </li>
+                                <li class="list__item-purchase in-processing">
+                                    <div class="purchase__data">
+                                        <div class="purchase__info">Отгрузка №5320/2, стоимость доставки 0 ₸</div>
+                                        <div class="purchase__price">Сумма к оплате по счету: 102 032 ₸</div>
+                                        <div class="purchase__date">23.06.21</div>
+                                    </div>
+                                    <div class="purchase__status">В обработке</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('./html/map.html')
+        @@include('./html/adresses.html')
+    </main>
+    @@include('./html/footer.html')
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>

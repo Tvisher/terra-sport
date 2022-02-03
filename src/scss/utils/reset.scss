@@ -138,6 +138,10 @@ svg {
 iframe {
   border: 0;
 }
+img,
+svg {
+  display: block;
+}
 
 // From
 textarea {
