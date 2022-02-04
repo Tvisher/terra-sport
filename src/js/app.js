@@ -1,7 +1,5 @@
 'use strict';
-
 import * as baseFunction from './modules/functions.js';
-
 import './vendors/vendors.js';
 import ModalVideo from 'modal-video';
 import Swiper, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
@@ -107,24 +105,61 @@ function tabsSwitch(e) {
         document.querySelector(`${tabId}`).classList.add('show');
     }
 }
-
 document.body.addEventListener('click', tabsSwitch);
 
 
 
-//слайдер расписания
-// const sheduleSlider = new Swiper('.shedule__slider', {
-//     modules: [Navigation],
-//     speed: 800,
-//     freeMode: true,
-//     slideClass: 'shedule__slider-slide',
-//     wrapperClass: 'shedule__slider-wrapper',
-//     slidesPerView: 5,
-//     centeredSlides: true,
-//     grabCursor: true,
-//     spaceBetween: 6,
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-// });
+//Анимация инпутов с placeholder выезжающим за пределы поля инпута
+const stylinginputs = document.querySelectorAll('[data-focus-item]');
+stylinginputs.forEach(input => {
+    input.addEventListener('focus', (e) => {
+        const input = e.target;
+        const inputpParent = e.target.parentNode;
+        const transformtext = inputpParent.querySelector('.transform-text');
+        transformtext.classList.add('fixed');
+
+        input.addEventListener('blur', (e) => {
+            const inputValue = e.target.value.trim();
+            if (inputValue.length === 0) {
+                transformtext.classList.remove('fixed');
+            }
+        }, { once: true });
+    });
+});
+
+
+
+// Принцип работы открытия и закрытия мобальных окон регистрации и авторизации
+document.body.addEventListener("click", (e) => {
+    const targetElem = e.target;
+    if (targetElem.closest('[data-modal-open]')) {
+        e.preventDefault();
+        let openModal = document.querySelector('.modal.show');
+        openModal && openModal.classList.remove('show');
+
+        const loginBtn = targetElem.closest('[data-modal-open]');
+        const modalId = loginBtn.getAttribute('data-modal-open');
+        const openedModal = document.querySelector(`#${modalId}`);
+        openedModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+
+        openedModal.addEventListener("click", (e) => {
+            const modalTarget = e.target;
+            if (!modalTarget.closest('.modal__content') || modalTarget.closest('.modal__close')) {
+                openedModal.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});
+
+
+// Маска для инпутов с номером телефона
+const phoneInputs = document.querySelectorAll('input[type=tel]');
+phoneInputs.forEach(item => {
+    $(item).mask("+7 (999) 999-99-99");
+});
+
+
+
+

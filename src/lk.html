@@ -8,7 +8,7 @@
 </head>
 
 <body class="">
-    @@include('./html/header-login.html')
+    @@include('./html/header-authorized.html')
     <main class="main" id="main">
         <section class="personal first-section" id='personal'>
             <div class="container">
@@ -81,14 +81,14 @@
                         <div class="personal-data">
                             <h3 class="tabs-content__title">Смена пароля</h3>
                             <div class="personal-data__wrapper">
-                                <form action="#" class="personal-data__content">
+                                <form action="#" id="change-pass" class="personal-data__content">
                                     <label>
                                         <span>Пароль</span>
-                                        <input type="password" name="password" placeholder="Введите новый пароль">
+                                        <input class="styles-inputs" type="password" name="password" placeholder="xxxxxxxxx">
                                     </label>
                                     <label>
                                         <span>Подтвердить пароль</span>
-                                        <input type="password" name="check-password" placeholder="Подтвердите новый пароль">
+                                        <input class="styles-inputs" type="password" name="check-password" placeholder="xxxxxxxxx">
                                     </label>
                                     <div class="personal-data__submit__wrapper">
                                         <button type="submit" class="personal-data__submit">Сохранить изменения</button>
@@ -102,14 +102,14 @@
                                 <form action="#" class="personal-data__content">
                                     <label>
                                         <span>Ваш e-mail *</span>
-                                        <input type="email" name="email" placeholder="gromov7404@mail.ru">
+                                        <input class="styles-inputs" type="email" name="email" placeholder="gromov7404@mail.ru">
                                     </label>
                                     <label class="custom__checkbox">
                                         <input type="checkbox" checked>
                                         <span>Даю согласие на обработку персональных данных.</span>
                                     </label>
                                     <div class="personal-data__submit__wrapper">
-                                        <button type="submit" class="personal-data__submit">Сохранить изменения</button>
+                                        <button type="submit" class="personal-data__submit allowed">Сохранить изменения</button>
                                     </div>
                                 </form>
                             </div>
@@ -122,7 +122,7 @@
                                 <li class="list__item-purchase paid">
                                     <div class="purchase__data">
                                         <div class="purchase__info">Отгрузка №5320/2, стоимость доставки 0 ₸</div>
-                                        <div class="purchase__price">Сумма к оплате по счету: 102 032 ₸</div>
+                                        <div class="purchase__price">Сумма к оплате по счету:&nbsp;<span>102 032 ₸</span></div>
                                         <div class="purchase__date">23.06.21</div>
                                     </div>
                                     <div class="purchase__status">Оплачен</div>
@@ -130,7 +130,7 @@
                                 <li class="list__item-purchase canceled">
                                     <div class="purchase__data">
                                         <div class="purchase__info">Отгрузка №5320/2, стоимость доставки 0 ₸</div>
-                                        <div class="purchase__price">Сумма к оплате по счету: 102 032 ₸</div>
+                                        <div class="purchase__price">Сумма к оплате по счету:&nbsp;<span>102 032 ₸</span></div>
                                         <div class="purchase__date">23.06.21</div>
                                     </div>
                                     <div class="purchase__status">Отменен</div>
@@ -138,7 +138,7 @@
                                 <li class="list__item-purchase in-processing">
                                     <div class="purchase__data">
                                         <div class="purchase__info">Отгрузка №5320/2, стоимость доставки 0 ₸</div>
-                                        <div class="purchase__price">Сумма к оплате по счету: 102 032 ₸</div>
+                                        <div class="purchase__price">Сумма к оплате по счету:&nbsp;<span>102 032 ₸</span></div>
                                         <div class="purchase__date">23.06.21</div>
                                     </div>
                                     <div class="purchase__status">В обработке</div>
