@@ -34,6 +34,23 @@ const firstScreenSlider = new Swiper('.main__slider', {
 
 });
 
+
+
+const programsSectionSlider = new Swiper('.programs-section__slider', {
+    modules: [Navigation],
+    spaceBetween: 30,
+    slideClass: 'programs-section__slide',
+    wrapperClass: 'programs-section__slider-wrapper',
+    speed: 900,
+    slidesPerView: "auto",
+    // loopedSlides: 1,
+    navigation: {
+        nextEl: '.section__slider-button-next',
+        prevEl: '.section__slider-button-prev',
+    },
+
+})
+
 //модалки с видео в слайдере на главной  
 new ModalVideo('.js-modal-btn', { theme: 'dark' });
 
