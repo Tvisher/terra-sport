@@ -43,13 +43,57 @@ const programsSectionSlider = new Swiper('.programs-section__slider', {
     wrapperClass: 'programs-section__slider-wrapper',
     speed: 900,
     slidesPerView: "auto",
-    // loopedSlides: 1,
     navigation: {
         nextEl: '.section__slider-button-next',
         prevEl: '.section__slider-button-prev',
     },
+});
 
-})
+
+
+const photoGalerySlider = new Swiper('.photo-galery__slider', {
+    modules: [Navigation],
+    spaceBetween: 30,
+    slideClass: 'photo-galery__slide',
+    wrapperClass: 'photo-galery__wrapper',
+    speed: 900,
+    slidesPerView: 3,
+    navigation: {
+        nextEl: '.section__slider-button-next.galery-arrows',
+        prevEl: '.section__slider-button-prev.galery-arrows',
+    },
+});
+
+const subscriptionsSlider = new Swiper('.subscriptions__slider', {
+    modules: [Navigation],
+    spaceBetween: 30,
+    slideClass: 'subscriptions__slide',
+    wrapperClass: 'subscriptions__slider-wrapper',
+    speed: 900,
+    slidesPerView: 'auto',
+    navigation: {
+        nextEl: '.section__slider-button-next.subscriptions-arrows',
+        prevEl: '.section__slider-button-prev.subscriptions-arrows',
+    },
+});
+
+const reviewsSectionSlider = new Swiper('.reviews-section__slider', {
+    modules: [Navigation],
+    spaceBetween: 30,
+    slideClass: 'reviews-section__slide',
+    wrapperClass: 'reviews-section__slider-wrapper',
+    speed: 900,
+    slidesPerView: "auto",
+    navigation: {
+        nextEl: '.section__slider-button-next.reviews-section-btns',
+        prevEl: '.section__slider-button-prev.reviews-section-btns',
+    },
+});
+
+
+
+
+
 
 //модалки с видео в слайдере на главной  
 new ModalVideo('.js-modal-btn', { theme: 'dark' });
