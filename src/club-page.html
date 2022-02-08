@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    @@include('./html/head.html',{
+    "title": "Главная"
+    })
+</head>
+
+<body class="">
+    @@include('./html/header-standart.html')
+    <div class="main-wrap">
+        <main class="main" id="main">
+
+            @@include('./html/map.html')
+            @@include('./html/adresses.html')
+        </main>
+    </div>
+    @@include('./html/footer.html')
+    @@include('./html/registration-modal.html')
+    @@include('./html/login-modal.html')
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>
