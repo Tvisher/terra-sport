@@ -10,650 +10,953 @@
 
 <body class="gray">
     @@include('./html/header-slider.html')
-    <main class="main" id="main">
-        <section class="test-train" id="test-train">
-            <div class="container">
-                <div class="test-train__wrapper">
-                    <div class="test-train__img">
-                        <img src="@img/test-train.png" alt="">
+    <div class="main-wrap">
+        <main class="main" id="main">
+            <section class="test-train" id="test-train">
+                <div class="container">
+                    <div class="test-train__wrapper">
+                        <div class="test-train__img">
+                            <img src="@img/test-train.png" alt="">
+                        </div>
+                        <div class="test-train__content">
+                            <h2 class="test-train__title section__title">Пробная тренеровка</h2>
+                            <p class="test-train__desc">We have programs with a load calculated for both beginners and more experienced athletes. There are also directions that can meet the training needs of almost every client. Gym, individual workouts, as well as a large selection of group destinations.</p>
+                            <ul class="test-train__icons-list icons-list">
+                                <li class="icons-list__item">
+                                    <div class="item__img">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M40.6298 30.8883C41.5344 28.7044 42 26.3638 42 24C42 19.2261 40.1036 14.6477 36.7279 11.2721C33.3523 7.89642 28.7739 6 24 6C19.2261 6 14.6477 7.89642 11.2721 11.2721C7.89642 14.6477 6 19.2261 6 24C6 26.3638 6.46558 28.7044 7.37017 30.8883C8.27475 33.0722 9.60062 35.0565 11.2721 36.7279C12.9435 38.3994 14.9278 39.7253 17.1117 40.6298C19.2956 41.5344 21.6362 42 24 42C26.3638 42 28.7044 41.5344 30.8883 40.6298C33.0722 39.7253 35.0565 38.3994 36.7279 36.7279C38.3994 35.0565 39.7253 33.0722 40.6298 30.8883Z" stroke="#F58634" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 14H32V16.4034H16V14ZM25.4063 36H22.5937V21.2101H16V18.8067H32V21.2101H25.4063V36Z" fill="#F58634" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="item__info">
+                                        <h5>Стоимость</h5>
+                                        <span>490 тг</span>
+                                    </div>
+                                </li>
+                                <li class="icons-list__item">
+                                    <div class="item__img">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M24 16V24L30 30M42 24C42 26.3638 41.5344 28.7044 40.6298 30.8883C39.7252 33.0722 38.3994 35.0565 36.7279 36.7279C35.0565 38.3994 33.0722 39.7252 30.8883 40.6298C28.7044 41.5344 26.3638 42 24 42C21.6362 42 19.2956 41.5344 17.1117 40.6298C14.9278 39.7252 12.9435 38.3994 11.2721 36.7279C9.60062 35.0565 8.27475 33.0722 7.37017 30.8883C6.46558 28.7044 6 26.3638 6 24C6 19.2261 7.89642 14.6477 11.2721 11.2721C14.6477 7.89642 19.2261 6 24 6C28.7739 6 33.3523 7.89642 36.7279 11.2721C40.1036 14.6477 42 19.2261 42 24Z" stroke="#A8CF45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="item__info">
+                                        <h5>Время</h5>
+                                        <span>Не ограничено</span>
+                                    </div>
+                                </li>
+                                <li class="icons-list__item">
+                                    <div class="item__img">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M38 42V10C38 8.93913 37.5786 7.92172 36.8284 7.17157C36.0783 6.42143 35.0609 6 34 6H14C12.9391 6 11.9217 6.42143 11.1716 7.17157C10.4214 7.92172 10 8.93913 10 10V42M38 42H10M38 42H42M38 42H28M10 42H6M10 42H20M28 42V32C28 31.4696 27.7893 30.9609 27.4142 30.5858C27.0391 30.2107 26.5304 30 26 30H22C21.4696 30 20.9609 30.2107 20.5858 30.5858C20.2107 30.9609 20 31.4696 20 32V42M28 42H20M18 14H20M18 22H20M28 14H30M28 22H30" stroke="#245990" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="item__info">
+                                        <h5>Клуб</h5>
+                                        <span>На выбор</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="test-train__form">
+                                <label class="test-train__label">
+                                    <input autocomplete="off" type="text" name="name" class="styles-inputs" data-focus-item>
+                                    <span class="transform-text">Имя</span>
+                                </label>
+                                <label class="test-train__label">
+                                    <input autocomplete="off" type="tel" name="phone" class="styles-inputs" data-focus-item>
+                                    <span class="transform-text">Телефон</span>
+                                </label>
+                                <button type="submit" class="btn btnOrange test-train__btn">
+                                    Записаться
+                                </button>
+                                <label class="custom__checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Даю согласие на обработку персональных данных.</span>
+                                </label>
+                            </form>
+                        </div>
                     </div>
-                    <div class="test-train__content">
-                        <h2 class="test-train__title section__title">Пробная тренеровка</h2>
-                        <p class="test-train__desc">We have programs with a load calculated for both beginners and more experienced athletes. There are also directions that can meet the training needs of almost every client. Gym, individual workouts, as well as a large selection of group destinations.</p>
-                        <ul class="test-train__icons-list icons-list">
-                            <li class="icons-list__item">
-                                <div class="item__img">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M40.6298 30.8883C41.5344 28.7044 42 26.3638 42 24C42 19.2261 40.1036 14.6477 36.7279 11.2721C33.3523 7.89642 28.7739 6 24 6C19.2261 6 14.6477 7.89642 11.2721 11.2721C7.89642 14.6477 6 19.2261 6 24C6 26.3638 6.46558 28.7044 7.37017 30.8883C8.27475 33.0722 9.60062 35.0565 11.2721 36.7279C12.9435 38.3994 14.9278 39.7253 17.1117 40.6298C19.2956 41.5344 21.6362 42 24 42C26.3638 42 28.7044 41.5344 30.8883 40.6298C33.0722 39.7253 35.0565 38.3994 36.7279 36.7279C38.3994 35.0565 39.7253 33.0722 40.6298 30.8883Z" stroke="#F58634" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M16 14H32V16.4034H16V14ZM25.4063 36H22.5937V21.2101H16V18.8067H32V21.2101H25.4063V36Z" fill="#F58634" />
-                                    </svg>
-
+                </div>
+            </section>
+            <section class="about-section" id="about-section">
+                <div class="section__bg">
+                    <div class="section__cover"></div>
+                    <img src="@img/bgimage.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="about-section__wrapper">
+                        <div class="about-section__title combo-title">
+                            <h2 class="section__title">О нашем клубе</h2>
+                            <a href="#" class="about-section__link">Подробнее о клубе</a>
+                        </div>
+                        <ul class="about-section__list">
+                            <li class="list__item">
+                                <div class="list__item__img">
+                                    <img src="@img/about-ico.svg" alt="">
                                 </div>
-                                <div class="item__info">
-                                    <h5>Стоимость</h5>
-                                    <span>490 тг</span>
-                                </div>
+                                <h5 class="list__item__title">Наша команда</h5>
+                                <p class="list__item__desc">Это коллектив энергичных, амбициозных людей, любящих свою работу и внимательно относящихся к каждому гостю нашего клуба.</p>
                             </li>
-                            <li class="icons-list__item">
-                                <div class="item__img">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M24 16V24L30 30M42 24C42 26.3638 41.5344 28.7044 40.6298 30.8883C39.7252 33.0722 38.3994 35.0565 36.7279 36.7279C35.0565 38.3994 33.0722 39.7252 30.8883 40.6298C28.7044 41.5344 26.3638 42 24 42C21.6362 42 19.2956 41.5344 17.1117 40.6298C14.9278 39.7252 12.9435 38.3994 11.2721 36.7279C9.60062 35.0565 8.27475 33.0722 7.37017 30.8883C6.46558 28.7044 6 26.3638 6 24C6 19.2261 7.89642 14.6477 11.2721 11.2721C14.6477 7.89642 19.2261 6 24 6C28.7739 6 33.3523 7.89642 36.7279 11.2721C40.1036 14.6477 42 19.2261 42 24Z" stroke="#A8CF45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-
+                            <li class="list__item">
+                                <div class="list__item__img">
+                                    <img src="@img/about-ico-1.svg" alt="">
                                 </div>
-                                <div class="item__info">
-                                    <h5>Время</h5>
-                                    <span>Не ограничено</span>
-                                </div>
+                                <h5 class="list__item__title">Мы для Вас</h5>
+                                <p class="list__item__desc">Предоставляем фитнес услуги высокого качества!</p>
                             </li>
-                            <li class="icons-list__item">
-                                <div class="item__img">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M38 42V10C38 8.93913 37.5786 7.92172 36.8284 7.17157C36.0783 6.42143 35.0609 6 34 6H14C12.9391 6 11.9217 6.42143 11.1716 7.17157C10.4214 7.92172 10 8.93913 10 10V42M38 42H10M38 42H42M38 42H28M10 42H6M10 42H20M28 42V32C28 31.4696 27.7893 30.9609 27.4142 30.5858C27.0391 30.2107 26.5304 30 26 30H22C21.4696 30 20.9609 30.2107 20.5858 30.5858C20.2107 30.9609 20 31.4696 20 32V42M28 42H20M18 14H20M18 22H20M28 14H30M28 22H30" stroke="#245990" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                            <li class="list__item">
+                                <div class="list__item__img">
+                                    <img src="@img/about-ico-2.svg" alt="">
                                 </div>
-                                <div class="item__info">
-                                    <h5>Клуб</h5>
-                                    <span>На выбор</span>
+                                <h5 class="list__item__title">Только вперед</h5>
+                                <p class="list__item__desc">Мы никогда не стоим на месте. Наши тренеры постоянно развиваются, повышают квалификацию, обучаются.</p>
+                            </li>
+                            <li class="list__item">
+                                <div class="list__item__img">
+                                    <img src="@img/about-ico-3.svg" alt="">
                                 </div>
+                                <h5 class="list__item__title">Нужен текст</h5>
+                                <p class="list__item__desc">Мы никогда не стоим на месте. Наши тренеры постоянно развиваются, повышают квалификацию, обучаются.</p>
                             </li>
                         </ul>
-                        <form class="test-train__form">
-                            <label class="test-train__label">
-                                <input autocomplete="off" type="text" name="name" class="styles-inputs" data-focus-item>
-                                <span class="transform-text">Имя</span>
-                            </label>
-                            <label class="test-train__label">
-                                <input autocomplete="off" type="tel" name="phone" class="styles-inputs" data-focus-item>
-                                <span class="transform-text">Телефон</span>
-                            </label>
-                            <button type="submit" class="btn btnOrange test-train__btn">
-                                Записаться
-                            </button>
-                            <label class="custom__checkbox">
-                                <input type="checkbox" checked>
-                                <span>Даю согласие на обработку персональных данных.</span>
-                            </label>
-                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="about-section" id="about-section">
-            <div class="section__bg">
-                <div class="section__cover"></div>
-                <img src="@img/bgimage.jpg" alt="">
-            </div>
-            <div class="container">
-                <div class="about-section__wrapper">
-                    <div class="about-section__title">
-                        <h2 class="section__title">О нашем клубе</h2>
-                        <a href="#" class="about-section__link">Подробнее о клубе</a>
+            </section>
+            <section class="programs-section" id="programs-section">
+                <div class="container">
+                    <div class="programs-section__wrapper">
+                        <div class="programs-section__title combo-title">
+                            <h2 class="section__title">Программы</h2>
+                            <a href="#" class="programs-section__link">Все программы</a>
+                        </div>
+                        <!-- programs-section__slider container -->
+                        <div class="programs-section__slider">
+                            <!-- If we need navigation buttons -->
+                            <div class="section__slider-nav">
+                                <div class="section__slider-button-prev">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
+                                    </svg>
+                                </div>
+                                <div class="section__slider-button-next">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- programs-section__slider wrapper -->
+                            <div class="programs-section__slider-wrapper">
+                                <!-- programs-section__slide -->
+                                <div class="programs-section__slide orange">
+                                    <div class="slide__bg">
+                                        <img src="@img/slide-img.jpg" alt="">
+                                    </div>
+                                    <div class="slide__content">
+                                        <div class="slide__logo">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <h4 class="slide__title">Йога</h4>
+                                        <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                        <a href="#" class="slide__link btn">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="programs-section__slide green">
+                                    <div class="slide__bg">
+                                        <img src="@img/slide-img.jpg" alt="">
+                                    </div>
+                                    <div class="slide__content">
+                                        <div class="slide__logo">
+                                            <img src="@img/slide-logo2.jpg" alt="">
+                                        </div>
+                                        <h4 class="slide__title">Бокс</h4>
+                                        <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                        <a href="#" class="slide__link btn">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="programs-section__slide blue">
+                                    <div class="slide__bg">
+                                        <img src="@img/slide-img.jpg" alt="">
+                                    </div>
+                                    <div class="slide__content">
+                                        <div class="slide__logo">
+                                            <img src="@img/slidel-ogo3.jpg" alt="">
+                                        </div>
+                                        <h4 class="slide__title">Борьба</h4>
+                                        <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                        <a href="#" class="slide__link btn">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="programs-section__slide orange">
+                                    <div class="slide__bg">
+                                        <img src="@img/slide-img.jpg" alt="">
+                                    </div>
+                                    <div class="slide__content">
+                                        <div class="slide__logo">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <h4 class="slide__title">Йога</h4>
+                                        <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                        <a href="#" class="slide__link btn">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="programs-section__slide green">
+                                    <div class="slide__bg">
+                                        <img src="@img/slide-img.jpg" alt="">
+                                    </div>
+                                    <div class="slide__content">
+                                        <div class="slide__logo">
+                                            <img src="@img/slide-logo2.jpg" alt="">
+                                        </div>
+                                        <h4 class="slide__title">Бокс</h4>
+                                        <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                        <a href="#" class="slide__link btn">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="programs-section__slide blue">
+                                    <div class="slide__bg">
+                                        <img src="@img/slide-img.jpg" alt="">
+                                    </div>
+                                    <div class="slide__content">
+                                        <div class="slide__logo">
+                                            <img src="@img/slidel-ogo3.jpg" alt="">
+                                        </div>
+                                        <h4 class="slide__title">Борьба</h4>
+                                        <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                        <a href="#" class="slide__link btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="about-section__list">
-                        <li class="list__item">
-                            <div class="list__item__img">
-                                <img src="@img/about-ico.svg" alt="">
-                            </div>
-                            <h5 class="list__item__title">Наша команда</h5>
-                            <p class="list__item__desc">Это коллектив энергичных, амбициозных людей, любящих свою работу и внимательно относящихся к каждому гостю нашего клуба.</p>
-                        </li>
-                        <li class="list__item">
-                            <div class="list__item__img">
-                                <img src="@img/about-ico-1.svg" alt="">
-                            </div>
-                            <h5 class="list__item__title">Мы для Вас</h5>
-                            <p class="list__item__desc">Предоставляем фитнес услуги высокого качества!</p>
-                        </li>
-                        <li class="list__item">
-                            <div class="list__item__img">
-                                <img src="@img/about-ico-2.svg" alt="">
-                            </div>
-                            <h5 class="list__item__title">Только вперед</h5>
-                            <p class="list__item__desc">Мы никогда не стоим на месте. Наши тренеры постоянно развиваются, повышают квалификацию, обучаются.</p>
-                        </li>
-                        <li class="list__item">
-                            <div class="list__item__img">
-                                <img src="@img/about-ico-3.svg" alt="">
-                            </div>
-                            <h5 class="list__item__title">Нужен текст</h5>
-                            <p class="list__item__desc">Мы никогда не стоим на месте. Наши тренеры постоянно развиваются, повышают квалификацию, обучаются.</p>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-        </section>
-        <section class="programs-section" id="programs-section">
-            <div class="container">
-                <div class="programs-section__wrapper">
-                    <div class="programs-section__title">
-                        <h2 class="section__title">Программы</h2>
-                        <a href="#" class="programs-section__link">Все программы</a>
+            </section>
+            <section class="benefits-section" id="benefits-section">
+                <div class="section__bg">
+                    <div class="section__cover"></div>
+                    <img src="@img/bgimage.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="benefits-section__wrapper">
+                        <h2 class="benefits-section__title section__title">Преимущества нашего фитнес клуба</h2>
+                        <ul class="benefits-section__list">
+                            <li class="list-item">
+                                <div class="list-item__num">01</div>
+                                <div class="list-item__trapezoid"></div>
+                                <h5 class="list-item__title">МЫ УНИВЕРСАЛЬНЫ!</h5>
+                                <p class="list-item__desc">У нас есть программы с нагрузкой рассчитанной, как для новичков, так и для более опытных спортсменов. А также представлены направления, которые могут удовлетворить потребности в тренировках почти каждого клиента. Тренажерный зал, индивидуальные тренировки, а также большой выбор групповых направлений.</p>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__num">02</div>
+                                <div class="list-item__trapezoid"></div>
+                                <h5 class="list-item__title">МЫ УНИКАЛЬНЫ!</h5>
+                                <p class="list-item__desc">У нас действует особенная система безлимитных клубных карт формата ВСЕ ВКЛЮЧЕНО. По данной системе можно посещать все клубы сети TERRASPORT без ограничений по времени, количеству тренировок и без привязки к определенному тренеру.</p>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__num">03</div>
+                                <div class="list-item__trapezoid"></div>
+                                <h5 class="list-item__title">МЫ ОБУЧАЕМ!</h5>
+                                <p class="list-item__desc">На базе фитнес клуба TERRASPORT действует обучение фитнесу. Абсолютно любой человек, желающий развиваться в области фитнеса, может пройти у нас обучение и получить сертификат, дающий право работать фитнес инструктором. А талантливых учеников, которые проявят себя и покажут лучшие результаты, мы приглашаем на работу в наш фитнес клуб.</p>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__num">04</div>
+                                <div class="list-item__trapezoid"></div>
+                                <h5 class="list-item__title">МЫ РАССКАЗЫВАЕМ!</h5>
+                                <p class="list-item__desc">На базе фитнес клуба TERRASPORT действует обучение фитнесу. Абсолютно любой человек, желающий развиваться в области фитнеса, может пройти у нас обучение и получить сертификат, дающий право работать фитнес инструктором. А талантливых учеников, которые проявят себя и покажут лучшие результаты, мы приглашаем на работу в наш фитнес клуб.</p>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- programs-section__slider container -->
-                    <div class="programs-section__slider">
-                        <!-- If we need navigation buttons -->
+                </div>
+            </section>
+            <section class="photo-galery" id="photo-galery">
+                <div class="container">
+                    <div class="photo-galery__facet">
+                        <div class="photo-galery__title combo-title">
+                            <h2 class="section__title">Фотогалерея</h2>
+                            <a href="#" class="photo-galery__link">Все фотографии</a>
+                        </div>
+                        <div class="photo-galery__slider">
+                            <div class="section__slider-nav">
+                                <div class="section__slider-button-prev galery-arrows">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
+                                    </svg>
+                                </div>
+                                <div class="section__slider-button-next galery-arrows">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="photo-galery__wrapper">
+                                <div class="photo-galery__slide">
+                                    <div class="img_wrap">
+                                        <img src="@img/galery1.jpg" alt="">
+                                    </div>
+                                    <div class="img_wrap">
+                                        <img src="@img/galery2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="photo-galery__slide">
+                                    <div class="img_wrap">
+                                        <img src="@img/galery3.jpg" alt="">
+                                    </div>
+                                    <div class="img_wrap">
+                                        <img src="@img/galery4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="photo-galery__slide full">
+                                    <div class="img_wrap">
+                                        <img src="@img/galery5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="photo-galery__slide">
+                                    <div class="img_wrap">
+                                        <img src="@img/galery3.jpg" alt="">
+                                    </div>
+                                    <div class="img_wrap">
+                                        <img src="@img/galery4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="photo-galery__slide full">
+                                    <div class="img_wrap">
+                                        <img src="@img/galery5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="photo-galery__slide full">
+                                    <div class="img_wrap">
+                                        <img src="@img/galery2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="photo-galery__slide full">
+                                    <div class="img_wrap">
+                                        <img src="@img/galery5.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="program-setcion" id="program-setcion">
+                <div class="section__bg">
+                    <div class="section__cover"></div>
+                    <img src="@img/corporate-fitness.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="program-setcion__wrapper">
+                        <h2 class="section__title program-setcion__title">Корпоративный фитнес</h2>
+                        <p class="program-setcion__desc">Мы рады представить вашему вниманию корпоративную программу фитнес-клуба «TERRASPORT»!</p>
+                        <p class="program-setcion__text">Корпоративное программа фитнес-клуба «TERRASPORT» - это эффективное экономичное решение для Вашей компании, которое дает возможность Вашим сотрудникам посещать лучший спортивный фитнес-клуб города Усть - Каменогорска. Использование Вашими сотрудниками всех видов услуг фитнес-клуба в любое удобное для них время.
+                        </p>
+                        <a href="#" class="program-setcion__link btn btnOrange">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+            <section class="subscriptions" id="subscriptions">
+                <div class="container">
+                    <div class="photo-galery__title combo-title">
+                        <h2 class="section__title">Абонименты</h2>
+                        <a href="#" class="photo-galery__link">Все абонименты</a>
+                    </div>
+                    <div class="subscriptions__slider">
                         <div class="section__slider-nav">
-                            <div class="section__slider-button-prev">
+                            <div class="section__slider-button-prev subscriptions-arrows">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
                                 </svg>
                             </div>
-                            <div class="section__slider-button-next">
+                            <div class="section__slider-button-next subscriptions-arrows">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="subscriptions__slider-wrapper">
+                            <div class="subscriptions__slide subscription-item">
+                                <div class="subscription-item__img">
+                                    <img src="@img/subscription-item2.jpg" alt="">
+                                </div>
+                                <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
+                                <div class="subscription-item__price">
+                                    <div class="curent__price">
+                                        <span>14 500 ₸</span>
+                                        <span>/ месяц</span>
+                                    </div>
+                                    <div class="old__price">
+                                        <span>15 900 ₸</span>
+                                        <span>старая цена</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscription-item__link btn">Купить</a>
+                            </div>
+                            <div class="subscriptions__slide subscription-item">
+                                <div class="subscription-item__img">
+                                    <img src="@img/subscription-item1.jpg" alt="">
+                                </div>
+                                <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
+                                <div class="subscription-item__price">
+                                    <div class="curent__price">
+                                        <span>14 500 ₸</span>
+                                        <span>/ месяц</span>
+                                    </div>
+                                    <div class="old__price">
+                                        <span>15 900 ₸</span>
+                                        <span>старая цена</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscription-item__link btn">Купить</a>
+                            </div>
+                            <div class="subscriptions__slide subscription-item">
+                                <div class="subscription-item__img">
+                                    <img src="@img/subscription-item3.jpg" alt="">
+                                </div>
+                                <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
+                                <div class="subscription-item__price">
+                                    <div class="curent__price">
+                                        <span>14 500 ₸</span>
+                                        <span>/ месяц</span>
+                                    </div>
+                                    <div class="old__price">
+                                        <span>15 900 ₸</span>
+                                        <span>старая цена</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscription-item__link btn">Купить</a>
+                            </div>
+                            <div class="subscriptions__slide subscription-item">
+                                <div class="subscription-item__img">
+                                    <img src="@img/subscription-item2.jpg" alt="">
+                                </div>
+                                <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
+                                <div class="subscription-item__price">
+                                    <div class="curent__price">
+                                        <span>14 500 ₸</span>
+                                        <span>/ месяц</span>
+                                    </div>
+                                    <div class="old__price">
+                                        <span>15 900 ₸</span>
+                                        <span>старая цена</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscription-item__link btn">Купить</a>
+                            </div>
+                            <div class="subscriptions__slide subscription-item">
+                                <div class="subscription-item__img">
+                                    <img src="@img/subscription-item1.jpg" alt="">
+                                </div>
+                                <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
+                                <div class="subscription-item__price">
+                                    <div class="curent__price">
+                                        <span>14 500 ₸</span>
+                                        <span>/ месяц</span>
+                                    </div>
+                                    <div class="old__price">
+                                        <span>15 900 ₸</span>
+                                        <span>старая цена</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscription-item__link btn">Купить</a>
+                            </div>
+                            <div class="subscriptions__slide subscription-item">
+                                <div class="subscription-item__img">
+                                    <img src="@img/subscription-item3.jpg" alt="">
+                                </div>
+                                <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
+                                <div class="subscription-item__price">
+                                    <div class="curent__price">
+                                        <span>14 500 ₸</span>
+                                        <span>/ месяц</span>
+                                    </div>
+                                    <div class="old__price">
+                                        <span>15 900 ₸</span>
+                                        <span>старая цена</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscription-item__link btn">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="program-setcion" id="program-setcion">
+                <div class="section__bg">
+                    <div class="section__cover"></div>
+                    <img src="@img/kids.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="program-setcion__wrapper">
+                        <h2 class="section__title program-setcion__title">Детские программы</h2>
+                        <p class="program-setcion__desc">Мы рады представить вашему вниманию корпоративную программу фитнес-клуба «TERRASPORT»!</p>
+                        <p class="program-setcion__text">Корпоративное программа фитнес-клуба «TERRASPORT» - это эффективное экономичное решение для Вашей компании, которое дает возможность Вашим сотрудникам посещать лучший спортивный фитнес-клуб города Усть - Каменогорска. Использование Вашими сотрудниками всех видов услуг фитнес-клуба в любое удобное для них время.
+                        </p>
+                        <a href="#" class="program-setcion__link btn btnOrange">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+            <section class="instagram-galery" id="instagram-galery">
+                <div class="container">
+                    <div class="instagram-galery__facet">
+                        <div class="instagram-galery__title combo-title">
+                            <h2 class="section__title">Наш Instagram</h2>
+                            <a href="#" class="instagram-galery__link">Все публикации</a>
+                        </div>
+                        <div class="instagram-galery__slider">
+                            <div class="section__slider-nav">
+                                <div class="section__slider-button-prev instagram-arrows">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
+                                    </svg>
+                                </div>
+                                <div class="section__slider-button-next instagram-arrows">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="instagram-galery__wrapper">
+                                <!-- Каждый слайд содержит по 2 поста -->
+                                <div class="instagram-galery__slide">
+                                    <div class="post">
+                                        <img src="@img/insta1.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <img src="@img/insta2.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instagram-galery__slide">
+                                    <div class="post">
+                                        <img src="@img/insta3.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <img src="@img/insta4.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instagram-galery__slide">
+                                    <div class="post">
+                                        <img src="@img/insta5.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <img src="@img/insta6.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instagram-galery__slide">
+                                    <div class="post">
+                                        <img src="@img/insta1.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <img src="@img/insta2.jpg" alt="">
+                                        <div class="post__content">
+                                            <p class="post__text"> 🕺 ТАНЦУЮТ ВЕЗДЕ! Теперь и на Серикбаева 7/5! 🕺</p>
+                                            <p class="post__text"> Современные детские танцы с Ксенией Минкевич @kseniya_minkevich !</p>
+                                            <p class="post__text"> 😇 Все вы, наверняка, уже знаете о бесплатных группах детских направлений.</p>
+                                            <p class="post__text"> И, если ваш ребенок не мог из-за времени попасть на эти тренировки, то 👍 спешим Вас обрадовать: открывается новая группа по детским танцам в удобное время утром и вечером!</p>
+                                            <p class="post__text"> 💃 Занятия с профессионалом своего дела - Ксенией точно не оставят равнодушными ваших детей!</p>
+                                            <p class="post__text">
+                                                ❗ Поспешите, и начните подавать заявки уже сейчас, потому что места ограничены!
+                                                ❗ Занятия начнутся уже 10 декабря.
+                                            </p>
+                                            <p class="post__text">
+                                                Расписание:
+                                                🏠 Ул. Серикбаева 7/5
+                                                🕚 10:00 вторник, четверг
+                                                🕔 17:00 понедельник, среда, пятница
+                                                🕕 18:00 вторник, четверг
+                                            </p>
+                                            <p class="post__text"> 🍀 Твоё движение вперёд!</p>
+                                            <p class="post__text">
+                                                #ТЕРРАРЯДОМ
+                                                #Terrasport #terrasport_ukg #тераспорт #хореографиядлядетей #танцыука
+                                                #детиустькаменогорск #детскийспорт
+                                                #фитнес #спорт #спортзал #спортсмен #хореографиядлядетей #танцыука #детиустькаменогорск #спортука #фитнесустькаменогорск #спортука #фитнесустькаменогорск
+                                                #детскийспорт #устькаменогорск #спортдлядетей #спортивнаясекция #спортначинаетсяздесь #карате #каратедлядетей #секциидлядетей #ука #uka
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="personal-section" id="personal-section">
+                <div class="section__bg">
+                    <div class="section__cover"></div>
+                    <img src="@img/bgimage.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="personal-section__content">
+                        <div class="personal-section__desc">
+                            <h2 class="section__title personal-section__title">Движение вперед</h2>
+                            <p class="personal-section__text">Причины заниматься фитнесом у каждого свои. Кто-то хочет повысить выносливость, кто-то мечтает избавиться от лишних килограммов, а кто-то просто тренируется для поддержания общей физической формы и укрепления здоровья. Какие бы разные цели у нас не были, объединяет нас одно: мы все любим спорт. У нас каждый найдет себе тренировку по душе. В нашем клубе представлены такие групповые направления как: Hot Iron, Fitness Mix, TRX петли, Yoga, Aeroyoga, Fitness&Bodyflex, Body Pump, Pilates, Zumba, Belly Dance, БОКС. Беговые дорожки, велотренажёры, кардио- зона, зал функционального тренинга доступны для вас.</p>
+                            <p class="personal-section__text">Просторный тренажерный зал вдохновит вас на новые спортивные подвиги, а тренеры подарят заряд энергии и мотивации для достижения фигуры своей мечты.
+                            </p>
+                            <p class="personal-section__text">
+                                Наши двери открыты абсолютно для каждого кто решил заняться спортом, улучшать и совершенствовать свое физическое состояние. Мы обязательно поможем вам в этом. TERRASPORT – твое движение вперед!
+                            </p>
+                        </div>
+                        <div class="personal-section__imgs figures">
+                            <div class="figures__box"></div>
+                            <div class="figures__img">
+                                <img src="@img/gymImage.jpg" alt="">
+                            </div>
+                            <div class="figures__card">
+                                <h4 class="figures__card-title">Абонимент</h4>
+                                <span class="figures__card-desc">Персональные тренировки</span>
+                                <div class="figures__card-price">
+                                    <h5>30.000 тг</h5>
+                                    <span>в месяц</span>
+                                </div>
+                                <a href="#" class="figures__card-btn btn">Купить сейчас</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews-section" id="reviews-section">
+                <div class="container">
+                    <div class="reviews-section__wrapper">
+                        <div class="reviews-section__title combo-title">
+                            <h2 class="section__title">Отзывы</h2>
+                            <a href="#" class="reviews-section__link">Все отзывы</a>
+                        </div>
+                    </div>
+                    <!-- programs-section__slider container -->
+                    <div class="reviews-section__slider">
+                        <!-- If we need navigation buttons -->
+                        <div class="section__slider-nav">
+                            <div class="section__slider-button-prev reviews-section-btns">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
+                                </svg>
+                            </div>
+                            <div class="section__slider-button-next reviews-section-btns">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
                                 </svg>
                             </div>
                         </div>
                         <!-- programs-section__slider wrapper -->
-                        <div class="programs-section__slider-wrapper">
+                        <div class="reviews-section__slider-wrapper">
                             <!-- programs-section__slide -->
-                            <div class="programs-section__slide orange">
-                                <div class="slide__bg">
-                                    <img src="@img/slide-img.jpg" alt="">
-                                </div>
-                                <div class="slide__content">
-                                    <div class="slide__logo">
-                                        <img src="@img/slide-logo1.jpg" alt="">
+                            <div class="reviews-section__slide review">
+                                <div class="review__content">
+                                    <div class="review__head">
+                                        <div class="review__img">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <div class="review__info">
+                                            <span class="review__name">Смирнов Владимир</span>
+                                            <span class="review__desc">Занимается 9 месяцев</span>
+                                        </div>
                                     </div>
-                                    <h4 class="slide__title">Йога</h4>
-                                    <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
-                                    <a href="#" class="slide__link btn">Подробнее</a>
+                                    <h4 class="review__title">Есть над чем задуматься: средства индивидуальной защиты оказались бесполезны</h4>
+                                    <p class="review__desc">Вот вам яркий пример современных тенденций - выбранный нами инновационный путь говорит о возможностях своевременного выполнения сверхзадачи. Ясность нашей позиции очевидна: понимание сути ресурсосберегающих технологий позволяет оценить значение модели развития. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
                                 </div>
                             </div>
-                            <div class="programs-section__slide green">
-                                <div class="slide__bg">
-                                    <img src="@img/slide-img.jpg" alt="">
-                                </div>
-                                <div class="slide__content">
-                                    <div class="slide__logo">
-                                        <img src="@img/slide-logo2.jpg" alt="">
+                            <div class="reviews-section__slide review">
+                                <div class="review__content">
+                                    <div class="review__head">
+                                        <div class="review__img">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <div class="review__info">
+                                            <span class="review__name">Алексей Поклонский</span>
+                                            <span class="review__desc">Занимается 12 месяцев</span>
+                                        </div>
                                     </div>
-                                    <h4 class="slide__title">Бокс</h4>
-                                    <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
-                                    <a href="#" class="slide__link btn">Подробнее</a>
+                                    <h4 class="review__title">Глубокий уровень погружения развеял последние сомнения</h4>
+                                    <p class="review__desc">Есть над чем задуматься: действия представителей оппозиции призывают нас к новым свершениям, которые, в свою очередь, должны быть обнародованы. Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта предполагает независимые способы реализации экспериментов, поражающих по своей масштабности и грандиозности!</p>
+                                    <div class="review__video js-modal-btn" data-video-id="5qap5aO4i9A">
+                                        <div class="img__wrap">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
+                                                <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
+                                            </svg>
+                                        </div>
+                                        <span>Посмотреть видеоотзыв</span>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="programs-section__slide blue">
-                                <div class="slide__bg">
-                                    <img src="@img/slide-img.jpg" alt="">
-                                </div>
-                                <div class="slide__content">
-                                    <div class="slide__logo">
-                                        <img src="@img/slidel-ogo3.jpg" alt="">
+                            <div class="reviews-section__slide review">
+                                <div class="review__content">
+                                    <div class="review__head">
+                                        <div class="review__img">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <div class="review__info">
+                                            <span class="review__name">Илья Берц</span>
+                                            <span class="review__desc">Занимается 3 года</span>
+                                        </div>
                                     </div>
-                                    <h4 class="slide__title">Борьба</h4>
-                                    <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
-                                    <a href="#" class="slide__link btn">Подробнее</a>
+                                    <h4 class="review__title">Кровь стынет в жилах!</h4>
+                                    <p class="review__desc">Есть над чем задуматься: сделанные на базе интернет-аналитики выводы призваны к ответу. Ясность нашей позиции очевидна: сложившаяся структура организации способствует повышению качества новых принципов формирования материально-технической и кадровой базы.</p>
+                                    <div class="review__video js-modal-btn" data-video-id="5qap5aO4i9A">
+                                        <div class="img__wrap">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
+                                                <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
+                                            </svg>
+                                        </div>
+                                        <span>Посмотреть видеоотзыв</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="programs-section__slide orange">
-                                <div class="slide__bg">
-                                    <img src="@img/slide-img.jpg" alt="">
-                                </div>
-                                <div class="slide__content">
-                                    <div class="slide__logo">
-                                        <img src="@img/slide-logo1.jpg" alt="">
+                            <div class="reviews-section__slide review">
+                                <div class="review__content">
+                                    <div class="review__head">
+                                        <div class="review__img">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <div class="review__info">
+                                            <span class="review__name">Смирнов Владимир</span>
+                                            <span class="review__desc">Занимается 9 месяцев</span>
+                                        </div>
                                     </div>
-                                    <h4 class="slide__title">Йога</h4>
-                                    <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
-                                    <a href="#" class="slide__link btn">Подробнее</a>
+                                    <h4 class="review__title">Есть над чем задуматься: средства индивидуальной защиты оказались бесполезны</h4>
+                                    <p class="review__desc">Вот вам яркий пример современных тенденций - выбранный нами инновационный путь говорит о возможностях своевременного выполнения сверхзадачи. Ясность нашей позиции очевидна: понимание сути ресурсосберегающих технологий позволяет оценить значение модели развития. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
                                 </div>
                             </div>
-                            <div class="programs-section__slide green">
-                                <div class="slide__bg">
-                                    <img src="@img/slide-img.jpg" alt="">
-                                </div>
-                                <div class="slide__content">
-                                    <div class="slide__logo">
-                                        <img src="@img/slide-logo2.jpg" alt="">
+                            <div class="reviews-section__slide review">
+                                <div class="review__content">
+                                    <div class="review__head">
+                                        <div class="review__img">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <div class="review__info">
+                                            <span class="review__name">Алексей Поклонский</span>
+                                            <span class="review__desc">Занимается 12 месяцев</span>
+                                        </div>
                                     </div>
-                                    <h4 class="slide__title">Бокс</h4>
-                                    <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
-                                    <a href="#" class="slide__link btn">Подробнее</a>
+                                    <h4 class="review__title">Глубокий уровень погружения развеял последние сомнения</h4>
+                                    <p class="review__desc">Есть над чем задуматься: действия представителей оппозиции призывают нас к новым свершениям, которые, в свою очередь, должны быть обнародованы. Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта предполагает независимые способы реализации экспериментов, поражающих по своей масштабности и грандиозности!</p>
+                                    <div class="review__video js-modal-btn" data-video-id="5qap5aO4i9A">
+                                        <div class="img__wrap">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
+                                                <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
+                                            </svg>
+                                        </div>
+                                        <span>Посмотреть видеоотзыв</span>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="programs-section__slide blue">
-                                <div class="slide__bg">
-                                    <img src="@img/slide-img.jpg" alt="">
-                                </div>
-                                <div class="slide__content">
-                                    <div class="slide__logo">
-                                        <img src="@img/slidel-ogo3.jpg" alt="">
+                            <div class="reviews-section__slide review">
+                                <div class="review__content">
+                                    <div class="review__head">
+                                        <div class="review__img">
+                                            <img src="@img/slide-logo1.jpg" alt="">
+                                        </div>
+                                        <div class="review__info">
+                                            <span class="review__name">Илья Берц</span>
+                                            <span class="review__desc">Занимается 3 года</span>
+                                        </div>
                                     </div>
-                                    <h4 class="slide__title">Борьба</h4>
-                                    <p class="slide__desc">Задача организации, в особенности же консультация с широким активом позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
-                                    <a href="#" class="slide__link btn">Подробнее</a>
+                                    <h4 class="review__title">Кровь стынет в жилах!</h4>
+                                    <p class="review__desc">Есть над чем задуматься: сделанные на базе интернет-аналитики выводы призваны к ответу. Ясность нашей позиции очевидна: сложившаяся структура организации способствует повышению качества новых принципов формирования материально-технической и кадровой базы.</p>
+                                    <div class="review__video js-modal-btn" data-video-id="5qap5aO4i9A">
+                                        <div class="img__wrap">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
+                                                <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
+                                            </svg>
+                                        </div>
+                                        <span>Посмотреть видеоотзыв</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="benefits-section" id="benefits-section">
-            <div class="section__bg">
-                <div class="section__cover"></div>
-                <img src="@img/bgimage.jpg" alt="">
-            </div>
-            <div class="container">
-                <div class="benefits-section__wrapper">
-                    <h2 class="benefits-section__title section__title">Преимущества нашего фитнес клуба</h2>
-                    <ul class="benefits-section__list">
-                        <li class="list-item">
-                            <div class="list-item__num">01</div>
-                            <div class="list-item__trapezoid"></div>
-                            <h5 class="list-item__title">МЫ УНИВЕРСАЛЬНЫ!</h5>
-                            <p class="list-item__desc">У нас есть программы с нагрузкой рассчитанной, как для новичков, так и для более опытных спортсменов. А также представлены направления, которые могут удовлетворить потребности в тренировках почти каждого клиента. Тренажерный зал, индивидуальные тренировки, а также большой выбор групповых направлений.</p>
-                        </li>
-                        <li class="list-item">
-                            <div class="list-item__num">02</div>
-                            <div class="list-item__trapezoid"></div>
-                            <h5 class="list-item__title">МЫ УНИКАЛЬНЫ!</h5>
-                            <p class="list-item__desc">У нас действует особенная система безлимитных клубных карт формата ВСЕ ВКЛЮЧЕНО. По данной системе можно посещать все клубы сети TERRASPORT без ограничений по времени, количеству тренировок и без привязки к определенному тренеру.</p>
-                        </li>
-                        <li class="list-item">
-                            <div class="list-item__num">03</div>
-                            <div class="list-item__trapezoid"></div>
-                            <h5 class="list-item__title">МЫ ОБУЧАЕМ!</h5>
-                            <p class="list-item__desc">На базе фитнес клуба TERRASPORT действует обучение фитнесу. Абсолютно любой человек, желающий развиваться в области фитнеса, может пройти у нас обучение и получить сертификат, дающий право работать фитнес инструктором. А талантливых учеников, которые проявят себя и покажут лучшие результаты, мы приглашаем на работу в наш фитнес клуб.</p>
-                        </li>
-                        <li class="list-item">
-                            <div class="list-item__num">04</div>
-                            <div class="list-item__trapezoid"></div>
-                            <h5 class="list-item__title">МЫ РАССКАЗЫВАЕМ!</h5>
-                            <p class="list-item__desc">На базе фитнес клуба TERRASPORT действует обучение фитнесу. Абсолютно любой человек, желающий развиваться в области фитнеса, может пройти у нас обучение и получить сертификат, дающий право работать фитнес инструктором. А талантливых учеников, которые проявят себя и покажут лучшие результаты, мы приглашаем на работу в наш фитнес клуб.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="photo-galery" id="photo-galery">
-            <div class="container">
-                <div class="photo-galery__facet">
-                    <div class="photo-galery__title">
-                        <h2 class="section__title">Фотогалерея</h2>
-                        <a href="#" class="photo-galery__link">Все фотографии</a>
-                    </div>
-                    <div class="photo-galery__slider">
-                        <div class="section__slider-nav">
-                            <div class="section__slider-button-prev galery-arrows">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
-                                </svg>
-                            </div>
-                            <div class="section__slider-button-next galery-arrows">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="photo-galery__wrapper">
-                            <div class="photo-galery__slide">
-                                <div class="img_wrap">
-                                    <img src="@img/galery1.jpg" alt="">
-                                </div>
-                                <div class="img_wrap">
-                                    <img src="@img/galery2.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="photo-galery__slide">
-                                <div class="img_wrap">
-                                    <img src="@img/galery3.jpg" alt="">
-                                </div>
-                                <div class="img_wrap">
-                                    <img src="@img/galery4.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="photo-galery__slide full">
-                                <div class="img_wrap">
-                                    <img src="@img/galery5.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="photo-galery__slide">
-                                <div class="img_wrap">
-                                    <img src="@img/galery3.jpg" alt="">
-                                </div>
-                                <div class="img_wrap">
-                                    <img src="@img/galery4.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="photo-galery__slide full">
-                                <div class="img_wrap">
-                                    <img src="@img/galery5.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="photo-galery__slide full">
-                                <div class="img_wrap">
-                                    <img src="@img/galery2.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="photo-galery__slide full">
-                                <div class="img_wrap">
-                                    <img src="@img/galery5.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="program-setcion" id="program-setcion">
-            <div class="section__bg">
-                <div class="section__cover"></div>
-                <img src="@img/corporate-fitness.jpg" alt="">
-            </div>
-            <div class="container">
-                <div class="program-setcion__wrapper">
-                    <h2 class="section__title program-setcion__title">Корпоративный фитнес</h2>
-                    <p class="program-setcion__desc">Мы рады представить вашему вниманию корпоративную программу фитнес-клуба «TERRASPORT»!</p>
-                    <p class="program-setcion__text">Корпоративное программа фитнес-клуба «TERRASPORT» - это эффективное экономичное решение для Вашей компании, которое дает возможность Вашим сотрудникам посещать лучший спортивный фитнес-клуб города Усть - Каменогорска. Использование Вашими сотрудниками всех видов услуг фитнес-клуба в любое удобное для них время.
-                    </p>
-                    <a href="#" class="program-setcion__link btn btnOrange">Подробнее</a>
-                </div>
-            </div>
-        </section>
-        <section class="subscriptions" id="subscriptions">
-            <div class="container">
-                <div class="photo-galery__title">
-                    <h2 class="section__title">Абонименты</h2>
-                    <a href="#" class="photo-galery__link">Все абонименты</a>
-                </div>
-                <div class="subscriptions__slider">
-                    <div class="section__slider-nav">
-                        <div class="section__slider-button-prev subscriptions-arrows">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
-                            </svg>
-                        </div>
-                        <div class="section__slider-button-next subscriptions-arrows">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="subscriptions__slider-wrapper">
-                        <div class="subscriptions__slide subscription-item">
-                            <div class="subscription-item__img">
-                                <img src="@img/subscription-item2.jpg" alt="">
-                            </div>
-                            <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
-                            <div class="subscription-item__price">
-                                <div class="curent__price">
-                                    <span>14 500 ₸</span>
-                                    <span>/ месяц</span>
-                                </div>
-                                <div class="old__price">
-                                    <span>15 900 ₸</span>
-                                    <span>старая цена</span>
-                                </div>
-                            </div>
-                            <a href="#" class="subscription-item__link btn">Купить</a>
-                        </div>
-                        <div class="subscriptions__slide subscription-item">
-                            <div class="subscription-item__img">
-                                <img src="@img/subscription-item1.jpg" alt="">
-                            </div>
-                            <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
-                            <div class="subscription-item__price">
-                                <div class="curent__price">
-                                    <span>14 500 ₸</span>
-                                    <span>/ месяц</span>
-                                </div>
-                                <div class="old__price">
-                                    <span>15 900 ₸</span>
-                                    <span>старая цена</span>
-                                </div>
-                            </div>
-                            <a href="#" class="subscription-item__link btn">Купить</a>
-                        </div>
-                        <div class="subscriptions__slide subscription-item">
-                            <div class="subscription-item__img">
-                                <img src="@img/subscription-item3.jpg" alt="">
-                            </div>
-                            <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
-                            <div class="subscription-item__price">
-                                <div class="curent__price">
-                                    <span>14 500 ₸</span>
-                                    <span>/ месяц</span>
-                                </div>
-                                <div class="old__price">
-                                    <span>15 900 ₸</span>
-                                    <span>старая цена</span>
-                                </div>
-                            </div>
-                            <a href="#" class="subscription-item__link btn">Купить</a>
-                        </div>
-                        <div class="subscriptions__slide subscription-item">
-                            <div class="subscription-item__img">
-                                <img src="@img/subscription-item2.jpg" alt="">
-                            </div>
-                            <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
-                            <div class="subscription-item__price">
-                                <div class="curent__price">
-                                    <span>14 500 ₸</span>
-                                    <span>/ месяц</span>
-                                </div>
-                                <div class="old__price">
-                                    <span>15 900 ₸</span>
-                                    <span>старая цена</span>
-                                </div>
-                            </div>
-                            <a href="#" class="subscription-item__link btn">Купить</a>
-                        </div>
-                        <div class="subscriptions__slide subscription-item">
-                            <div class="subscription-item__img">
-                                <img src="@img/subscription-item1.jpg" alt="">
-                            </div>
-                            <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
-                            <div class="subscription-item__price">
-                                <div class="curent__price">
-                                    <span>14 500 ₸</span>
-                                    <span>/ месяц</span>
-                                </div>
-                                <div class="old__price">
-                                    <span>15 900 ₸</span>
-                                    <span>старая цена</span>
-                                </div>
-                            </div>
-                            <a href="#" class="subscription-item__link btn">Купить</a>
-                        </div>
-                        <div class="subscriptions__slide subscription-item">
-                            <div class="subscription-item__img">
-                                <img src="@img/subscription-item3.jpg" alt="">
-                            </div>
-                            <div class="subscription-item__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
-                            <div class="subscription-item__price">
-                                <div class="curent__price">
-                                    <span>14 500 ₸</span>
-                                    <span>/ месяц</span>
-                                </div>
-                                <div class="old__price">
-                                    <span>15 900 ₸</span>
-                                    <span>старая цена</span>
-                                </div>
-                            </div>
-                            <a href="#" class="subscription-item__link btn">Купить</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="program-setcion" id="program-setcion">
-            <div class="section__bg">
-                <div class="section__cover"></div>
-                <img src="@img/kids.jpg" alt="">
-            </div>
-            <div class="container">
-                <div class="program-setcion__wrapper">
-                    <h2 class="section__title program-setcion__title">Детские программы</h2>
-                    <p class="program-setcion__desc">Мы рады представить вашему вниманию корпоративную программу фитнес-клуба «TERRASPORT»!</p>
-                    <p class="program-setcion__text">Корпоративное программа фитнес-клуба «TERRASPORT» - это эффективное экономичное решение для Вашей компании, которое дает возможность Вашим сотрудникам посещать лучший спортивный фитнес-клуб города Усть - Каменогорска. Использование Вашими сотрудниками всех видов услуг фитнес-клуба в любое удобное для них время.
-                    </p>
-                    <a href="#" class="program-setcion__link btn btnOrange">Подробнее</a>
-                </div>
-            </div>
-        </section>
-        <section class="reviews-section" id="reviews-section">
-            <div class="container">
-                <div class="reviews-section__wrapper">
-                    <div class="reviews-section__title">
-                        <h2 class="section__title">Отзывы</h2>
-                        <a href="#" class="reviews-section__link">Все отзывы</a>
-                    </div>
-                </div>
-                <!-- programs-section__slider container -->
-                <div class="reviews-section__slider">
-                    <!-- If we need navigation buttons -->
-                    <div class="section__slider-nav">
-                        <div class="section__slider-button-prev reviews-section-btns">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L17.4142 24L30.7071 37.2929C31.0976 37.6834 31.0976 38.3166 30.7071 38.7071C30.3166 39.0976 29.6834 39.0976 29.2929 38.7071L15.2929 24.7071C14.9024 24.3166 14.9024 23.6834 15.2929 23.2929L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289Z" fill="#FAFAFA" />
-                            </svg>
-                        </div>
-                        <div class="section__slider-button-next reviews-section-btns">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289L32.7071 23.2929C33.0976 23.6834 33.0976 24.3166 32.7071 24.7071L18.7071 38.7071C18.3166 39.0976 17.6834 39.0976 17.2929 38.7071C16.9024 38.3166 16.9024 37.6834 17.2929 37.2929L30.5858 24L17.2929 10.7071C16.9024 10.3166 16.9024 9.68342 17.2929 9.29289Z" fill="#FAFAFA" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- programs-section__slider wrapper -->
-                    <div class="reviews-section__slider-wrapper">
-                        <!-- programs-section__slide -->
-                        <div class="reviews-section__slide review">
-                            <div class="review__content">
-                                <div class="review__head">
-                                    <div class="review__img">
-                                        <img src="@img/slide-logo1.jpg" alt="">
-                                    </div>
-                                    <div class="review__info">
-                                        <span class="review__name">Смирнов Владимир</span>
-                                        <span class="review__desc">Занимается 9 месяцев</span>
-                                    </div>
-                                </div>
-                                <h4 class="review__title">Есть над чем задуматься: средства индивидуальной защиты оказались бесполезны</h4>
-                                <p class="review__desc">Вот вам яркий пример современных тенденций - выбранный нами инновационный путь говорит о возможностях своевременного выполнения сверхзадачи. Ясность нашей позиции очевидна: понимание сути ресурсосберегающих технологий позволяет оценить значение модели развития. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
-                            </div>
-                        </div>
-                        <div class="reviews-section__slide review">
-                            <div class="review__content">
-                                <div class="review__head">
-                                    <div class="review__img">
-                                        <img src="@img/slide-logo1.jpg" alt="">
-                                    </div>
-                                    <div class="review__info">
-                                        <span class="review__name">Алексей Поклонский</span>
-                                        <span class="review__desc">Занимается 12 месяцев</span>
-                                    </div>
-                                </div>
-                                <h4 class="review__title">Глубокий уровень погружения развеял последние сомнения</h4>
-                                <p class="review__desc">Есть над чем задуматься: действия представителей оппозиции призывают нас к новым свершениям, которые, в свою очередь, должны быть обнародованы. Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта предполагает независимые способы реализации экспериментов, поражающих по своей масштабности и грандиозности!</p>
-                                <div class="review__video">
-                                    <div class="img__wrap">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
-                                            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
-                                        </svg>
-                                    </div>
-                                    <span>Посмотреть видеоотзыв</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-section__slide review">
-                            <div class="review__content">
-                                <div class="review__head">
-                                    <div class="review__img">
-                                        <img src="@img/slide-logo1.jpg" alt="">
-                                    </div>
-                                    <div class="review__info">
-                                        <span class="review__name">Илья Берц</span>
-                                        <span class="review__desc">Занимается 3 года</span>
-                                    </div>
-                                </div>
-                                <h4 class="review__title">Кровь стынет в жилах!</h4>
-                                <p class="review__desc">Есть над чем задуматься: сделанные на базе интернет-аналитики выводы призваны к ответу. Ясность нашей позиции очевидна: сложившаяся структура организации способствует повышению качества новых принципов формирования материально-технической и кадровой базы.</p>
-                                <div class="review__video">
-                                    <div class="img__wrap">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
-                                            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
-                                        </svg>
-                                    </div>
-                                    <span>Посмотреть видеоотзыв</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-section__slide review">
-                            <div class="review__content">
-                                <div class="review__head">
-                                    <div class="review__img">
-                                        <img src="@img/slide-logo1.jpg" alt="">
-                                    </div>
-                                    <div class="review__info">
-                                        <span class="review__name">Смирнов Владимир</span>
-                                        <span class="review__desc">Занимается 9 месяцев</span>
-                                    </div>
-                                </div>
-                                <h4 class="review__title">Есть над чем задуматься: средства индивидуальной защиты оказались бесполезны</h4>
-                                <p class="review__desc">Вот вам яркий пример современных тенденций - выбранный нами инновационный путь говорит о возможностях своевременного выполнения сверхзадачи. Ясность нашей позиции очевидна: понимание сути ресурсосберегающих технологий позволяет оценить значение модели развития. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
-                            </div>
-                        </div>
-                        <div class="reviews-section__slide review">
-                            <div class="review__content">
-                                <div class="review__head">
-                                    <div class="review__img">
-                                        <img src="@img/slide-logo1.jpg" alt="">
-                                    </div>
-                                    <div class="review__info">
-                                        <span class="review__name">Алексей Поклонский</span>
-                                        <span class="review__desc">Занимается 12 месяцев</span>
-                                    </div>
-                                </div>
-                                <h4 class="review__title">Глубокий уровень погружения развеял последние сомнения</h4>
-                                <p class="review__desc">Есть над чем задуматься: действия представителей оппозиции призывают нас к новым свершениям, которые, в свою очередь, должны быть обнародованы. Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта предполагает независимые способы реализации экспериментов, поражающих по своей масштабности и грандиозности!</p>
-                                <div class="review__video">
-                                    <div class="img__wrap">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
-                                            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
-                                        </svg>
-                                    </div>
-                                    <span>Посмотреть видеоотзыв</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-section__slide review">
-                            <div class="review__content">
-                                <div class="review__head">
-                                    <div class="review__img">
-                                        <img src="@img/slide-logo1.jpg" alt="">
-                                    </div>
-                                    <div class="review__info">
-                                        <span class="review__name">Илья Берц</span>
-                                        <span class="review__desc">Занимается 3 года</span>
-                                    </div>
-                                </div>
-                                <h4 class="review__title">Кровь стынет в жилах!</h4>
-                                <p class="review__desc">Есть над чем задуматься: сделанные на базе интернет-аналитики выводы призваны к ответу. Ясность нашей позиции очевидна: сложившаяся структура организации способствует повышению качества новых принципов формирования материально-технической и кадровой базы.</p>
-                                <div class="review__video">
-                                    <div class="img__wrap">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21 14.2679C22.3333 15.0378 22.3333 16.9623 21 17.7321L15 21.1962C13.6667 21.966 12 21.0037 12 19.4641L12 12.5359C12 10.9963 13.6667 10.034 15 10.8038L21 14.2679Z" fill="#F58634" />
-                                            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F58634" />
-                                        </svg>
-                                    </div>
-                                    <span>Посмотреть видеоотзыв</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        @@include('./html/map.html')
-        @@include('./html/adresses.html')
-    </main>
+            </section>
+            @@include('./html/map.html')
+            @@include('./html/adresses.html')
+        </main>
+    </div>
     @@include('./html/footer-white.html')
     @@include('./html/registration-modal.html')
     @@include('./html/login-modal.html')

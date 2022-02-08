@@ -38,7 +38,7 @@ const firstScreenSlider = new Swiper('.main__slider', {
 
 const programsSectionSlider = new Swiper('.programs-section__slider', {
     modules: [Navigation],
-    spaceBetween: 30,
+    spaceBetween: 15,
     slideClass: 'programs-section__slide',
     wrapperClass: 'programs-section__slider-wrapper',
     speed: 900,
@@ -47,26 +47,40 @@ const programsSectionSlider = new Swiper('.programs-section__slider', {
         nextEl: '.section__slider-button-next',
         prevEl: '.section__slider-button-prev',
     },
+    breakpoints: {
+        560: {
+            spaceBetween: 30,
+        }
+    }
 });
 
 
 
 const photoGalerySlider = new Swiper('.photo-galery__slider', {
     modules: [Navigation],
-    spaceBetween: 30,
+    spaceBetween: 15,
     slideClass: 'photo-galery__slide',
     wrapperClass: 'photo-galery__wrapper',
     speed: 900,
-    slidesPerView: 3,
+    slidesPerView: 1,
     navigation: {
         nextEl: '.section__slider-button-next.galery-arrows',
         prevEl: '.section__slider-button-prev.galery-arrows',
     },
+    breakpoints: {
+        768: {
+            spaceBetween: 30,
+            slidesPerView: 3,
+        },
+        440: {
+            slidesPerView: 2,
+        }
+    }
 });
 
 const subscriptionsSlider = new Swiper('.subscriptions__slider', {
     modules: [Navigation],
-    spaceBetween: 30,
+    spaceBetween: 15,
     slideClass: 'subscriptions__slide',
     wrapperClass: 'subscriptions__slider-wrapper',
     speed: 900,
@@ -75,11 +89,16 @@ const subscriptionsSlider = new Swiper('.subscriptions__slider', {
         nextEl: '.section__slider-button-next.subscriptions-arrows',
         prevEl: '.section__slider-button-prev.subscriptions-arrows',
     },
+    breakpoints: {
+        560: {
+            spaceBetween: 30,
+        }
+    }
 });
 
 const reviewsSectionSlider = new Swiper('.reviews-section__slider', {
     modules: [Navigation],
-    spaceBetween: 30,
+    spaceBetween: 15,
     slideClass: 'reviews-section__slide',
     wrapperClass: 'reviews-section__slider-wrapper',
     speed: 900,
@@ -88,11 +107,38 @@ const reviewsSectionSlider = new Swiper('.reviews-section__slider', {
         nextEl: '.section__slider-button-next.reviews-section-btns',
         prevEl: '.section__slider-button-prev.reviews-section-btns',
     },
+    breakpoints: {
+        576: {
+            spaceBetween: 30,
+        },
+    }
 });
 
 
+const instagramGalerySlider = new Swiper('.instagram-galery__slider', {
+    modules: [Navigation],
+    spaceBetween: 15,
+    slideClass: 'instagram-galery__slide',
+    wrapperClass: 'instagram-galery__wrapper',
+    speed: 900,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.section__slider-button-next.instagram-arrows',
+        prevEl: '.section__slider-button-prev.instagram-arrows',
+    },
+    breakpoints: {
+        768: {
+            spaceBetween: 30,
+            slidesPerView: 3,
+        },
+        650: {
+            slidesPerView: 2,
+        },
+    }
+});
 
-
+OverlayScrollbars(document.querySelectorAll(".post__content"), {});
+OverlayScrollbars(document.querySelectorAll("body"), {});
 
 
 //модалки с видео в слайдере на главной  
@@ -220,7 +266,3 @@ const phoneInputs = document.querySelectorAll('input[type=tel]');
 phoneInputs.forEach(item => {
     $(item).mask("+7 (999) 999-99-99");
 });
-
-
-
-
