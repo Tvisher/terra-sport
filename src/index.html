@@ -12,74 +12,7 @@
     @@include('./html/header-slider.html')
     <div class="main-wrap">
         <main class="main" id="main">
-            <section class="test-train" id="test-train">
-                <div class="container">
-                    <div class="test-train__wrapper">
-                        <div class="test-train__img">
-                            <img src="@img/test-train.png" alt="">
-                        </div>
-                        <div class="test-train__content">
-                            <h2 class="test-train__title section__title">Пробная тренеровка</h2>
-                            <p class="test-train__desc">We have programs with a load calculated for both beginners and more experienced athletes. There are also directions that can meet the training needs of almost every client. Gym, individual workouts, as well as a large selection of group destinations.</p>
-                            <ul class="test-train__icons-list icons-list">
-                                <li class="icons-list__item">
-                                    <div class="item__img">
-                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M40.6298 30.8883C41.5344 28.7044 42 26.3638 42 24C42 19.2261 40.1036 14.6477 36.7279 11.2721C33.3523 7.89642 28.7739 6 24 6C19.2261 6 14.6477 7.89642 11.2721 11.2721C7.89642 14.6477 6 19.2261 6 24C6 26.3638 6.46558 28.7044 7.37017 30.8883C8.27475 33.0722 9.60062 35.0565 11.2721 36.7279C12.9435 38.3994 14.9278 39.7253 17.1117 40.6298C19.2956 41.5344 21.6362 42 24 42C26.3638 42 28.7044 41.5344 30.8883 40.6298C33.0722 39.7253 35.0565 38.3994 36.7279 36.7279C38.3994 35.0565 39.7253 33.0722 40.6298 30.8883Z" stroke="#F58634" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M16 14H32V16.4034H16V14ZM25.4063 36H22.5937V21.2101H16V18.8067H32V21.2101H25.4063V36Z" fill="#F58634" />
-                                        </svg>
-
-                                    </div>
-                                    <div class="item__info">
-                                        <h5>Стоимость</h5>
-                                        <span>490 тг</span>
-                                    </div>
-                                </li>
-                                <li class="icons-list__item">
-                                    <div class="item__img">
-                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M24 16V24L30 30M42 24C42 26.3638 41.5344 28.7044 40.6298 30.8883C39.7252 33.0722 38.3994 35.0565 36.7279 36.7279C35.0565 38.3994 33.0722 39.7252 30.8883 40.6298C28.7044 41.5344 26.3638 42 24 42C21.6362 42 19.2956 41.5344 17.1117 40.6298C14.9278 39.7252 12.9435 38.3994 11.2721 36.7279C9.60062 35.0565 8.27475 33.0722 7.37017 30.8883C6.46558 28.7044 6 26.3638 6 24C6 19.2261 7.89642 14.6477 11.2721 11.2721C14.6477 7.89642 19.2261 6 24 6C28.7739 6 33.3523 7.89642 36.7279 11.2721C40.1036 14.6477 42 19.2261 42 24Z" stroke="#A8CF45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-
-                                    </div>
-                                    <div class="item__info">
-                                        <h5>Время</h5>
-                                        <span>Не ограничено</span>
-                                    </div>
-                                </li>
-                                <li class="icons-list__item">
-                                    <div class="item__img">
-                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M38 42V10C38 8.93913 37.5786 7.92172 36.8284 7.17157C36.0783 6.42143 35.0609 6 34 6H14C12.9391 6 11.9217 6.42143 11.1716 7.17157C10.4214 7.92172 10 8.93913 10 10V42M38 42H10M38 42H42M38 42H28M10 42H6M10 42H20M28 42V32C28 31.4696 27.7893 30.9609 27.4142 30.5858C27.0391 30.2107 26.5304 30 26 30H22C21.4696 30 20.9609 30.2107 20.5858 30.5858C20.2107 30.9609 20 31.4696 20 32V42M28 42H20M18 14H20M18 22H20M28 14H30M28 22H30" stroke="#245990" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="item__info">
-                                        <h5>Клуб</h5>
-                                        <span>На выбор</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form class="test-train__form">
-                                <label class="test-train__label">
-                                    <input autocomplete="off" type="text" name="name" class="styles-inputs" data-focus-item>
-                                    <span class="transform-text">Имя</span>
-                                </label>
-                                <label class="test-train__label">
-                                    <input autocomplete="off" type="tel" name="phone" class="styles-inputs" data-focus-item>
-                                    <span class="transform-text">Телефон</span>
-                                </label>
-                                <button type="submit" class="btn btnOrange test-train__btn">
-                                    Записаться
-                                </button>
-                                <label class="custom__checkbox">
-                                    <input type="checkbox" checked>
-                                    <span>Даю согласие на обработку персональных данных.</span>
-                                </label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            @@include('./html/test-train.html')
             <section class="about-section" id="about-section">
                 <div class="section__bg">
                     <div class="section__cover"></div>

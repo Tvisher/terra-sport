@@ -8,10 +8,10 @@
     })
 </head>
 
-<body class="">
+<body class="white">
     @@include('./html/header-100vh.html')
     <div class="main-wrap">
-        <main class="main white" id="main">
+        <main class="main " id="main">
             <section class="club-section">
                 <div class="container">
                     <div class="club-section__content">
@@ -617,6 +617,13 @@
                     </div>
                 </div>
             </section>
+            <section class="shedule-section">
+                <div class="container">
+                    <h2 class="shedule-section__title section__title">Расписание занятий</h2>
+                    @@include('./html/shedule-segment.html')
+                </div>
+            </section>
+            @@include('./html/test-train.html')
             @@include('./html/map.html')
             @@include('./html/adresses.html')
         </main>

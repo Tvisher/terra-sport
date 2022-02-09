@@ -58,8 +58,23 @@ body {
     }
   }
 }
-.main.white section {
-  background-color: #FAFAFA;
+body.white {
+  section,
+  footer {
+    background-color: #FAFAFA;
+  }
+  .test-train {
+    padding-top: 0;
+    .test-train__title,
+    .custom__checkbox span,
+    .item__info span,
+    .transform-text.fixed {
+      color:#393D46 !important;
+    }
+    .test-train__form .custom__checkbox span::after {
+      background-color: #F0F0F0;
+    }
+  }
 }
 
 
@@ -3489,5 +3504,12 @@ html .ui-button.ui-state-disabled:active {
         // border: px solid $brand-orange;
       }
     }
+  }
+}
+
+.shedule-section {
+  padding-top: 50px;
+  .section__title {
+    color:#393D46;
   }
 }
