@@ -2,7 +2,14 @@
 import * as baseFunction from './modules/functions.js';
 import './vendors/vendors.js';
 import ModalVideo from 'modal-video';
-import Swiper, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
+import Swiper, {
+    Navigation,
+    Pagination,
+    EffectFade,
+    Autoplay,
+    Thumbs,
+    Mousewheel
+} from 'swiper';
 
 // Проверка поддержки webP
 baseFunction.testWebP();
@@ -34,8 +41,6 @@ const firstScreenSlider = new Swiper('.main__slider', {
 
 });
 
-
-
 const programsSectionSlider = new Swiper('.programs-section__slider', {
     modules: [Navigation],
     spaceBetween: 15,
@@ -54,7 +59,23 @@ const programsSectionSlider = new Swiper('.programs-section__slider', {
     }
 });
 
-
+const trainersSectionSlider = new Swiper('.trainers-section__slider', {
+    modules: [Navigation],
+    spaceBetween: 15,
+    slideClass: 'trainers-section__slide',
+    wrapperClass: 'trainers-section__slider-wrapper',
+    speed: 900,
+    slidesPerView: "auto",
+    navigation: {
+        nextEl: '.section__slider-button-next',
+        prevEl: '.section__slider-button-prev',
+    },
+    breakpoints: {
+        560: {
+            spaceBetween: 30,
+        }
+    }
+});
 
 const photoGalerySlider = new Swiper('.photo-galery__slider', {
     modules: [Navigation],
@@ -114,7 +135,6 @@ const reviewsSectionSlider = new Swiper('.reviews-section__slider', {
     }
 });
 
-
 const instagramGalerySlider = new Swiper('.instagram-galery__slider', {
     modules: [Navigation],
     spaceBetween: 15,
@@ -135,6 +155,35 @@ const instagramGalerySlider = new Swiper('.instagram-galery__slider', {
             slidesPerView: 2,
         },
     }
+});
+
+const swiperGalery = new Swiper(".galery-section__slider-thumbs", {
+    modules: [Navigation, Thumbs, Mousewheel],
+    spaceBetween: 30,
+    slidesPerView: 3,
+    speed: 400,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+    mousewheel: {
+        enabled: true,
+    },
+});
+
+const swiperGaleryThumbs = new Swiper(".galery-section__slider", {
+    modules: [Navigation, Thumbs, EffectFade],
+    allowTouchMove: false,
+    speed: 900,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next-galery-section__slider",
+        prevEl: ".swiper-button-prev-galery-section__slider",
+    },
+    thumbs: {
+        swiper: swiperGalery,
+    },
 });
 
 OverlayScrollbars(document.querySelectorAll(".post__content"), {});
