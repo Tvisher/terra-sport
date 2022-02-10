@@ -4598,6 +4598,11 @@ li {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 380px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -8149,6 +8154,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .city-map__wrapper .city-map__contact {
   padding-top: 100px;
+  padding-left: 20px;
   width: 30%;
   position: absolute;
   left: 0;
@@ -8179,6 +8185,10 @@ html .ui-button.ui-state-disabled:active {
 }
 .city-map__wrapper .city-map__contact .location__shedule {
   margin-bottom: 30px;
+}
+
+.city-map__wrapper .city-map__contact {
+  width: 50%;
 }
 
 @media (max-width: 1024px) {
@@ -8239,8 +8249,34 @@ html .ui-button.ui-state-disabled:active {
     right: 15px;
     bottom: 15px;
   }
+
+  .city-map__wrapper .city-map__contact .section__title {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+
+  .city-map__wrapper .city-map__contact .location__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .city-map__wrapper .city-map__contact .location__shedule span,
+.city-map__wrapper .city-map__contact .location__contacts a {
+    font-size: 18px;
+  }
 }
 @media (max-width: 576px) {
+  .programs-blocks__list,
+.adresses__list,
+.benefits-section__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .city-map__wrapper .city-map__contact {
+    display: none;
+  }
+
   body.white .main-screen__bg {
     max-height: initial;
   }
@@ -8314,5 +8350,29 @@ html .ui-button.ui-state-disabled:active {
 
   .promotions-section__slide {
     padding: 15px;
+  }
+
+  .programs-blocks {
+    padding-top: 50px;
+  }
+
+  body.white .section__title {
+    margin-bottom: 15px;
+  }
+
+  .trainers-section,
+.galery-section,
+.subscriptions.white,
+body.white .shedule-section,
+.promotions-section {
+    padding: 25px 0;
+  }
+
+  .galery-section__wrapper .galery-section__slider .swiper-slide .club-section__play-btn {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  body.white .section__title {
+    max-width: 70%;
   }
 }

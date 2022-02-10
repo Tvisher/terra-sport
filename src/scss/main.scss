@@ -145,6 +145,9 @@ li {
   @media screen and (max-width: $phoneWidth) {
     max-width: 100%;
   }
+  @media screen and (max-width: $smPhoneWidth) {
+    padding: 0 10px;
+  }
 }
 
 @import "./common.scss";
@@ -1205,7 +1208,9 @@ html .ui-button.ui-state-disabled:active {
   transform: rotate(-180deg);
 }
 
+
 @media (max-width: 1280px) {
+
   .shedule__block {
     flex: 0 0 32%;
   }
@@ -3640,6 +3645,7 @@ html .ui-button.ui-state-disabled:active {
   position: relative;
   .city-map__contact {
     padding-top: 100px;
+    padding-left: 20px;
     width: 30%;
     position: absolute;
     left: 0;
@@ -3672,6 +3678,9 @@ html .ui-button.ui-state-disabled:active {
     }
   }
 }
+.city-map__wrapper .city-map__contact {
+  width: 50%;
+}
 
 @media (max-width: 1024px) {
   .programs-blocks__list .list-item {
@@ -3695,9 +3704,6 @@ html .ui-button.ui-state-disabled:active {
     flex:0 0 50%;
   }
   body.white {
-    // .main-screen__bg {
-    //   height: 150vh;
-    // }
     .club-section__content .club-section__play-btn {
       display: none;
     }
@@ -3732,10 +3738,32 @@ html .ui-button.ui-state-disabled:active {
     right: 15px;
     bottom: 15px;
   }
+
+  .city-map__wrapper .city-map__contact .section__title {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  .city-map__wrapper .city-map__contact .location__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .city-map__wrapper .city-map__contact .location__shedule span,
+  .city-map__wrapper .city-map__contact .location__contacts a {
+    font-size: 18px;
+  }
 }
 
 
 @media (max-width: 576px) {
+  .programs-blocks__list,
+  .adresses__list,
+  .benefits-section__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .city-map__wrapper .city-map__contact {
+    display: none;  
+  }
   body.white {
     .main-screen__bg {
       max-height: initial;
@@ -3797,6 +3825,25 @@ html .ui-button.ui-state-disabled:active {
   }
   .promotions-section__slide {
     padding: 15px;
+  }
+  .programs-blocks {
+    padding-top: 50px;
+  }
+  body.white .section__title {
+    margin-bottom: 15px;
+  }
+  .trainers-section,
+  .galery-section,
+  .subscriptions.white,
+  body.white .shedule-section,
+  .promotions-section {
+    padding: 25px 0;
+  }
+  .galery-section__wrapper .galery-section__slider .swiper-slide .club-section__play-btn {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  body.white .section__title {
+    max-width: 70%;
   }
 }
 
