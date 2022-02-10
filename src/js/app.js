@@ -171,13 +171,14 @@ const swiperGalery = new Swiper(".galery-section__slider-thumbs", {
         768: {
             spaceBetween: 30,
             direction: 'vertical',
+            slidesPerView: 3,
+
         },
         576: {
+            direction: 'horizontal',
             slidesPerView: 3,
             spaceBetween: 15,
         },
-        380: {
-        }
     }
 });
 
@@ -220,12 +221,11 @@ const promotionsSectionSlider = new Swiper('.promotions-section__slider', {
 });
 
 OverlayScrollbars(document.querySelectorAll(".post__content"), {});
-OverlayScrollbars(document.querySelectorAll("body"), {});
+OverlayScrollbars(document.querySelector("body"), {});
 
 
 //модалки с видео в слайдере на главной  
 new ModalVideo('.js-modal-btn', { theme: 'dark' });
-
 
 // Календарь на странице Расписание
 $(function () {
@@ -345,6 +345,6 @@ document.body.addEventListener("click", (e) => {
 
 // Маска для инпутов с номером телефона
 const phoneInputs = document.querySelectorAll('input[type=tel]');
-phoneInputs.forEach(item => {
-    $(item).mask("+7 (999) 999-99-99");
+phoneInputs.forEach(input => {
+    $(input).mask("+7 (999) 999-99-99");
 });

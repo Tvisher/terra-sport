@@ -2850,6 +2850,8 @@ html .ui-button.ui-state-disabled:active {
         .post__content {
           opacity: 1;
           box-shadow: 0px 0px 0px 30px rgba(0, 0, 0, 0.5);
+          pointer-events: auto;
+
         }
         img {
           transform: scale(1.3);
@@ -2867,6 +2869,7 @@ html .ui-button.ui-state-disabled:active {
       height: 95%;
       background-color: #fff;
       opacity: 0;
+      pointer-events: none;
       color: #202020;
       overflow-y: auto;
     }
@@ -3477,7 +3480,6 @@ html .ui-button.ui-state-disabled:active {
   top: 0;
   left: 0;
   width: 100%;
-  // max-height: 650px;
   height: 100%;
   display: flex;
   align-items: stretch;
@@ -3486,18 +3488,21 @@ html .ui-button.ui-state-disabled:active {
     width: 78%;
     .swiper-slide {
       border-radius: 3px;
-      overflow: hidden;
-      & > img {
-        width: 100%;
+      .img_wrap {
+        overflow: hidden;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
       }
       .club-section__play-btn {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-
       }
       .swiper-slide__title {
         color: #fff;
@@ -3755,6 +3760,11 @@ html .ui-button.ui-state-disabled:active {
 
 
 @media (max-width: 576px) {
+  .programs-section__slide.swiper-slide-active {
+    .slide__content {
+      background: transparent;
+    }
+  }
   .programs-blocks__list,
   .adresses__list,
   .benefits-section__list {
