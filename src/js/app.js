@@ -159,14 +159,26 @@ const instagramGalerySlider = new Swiper('.instagram-galery__slider', {
 
 const swiperGalery = new Swiper(".galery-section__slider-thumbs", {
     modules: [Navigation, Thumbs, Mousewheel],
-    spaceBetween: 30,
-    slidesPerView: 3,
+    spaceBetween: 5,
+    slidesPerView: 2,
     speed: 400,
     watchSlidesProgress: true,
-    direction: 'vertical',
+    direction: 'horizontal',
     mousewheel: {
         enabled: true,
     },
+    breakpoints: {
+        768: {
+            spaceBetween: 30,
+            direction: 'vertical',
+        },
+        576: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        380: {
+        }
+    }
 });
 
 const swiperGaleryThumbs = new Swiper(".galery-section__slider", {
@@ -184,6 +196,27 @@ const swiperGaleryThumbs = new Swiper(".galery-section__slider", {
     thumbs: {
         swiper: swiperGalery,
     },
+
+});
+
+const promotionsSectionSlider = new Swiper('.promotions-section__slider', {
+    modules: [Navigation],
+    spaceBetween: 15,
+    speed: 900,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.promotions-section__slider-button-next',
+        prevEl: '.promotions-section__slider-button-prev',
+    },
+    breakpoints: {
+        980: {
+            spaceBetween: 30,
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        }
+    }
 });
 
 OverlayScrollbars(document.querySelectorAll(".post__content"), {});

@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+</head>
+
+<body>
+    <header class="header white" id="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/logo-white.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__nav">
+                <a href="shedule.html" class="header__schedule btn btnGreen">
+                    <img src="img/schedules.svg" alt="">
+                    <span>Расписание</span>
+                </a>
+                <a href="#" class="header__login btn btnOrange" data-modal-open="modalLogin">
+                    <img src="img/login.svg" alt="">
+                    <span>Войти</span>
+                </a>
+                <a href="site-map.html" class="header__menu menu">
+                    <span>Меню</span>
+                    <div class="menu__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <ul class="header__breadcrumbs">
+            <li><a href="#">Главная страница</a></li>
+            <li><a href="#">Текущая страница</a></li>
+        </ul>
+    </div>
+</header>
+    <main class="main" id="main">
+        <section class="events first-section">
+            <div class="container">
+                <div class="events__wrapper">
+                    <h1 class="main-page-title events__title">
+                        Расписание
+                    </h1>
+                    <p class="main-page-desc">
+                        Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий
+                    </p>
+                </div>
+                <div class="shedule">
+    <div class="shedule__filters">
+        <div class="shedule__filters-date">
+            <label>
+                <input type="radio" name="date" class="shedule__datepicker">
+                <span class="shedule__datepicker-value">Выбрать дату</span>
+                <span class="shedule__datepicker-placeholder">Выбрать дату</span>
+            </label>
+            <label>
+                <input type="radio" name="date" checked>
+                <span>Сегодня</span>
+            </label>
+            <label>
+                <input type="radio" name="date">
+                <span>Завтра</span>
+            </label>
+        </div>
+        <div class="shedule__filters-categories categories">
+            <div class="categories__select select">
+                <span class="select__name">Выбор клуба</span>
+                <form class="select__content">
+                    <label>
+                        <input type="checkbox" checked>
+                        <span>Все</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Серикбаева, 7/5</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Потанина, 17</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Крылова, 106</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>пр. Нурсултана Назарбаева, 5/3</span>
+                    </label>
+                    <button type="submit" class="select__submit">Применить</button>
+                </form>
+            </div>
+            <div class="categories__select select">
+                <span class="select__name">Программа</span>
+                <form class="select__content">
+                    <label>
+                        <input type="checkbox">
+                        <span>Аэробика</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Бокс</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Hot Iron</span>
+                    </label>
+                    <button type="submit" class="select__submit">Применить</button>
+                </form>
+            </div>
+            <div class="categories__select select">
+                <span class="select__name">Зал</span>
+                <form class="select__content">
+                    <label>
+                        <input type="checkbox">
+                        <span>Зал №1</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Зал №2</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Зал №3</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Зал №4</span>
+                    </label>
+                    <button type="submit" class="select__submit">Применить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">08:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">09:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">10:00</div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">11:00</div>
+        <div class="shedule__block gym empty">
+            <span>Нет событий</span>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">12:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">13:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">14:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">15:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">16:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+    <div class="shedule__blocks">
+        <div class="shedule__blocks-time">17:00</div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym orange">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-gymnastics.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №2
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym green">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-waterpool.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №1
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+        <div class="shedule__block gym blue">
+            <div class="shedule__block-head">
+                <div class="gym__img">
+                    <img src="img/ico-box.svg" alt="">
+                </div>
+                <div class="gym__name">
+                    Зал №3 (Бокс)
+                </div>
+            </div>
+            <div class="shedule__block-body">
+                <h3 class="gym__title">Hot Iron</h3>
+                <span class="gym__date">23 декабря</span>
+                <span class="gym__time">10:00 - 10:55</span>
+                <div class="gym__adress">проспект Нурсултана Назарбаева, 5/3</div>
+                <div class="gym__trainer">Тренеровку проводит:</div>
+                <div class="gym__trainer-name">Арыкин Семен</div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+        <section class="city-map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab59ecd8c61aab8518a81faefd6790651977fdd829c2ef3895438c70f192f70f2&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+</section>
+        <section class="adresses">
+    <div class="adresses__wrapper">
+        <div class="container">
+            <ul class="adresses__list">
+                <li class="list__ittem location orange">
+                    <h3 class="location__title">пр. Нурсултана Назарбаева, 5/3</h3>
+                    <div class="location__shedule">
+                        <h5 class="location__shedule-title">График работы:</h5>
+                        <span>Пн-Сб: 7:00-23:00</span>
+                        <span>Вс: 10:00-19:00</span>
+                    </div>
+                    <div class="location__contacts">
+                        <h5 class="location__contacts-title">Контакты филиала:</h5>
+                        <a href="tel:87232402000">8 (7232) 40-20-00</a>
+                        <a href="tel:87778259922">8-777-825-99-22</a>
+                    </div>
+                </li>
+                <li class="list__ittem location green">
+                    <h3 class="location__title">Серикбаева, 7/5</h3>
+                    <div class="location__shedule">
+                        <h5 class="location__shedule-title">График работы:</h5>
+                        <span>Пн-Сб: 7:00-23:00</span>
+                        <span>Вс: 10:00-19:00</span>
+                    </div>
+                    <div class="location__contacts">
+                        <h5 class="location__contacts-title">Контакты филиала:</h5>
+                        <a href="tel:87232402000">8 (7232) 40-20-00</a>
+                        <a href="tel:87778259922">8-777-825-99-22</a>
+                    </div>
+                </li>
+                <li class="list__ittem location blue">
+                    <h3 class="location__title">Потанина, 17</h3>
+                    <div class="location__shedule">
+                        <h5 class="location__shedule-title">График работы:</h5>
+                        <span>Пн-Сб: 7:00-23:00</span>
+                        <span>Вс: 10:00-19:00</span>
+                    </div>
+                    <div class="location__contacts">
+                        <h5 class="location__contacts-title">Контакты филиала:</h5>
+                        <a href="tel:87232402000">8 (7232) 40-20-00</a>
+                        <a href="tel:87778259922">8-777-825-99-22</a>
+                    </div>
+                </li>
+                <li class="list__ittem location blue">
+                    <h3 class="location__title">Крылова, 106</h3>
+                    <div class="location__shedule">
+                        <h5 class="location__shedule-title">График работы:</h5>
+                        <span>Пн-Сб: 7:00-23:00</span>
+                        <span>Вс: 10:00-19:00</span>
+                    </div>
+                    <div class="location__contacts">
+                        <h5 class="location__contacts-title">Контакты филиала:</h5>
+                        <a href="tel:87232402000">8 (7232) 40-20-00</a>
+                        <a href="tel:87778259922">8-777-825-99-22</a>
+                    </div>
+                </li>
+                <li class="list__ittem location orange">
+                    <h3 class="location__title">Протозанова, 139/3</h3>
+                    <div class="location__shedule">
+                        <h5 class="location__shedule-title">График работы:</h5>
+                        <span>Пн-Сб: 7:00-23:00</span>
+                        <span>Вс: 10:00-19:00</span>
+                    </div>
+                    <div class="location__contacts">
+                        <h5 class="location__contacts-title">Контакты филиала:</h5>
+                        <a href="tel:87232402000">8 (7232) 40-20-00</a>
+                        <a href="tel:87778259922">8-777-825-99-22</a>
+                    </div>
+                </li>
+                <li class="list__ittem location green">
+                    <h3 class="location__title">Мы в социальных сетях</h3>
+                    <ul class="social-list">
+                        <li>
+                            <a class="social-list__link" href="#">
+                                <div class="link-ico">
+                                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.6016 12.8L13.4016 8.8L9.40156 8.8008V5.6C9.40156 4.3648 10.0288 4 11.8016 4L13.4016 4V0C13.4016 0 11.7616 0 10.2016 0C6.94396 0 4.60156 1.948 4.60156 5.6L4.60156 8.8H0.601563L0.601563 12.8H4.60156L4.60156 24H9.40156L9.40156 12.8H12.6016Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <span>facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-list__link" href="#">
+                                <div class="link-ico">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.8503 0L7.14973 0C3.20735 0 0 3.20735 0 7.14973L0 16.8503C0 20.7926 3.20735 24 7.14973 24L16.8503 24C20.7926 24 24 20.7926 24 16.8503L24 7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856L7.14973 21.5856C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503L2.4144 7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144L16.8503 2.4144C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973L21.5856 16.8503Z" fill="white" />
+                                        <path d="M12.0002 5.79297C8.57753 5.79297 5.79297 8.57753 5.79297 12.0002C5.79297 15.4228 8.57753 18.2074 12.0002 18.2074C15.4229 18.2074 18.2075 15.4229 18.2075 12.0002C18.2075 8.57749 15.4229 5.79297 12.0002 5.79297ZM12.0002 15.7931C9.90547 15.7931 8.20737 14.095 8.20737 12.0002C8.20737 9.90547 9.90551 8.20737 12.0002 8.20737C14.095 8.20737 15.7931 9.90547 15.7931 12.0002C15.7931 14.0949 14.0949 15.7931 12.0002 15.7931Z" fill="white" />
+                                        <path d="M18.2179 7.32633C19.0393 7.32633 19.7053 6.66041 19.7053 5.83895C19.7053 5.01749 19.0393 4.35156 18.2179 4.35156C17.3964 4.35156 16.7305 5.01749 16.7305 5.83895C16.7305 6.66041 17.3964 7.32633 18.2179 7.32633Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-list__link" href="#">
+                                <div class="link-ico">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8208 4.94989C5.54775 7.3707 0.362954 9.38563 0.299016 9.42749C0.144094 9.52902 0.000188016 9.77258 5.16096e-07 9.93364C-0.000280734 10.1316 0.114422 10.3644 0.264047 10.4695C0.337875 10.5214 1.63223 11.0226 3.14044 11.5834C4.64864 12.1442 5.9055 12.6269 5.93348 12.6562C5.96142 12.6855 6.45427 14.2282 7.02867 16.0845C7.60308 17.9407 8.10586 19.5306 8.14594 19.6174C8.18606 19.7042 8.28384 19.8148 8.36325 19.8633C8.52595 19.9625 8.85905 19.9801 9.01308 19.8977C9.06853 19.868 9.78961 19.292 10.6155 18.6177C12.4189 17.1452 12.3585 17.1903 12.6027 17.1354C12.9885 17.0488 13.0637 17.0929 15.331 18.7385C19.3097 21.6261 19.0198 21.4282 19.2714 21.4282C19.532 21.4282 19.716 21.3133 19.8407 21.0729C19.965 20.8332 24.0142 1.26997 23.9788 1.08078C23.9247 0.792736 23.6227 0.542892 23.3333 0.546923C23.2745 0.54772 18.0938 2.52903 11.8208 4.94989ZM18.7873 4.91417C18.8182 4.94511 18.8436 5.00474 18.8436 5.04669C18.8436 5.08864 17.1198 6.72449 15.0129 8.68185C9.88837 13.4428 9.6855 13.6354 9.549 13.8683C9.36834 14.1766 9.29902 14.4873 9.13805 15.7095C9.05367 16.35 8.96128 16.8799 8.92345 16.94C8.85473 17.0491 8.66034 17.0813 8.53819 17.0039C8.50341 16.9819 8.19942 16.0066 7.86267 14.8367C7.21209 12.5766 7.17473 12.3788 7.33069 12.0191C7.37236 11.923 7.47492 11.7797 7.55859 11.7008C7.74633 11.5237 18.5575 4.85938 18.6584 4.85853C18.6984 4.8582 18.7564 4.88324 18.7873 4.91417Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <span>Telegram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-list__link" href="#">
+                                <div class="link-ico">
+                                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8017 15.2008C13.6017 15.2008 13.6017 14.048 13.6017 13.6008C13.6017 12.8008 14.4017 12.0008 15.2017 12.0008C16.0017 12.0008 17.3737 13.3728 18.4017 14.4008C19.2017 15.2008 19.2017 15.2008 20.0017 15.2008C20.8017 15.2008 22.4017 15.2008 22.4017 15.2008C22.4017 15.2008 24.0017 15.14 24.0017 13.6008C24.0017 13.1008 23.4537 12.2528 21.6017 10.4008C20.0017 8.80078 19.1809 9.62718 21.6017 6.40078C23.0761 4.43598 24.1489 2.65598 23.9649 2.14238C23.7889 1.65198 19.6881 0.871181 19.2017 1.60078C17.6017 4.00078 17.3081 4.58878 16.8017 5.60078C16.0017 7.20078 15.9225 8.00078 15.2017 8.00078C14.4745 8.00078 14.4017 6.44798 14.4017 5.60078C14.4017 2.95598 14.7849 1.08558 13.6017 0.800781C13.6017 0.800781 12.0017 0.800781 11.2017 0.800781C9.91367 0.800781 8.80167 1.60078 8.80167 1.60078C8.80167 1.60078 7.80887 2.37518 8.00167 2.40078C8.24007 2.43278 9.60167 2.06958 9.60167 3.20078C9.60167 4.00078 9.60167 4.80078 9.60167 4.80078C9.60167 4.80078 9.60887 8.00078 8.80167 8.00078C8.00167 8.00078 6.40167 4.80078 4.80167 2.40078C4.17367 1.45918 4.00167 1.60078 3.20167 1.60078C2.34407 1.60078 1.60247 1.63438 0.801673 1.63438C0.00167303 1.63438 -0.100727 2.14398 0.00167305 2.40078C1.60167 6.40078 2.75127 8.91278 5.79127 12.0776C8.57927 14.9808 10.4417 15.1352 12.0017 15.2008C12.4017 15.2176 12.0017 15.2008 12.8017 15.2008Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <span>vkontakte</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-list__link" href="#">
+                                <div class="link-ico">
+                                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.7592 3.83185C23.7592 3.83185 23.5248 2.17825 22.8064 1.44865C21.8936 0.493453 20.8704 0.488653 20.4016 0.431853C17.0424 0.189453 12 0.189453 12 0.189453C12 0.189453 6.9568 0.189453 3.5984 0.432653C3.1296 0.488653 2.1064 0.493453 1.1936 1.44945C0.4736 2.17825 0.24 3.83185 0.24 3.83185C0.24 3.83185 0 5.44785 0 7.38945L0 9.79025C0 11.7319 0.24 13.4215 0.24 13.4215C0.24 13.4215 0.4736 15.0743 1.1936 15.8031C2.1064 16.7591 3.3056 16.7295 3.84 16.8295C5.76 17.0135 12 16.9903 12 16.9903C12 16.9903 17.0424 17.0623 20.4016 16.8199C20.8704 16.7639 21.8936 16.7591 22.8064 15.8031C23.5248 15.0751 23.7592 13.4215 23.7592 13.4215C23.7592 13.4215 24 11.7327 24 9.79105V7.39025C24 5.44785 23.7592 3.83185 23.7592 3.83185ZM8.8 11.7951L8.8 5.39505L15.2 8.59505L8.8 11.7951Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <span>youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper-top-line">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="footer__wrapper-bottom-line">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">
+                    <a href="#">Главная</a>
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="menu-list__item">
+                        <a href="#">Пробная тренировка</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Программы</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">О клубе</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Преимущества</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Фото</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Движение вперед</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Наш Instagram</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col wide">
+                <div class="footer__col-title">
+                    <a href="#">Программы</a>
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Тренажерный зал
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Аэробные программы
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Танцевальные программы
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Специальные программы
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Персональные тренировки
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Фитнес-бар
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Массаж
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Зал бокса
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Силовые программы
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Детские программы
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            MIND & BODY (Разум и тело)
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Корпоративный фитнес
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Солярий
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">
+                            Шугаринг
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">
+                    <a href="#">Расписание</a>
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="menu-list__item">
+                        <a href="#">День</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Неделя</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Месяц</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Прошедние тренеровки</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__info">
+            <div class="footer__privacy">
+                <a href="#">Политика конфиденциальности</a>
+                <span>Все права защищены © 2022</span>
+            </div>
+            <div class="footer__logo-wrapper">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo-white.svg" alt="#">
+                </a>
+            </div>
+            <div class="footer__development">
+                <span>Дизайн и разработка</span>
+                <a href="https://voxel.kz/">Voxel.kz</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="modal" id="modalRegister">
+    <div class="modal-wrapper">
+        <div class="modal__content">
+            <form action="#">
+                <div class="modal__head">
+                    <h3 class="modal__title">Регистрация</h3>
+                    <div class="modal__close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal__body">
+                    <label>
+                        <input autocomplete="off" type="text" name="surname" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Фамилия</span>
+                    </label>
+                    <label>
+                        <input autocomplete="off" type="text" name="name" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Имя</span>
+                    </label>
+                    <label>
+                        <input autocomplete="off" type="text" name="patronymic" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Отчество</span>
+                    </label>
+                    <label>
+                        <input autocomplete="off" type="tel" name="phone" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Телефон</span>
+                    </label>
+                    <label>
+                        <input autocomplete="off" type="email" name="email" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Email</span>
+                    </label>
+                    <label>
+                        <input autocomplete="off" type="password" name="password" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Пароль</span>
+                    </label>
+                    <label>
+                        <input autocomplete="off" type="password" name="check-password" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Подтвердить пароль</span>
+                    </label>
+                </div>
+                <label class="custom__checkbox">
+                    <input type="checkbox" checked>
+                    <span>Даю согласие на обработку персональных данных.</span>
+                </label>
+                <button type="submit" class="btn personal-data__submit">Регистрация</button>
+                <button type="submit" class="btn personal-data__submit allowed">Регистрация</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="modal" id="modalLogin">
+    <div class="modal-wrapper">
+        <div class="modal__content">
+            <form action="#">
+                <div class="modal__head">
+                    <h3 class="modal__title">Авторизация</h3>
+                    <div class="modal__close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal__body">
+                    <label>
+                        <input autocomplete="off" type="tel" name="phone" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Телефон</span>
+                    </label>
+                    <label>
+                        <input autocomplete="off" type="password" name="password" class="styles-inputs" data-focus-item>
+                        <span class="transform-text">Пароль</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn personal-data__submit">Войти</button>
+                <button type="submit" class="btn personal-data__submit allowed">Войти</button>
+                <span class="modal_info">Или пройдите регистрацию</span>
+                <button class="btn  modal-btn__registration" data-modal-open="modalRegister">Регистрация</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>
