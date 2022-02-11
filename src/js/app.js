@@ -289,7 +289,7 @@ function tabsSwitch(e) {
         activeTabsBtn.classList.remove('active');
         target.classList.add('active');
         const tabId = target.getAttribute('href');
-        const showingTab = document.querySelector('.manage__tabs-content.show');
+        const showingTab = document.querySelector('[data-tabs-content].show');
         showingTab && showingTab.classList.remove('show');
         document.querySelector(`${tabId}`).classList.add('show');
     }
