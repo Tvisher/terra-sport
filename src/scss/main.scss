@@ -76,6 +76,9 @@ body.white {
   .section__title {
     color: $mainFontColor;
   }
+  .programs-blocks {
+    padding-top: 50px;
+  }
 }
 
 
@@ -3850,7 +3853,8 @@ html .ui-button.ui-state-disabled:active {
     transform: translate(-50%, -50%) scale(0.5);
   }
   body.white .section__title {
-    max-width: 70%;
+    // max-width: 70%;
+    margin-right: 20px;
   }
 }
 
@@ -3885,6 +3889,12 @@ html .ui-button.ui-state-disabled:active {
       background-color: #ffffff;
       transform: rotate(5deg);
     }
+  }
+  .header-content__text {
+    max-width: 52%;
+  }
+  .header-content__wrapper {
+    width: 100%;
   }
 }
 .header__footer {
@@ -3962,6 +3972,8 @@ body.white {
 }
 
 .info-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
   &.reverse {
     .info-content__img {
       order: -1;
@@ -3974,17 +3986,10 @@ body.white {
   .info-content__block {
     margin-right: 30px;
   }
-  padding-top: 100px;
-  padding-bottom: 50px;
   .info-content__wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .info-content__title {
-    margin-bottom: 30px;
-    font-size: 48px;
-    line-height: 100%;
   }
   .info-content__text {
     color: $brand-gray;
@@ -4016,11 +4021,19 @@ body.white {
     }
   }
 }
+.info-content__title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 100%;
+}
 
 body.white {
   .benefits-section {
     .list-item__num {
       -webkit-text-stroke: 2px $mainFontColor;
+    }
+    .list-item__title {
+      color:$mainFontColor;
     }
   }
 }
@@ -4105,11 +4118,11 @@ body.white {
 
 .date-components {
   margin-top: 50px;
-  border-top: 1px solid $brand-gray;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   .date-component {
+    border-top: 1px solid $brand-gray;
     position: relative;
     flex: 0 0 33%;
     padding-top: 45px;
@@ -4147,6 +4160,7 @@ body.white {
   }
 }
 .trainers-section__wrapper {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -4189,8 +4203,11 @@ body.white {
   align-items: stretch;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
   .list-item {
-    width: 33%;
+    margin: 1vw;
+    width: 30%;
     padding: 30px;
     box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.25);
     border-radius: 2px;
@@ -4210,5 +4227,331 @@ body.white {
     span{
       color: $brand-gray;
     }
+  }
+}
+.downloads {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.downloads__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  .list-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    border-radius:4px;
+    width: 30%;
+    margin: 1vw;
+    padding: 16px 16px 16px 22px;
+  a {
+    width: 100%;
+    color: $mainFontColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   span {
+     width: 100%;
+   }
+  }
+  .list-item__ico {
+    flex-shrink: 0;
+    margin-right: 22px;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    svg {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      path {
+        fill: red;
+      }
+    }
+  }
+  .list-item__download {
+    flex-shrink: 0;
+    margin-left: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-item.orange .list-item__download  {
+    background-color:$brand-orange;
+  }
+  .list-item.orange .list-item__ico svg path {
+    fill:$brand-orange;
+  }
+
+  .list-item.green .list-item__download  {
+    background-color:$brand-green;
+  }
+  .list-item.green .list-item__ico svg path {
+    fill:$brand-green;
+  }
+  .list-item.blue .list-item__download  {
+    background-color:$brand-blue;
+  }
+  .list-item.blue .list-item__ico svg path {
+    fill:$brand-blue;
+  }
+}
+
+.rental__title {
+  margin-bottom: 15px;
+}
+.rental__list {
+  margin-right: -1vw;
+  margin-left: -1vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  .list-item__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .nameplate {
+    font-size: 14px;
+    color: $brand-green;
+    border:  1px solid $brand-green;
+    padding: 3px 7px;
+    border-radius: 4px;
+    display: inline-flex;
+    margin-bottom: 30px;
+  }
+  .list-item {
+    width: 31%;
+    margin: 1vw;
+    padding: 30px;
+    box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.3);
+    border-radius: 2px;
+    .list-item__tab-content {
+      display: none;
+      &.show {
+        display: block;
+      }
+      &>span {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+    }
+    &.orange {
+      .tab-btn.active {
+        background-color: $brand-orange;
+      }
+    }
+    &.green {
+      .tab-btn.active {
+        background-color: $brand-green;
+      }
+    }
+    &.blue {
+      .tab-btn.active {
+        background-color: $brand-blue;
+      }
+    }
+  }
+  .list-item__tabs-btns {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .tab-btn {
+    transition: all .2s ease;
+    &.active {
+      color: #fff;
+    }
+    margin-bottom: 30px;
+    color:#BFBFBF;
+    padding: 5px 12px;
+    border-radius:20px;
+    background: #E1E1E1;
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+  .list-item__block {
+    margin-bottom: 6px;
+
+  }
+  .list-item__times {
+    color: $desc-color;
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info-content .info-content__wrapper {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 992px) {
+  .downloads__list .list-item {
+    width: 47%;
+  }
+}
+@media (max-width: 991.99px) {
+  .rental__list .list-item {
+    width: 100%;
+  }
+  .trainers-section__wrapper .section__title {
+    margin-right: 0;
+  }
+  .trainers-section.tabs .trainers-section__slider .section__slider-nav {
+    top: -96px;
+  }
+  .trainers-section__wrapper .section__title {
+    flex: 0 0 100%;
+  }
+  .header__footer .main-screen__desc {
+    display: none;
+  }
+  .header__footer {
+    display: flex;
+    align-items: center;
+  }
+  .header__footer-wrapper {
+    transform: translateY(0);
+  }
+  .info-content__wrapper {
+    flex-wrap: wrap;
+  }
+  .info-content .info-content__img {
+    flex: 0 0 80%;
+  }
+  .info-content.reverse .info-content__img,
+  .info-content .info-content__block {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .benefits-block__list .list__item {
+    flex: 0 0 100%;
+  }
+  .date-component .date-component__title {
+    font-size: 55px;
+  }
+  .date-components {
+    flex-wrap: wrap;
+  }
+  .date-components .date-component {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+  .info-content .info-content__wrapper {
+    justify-content: flex-start;
+  }
+
+  body.white {
+    .benefits-section,
+    .info-content,
+    .programs-blocks,
+    .benefits-block,
+    .downloads {
+      padding: 25px 0;
+    }
+  }
+  .vacancies-section__list .list-item {
+    width: 100%; 
+  }
+  .vacancies-section__list {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .downloads__list .list-item {
+    width: 100%;
+  }
+  .header-content .header-content__bg {
+    width: 100%;
+    &:before {
+      display: none;
+    }
+  }
+  .header-content .header-content__text {
+    width: 100%;
+    max-width: initial;
+    padding: 10px 0 30px 0;
+  }
+  .header-content__wrapper {
+    margin-top: auto;
+    background-color: #fff;
+  }
+  .header-content .header-content__bg {
+    height: calc(65% - 130px);
+  }
+  .info-content .info-content__img {
+    flex:0 0 100%;
+  }
+  .benefits-block__list .list__item:last-child {
+    margin-bottom: 0;
+  }
+  .date-components .date-component {
+    padding-top: 25px;
+  }
+  .date-component .date-component__title,
+  .date-component .date-component__figure {
+    margin-bottom: 15px;
+  }
+  .rental__list .list-item__times {
+    max-width: initial;
+  }
+  .trainers-section__wrapper .manage__tabs-btns .tabs-btn {
+    margin: 0px 5px;
+  }
+  .vacancies-section__list,
+  .downloads__list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .vacancies-section__list .list-item {
+    padding: 15px;
+  }
+  .trainers-section__wrapper {
+    margin-bottom: 25px;
+  }
+  .trainers-section.tabs .trainers-section__slider .section__slider-nav {
+    top: -67px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__footer {
+    height: 80px;
+  }
+  .socials__wrap {
+    margin-right: 0;
+    flex:0 0 100%;
+  }
+  .socials__text {
+    display: none;
+  }
+  .header__footer-wrapper, .header__footer-socials, .socials__wrap {
+    justify-content: center;
+  }
+  .rental__list .tab-btn {
+    margin-bottom: 15px;
+  }
+  .rental__list .list-item,
+  .downloads__list .list-item {
+    padding: 15px;
+  }
+  .header-content__wrapper {
+    margin-top: 45vh;
   }
 }

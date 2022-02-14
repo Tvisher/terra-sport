@@ -280,7 +280,7 @@ $("body").click(function (event) {
 });
 
 
-//Табы на странице личного кабинета
+//Табы на странице личного кабинета и строаницы о нас
 function tabsSwitch(e) {
     const target = e.target;
     if (target.hasAttribute('data-tabs-switch')) {
@@ -293,9 +293,20 @@ function tabsSwitch(e) {
         showingTab && showingTab.classList.remove('show');
         document.querySelector(`${tabId}`).classList.add('show');
     }
+    if (target.hasAttribute('data-tabs-list')) {
+        e.preventDefault();
+        let parentItem = target.closest('.list-item');
+        const activeTabsBtn = parentItem.querySelector('.active[data-tabs-list]');
+        activeTabsBtn.classList.remove('active');
+        target.classList.add('active');
+        const tabId = target.getAttribute('href').substr(1);
+        const showingTab = parentItem.querySelector('.list-item__tab-content.show');
+        showingTab && showingTab.classList.remove('show');
+        parentItem.querySelector(`[data-id="${tabId}"]`).classList.add('show');
+    }
 }
-document.body.addEventListener('click', tabsSwitch);
 
+document.body.addEventListener('click', tabsSwitch);
 
 
 //Анимация инпутов с placeholder выезжающим за пределы поля инпута

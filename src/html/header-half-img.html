@@ -2,7 +2,12 @@
     <div class="container">
         <div class="header__wrapper">
             <div class="header__logo">
-                <a href="#"> <img src="@img/logo.svg" alt="logo"></a>
+                <a href="#">
+                    <picture>
+                        <source srcset="@img/logo.svg" media="(max-width: 767.9px)" />
+                        <img src="@img/logo-dark.svg" alt="logo">
+                    </picture>
+                </a>
             </div>
             <div class="header__nav">
                 <a href="shedule.html" class="header__schedule btn btnGreen">
@@ -36,17 +41,19 @@
         <div class="header-content__bg">
             <img src="@img/branch.jpg" alt="">
         </div>
-        <div class=" container">
-            <div class="header-content__text">
-                <h1 class="header-content__titile">О компании</h1>
-                <ul class="slide__advantages">
-                    <li>Безлимитное посещение: Тренажерного зала, зала бокса, фитнес зала</li>
-                    <li>Прасторная парковка</li>
-                    <li>Сауна, просторные душевые, солярий, детская комната</li>
-                </ul>
-                <a href="#" class="slide__more btn btnOrange">
-                    Подробнее
-                </a>
+        <div class="header-content__wrapper">
+            <div class="container">
+                <div class="header-content__text">
+                    <h1 class="header-content__titile">О компании</h1>
+                    <ul class="slide__advantages">
+                        <li>Безлимитное посещение: Тренажерного зала, зала бокса, фитнес зала</li>
+                        <li>Прасторная парковка</li>
+                        <li>Сауна, просторные душевые, солярий, детская комната</li>
+                    </ul>
+                    <a href="#" class="slide__more btn btnOrange">
+                        Подробнее
+                    </a>
+                </div>
             </div>
         </div>
     </div>

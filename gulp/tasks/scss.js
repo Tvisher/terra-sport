@@ -24,12 +24,7 @@ export const scss = () => {
         .pipe(sass({
             outputStyle: 'expanded'
         }))
-        .pipe(
-            app.plugins.ifPlugin(
-                app.isBuild,
-                groupCssMediaQueries()
-            )
-        )
+        .pipe(groupCssMediaQueries())
         .pipe(
             app.plugins.ifPlugin(
                 app.isBuild,
