@@ -8413,6 +8413,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .downloads__list .list-item {
+  transition: box-shadow 0.4s ease;
   display: flex;
   align-items: center;
   border: 1px solid #E6E6E6;
@@ -8487,6 +8488,18 @@ body.white .benefits-section .list-item__title {
   fill: #245990;
 }
 
+.downloads__list .list-item.orange:hover {
+  box-shadow: 0px 0px 10px 1px #f58634;
+}
+
+.downloads__list .list-item.green:hover {
+  box-shadow: 0px 0px 10px 1px #a8cf45;
+}
+
+.downloads__list .list-item.blue:hover {
+  box-shadow: 0px 0px 10px 1px #245990;
+}
+
 .rental__title {
   margin-bottom: 15px;
 }
@@ -8517,7 +8530,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .rental__list .list-item {
-  width: 31%;
+  width: 30%;
   margin: 1vw;
   padding: 30px;
   box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.3);
@@ -8530,6 +8543,7 @@ body.white .benefits-section .list-item__title {
 
 .rental__list .list-item .list-item__tab-content.show {
   display: block;
+  animation: toOpas 0.3s ease forwards 0s;
 }
 
 .rental__list .list-item .list-item__tab-content > span {
@@ -9164,7 +9178,7 @@ body.white .benefits-section .list-item__title {
   }
 
   .trainers-section.tabs .trainers-section__slider .section__slider-nav {
-    top: -67px;
+    top: -75px;
   }
 }
 
@@ -9586,6 +9600,10 @@ body.white .benefits-section .list-item__title {
 
   body.white .section__title {
     margin-right: 20px;
+  }
+
+  .trainers-section__slider {
+    margin-top: 30px;
   }
 
   .header__footer {

@@ -4242,6 +4242,7 @@ body.white {
   margin-right: -15px;
   margin-left: -15px;
   .list-item {
+    transition: box-shadow 0.4s ease;
     display: flex;
     align-items: center;
     border: 1px solid #E6E6E6;
@@ -4305,6 +4306,15 @@ body.white {
   .list-item.blue .list-item__ico svg path {
     fill:$brand-blue;
   }
+  .list-item.orange:hover {
+    box-shadow: 0px 0px 10px 1px $brand-orange;
+  }
+  .list-item.green:hover {
+    box-shadow: 0px 0px 10px 1px $brand-green;
+  }
+  .list-item.blue:hover {
+    box-shadow: 0px 0px 10px 1px $brand-blue;
+  }
 }
 
 .rental__title {
@@ -4322,7 +4332,6 @@ body.white {
     font-size: 24px;
     font-weight: 700;
   }
-
   .nameplate {
     font-size: 14px;
     color: $brand-green;
@@ -4333,7 +4342,7 @@ body.white {
     margin-bottom: 30px;
   }
   .list-item {
-    width: 31%;
+    width: 30%;
     margin: 1vw;
     padding: 30px;
     box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.3);
@@ -4342,6 +4351,7 @@ body.white {
       display: none;
       &.show {
         display: block;
+        animation: toOpas .3s ease forwards 0s;
       }
       &>span {
         font-size: 20px;
@@ -4526,11 +4536,14 @@ body.white {
     margin-bottom: 25px;
   }
   .trainers-section.tabs .trainers-section__slider .section__slider-nav {
-    top: -67px;
+    top: -75px;
   }
 }
 
 @media (max-width: 576px) {
+  .trainers-section__slider{
+    margin-top: 30px;
+  }
   .header__footer {
     height: 80px;
   }
