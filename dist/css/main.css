@@ -4868,8 +4868,11 @@ li {
 }
 
 .header {
-  padding-top: 32px;
   position: relative;
+}
+
+.header-content__block {
+  padding-top: 32px;
 }
 
 .header__wrapper {
@@ -8615,10 +8618,11 @@ body.white .benefits-section .list-item__title {
   align-items: flex-start;
   flex-direction: column;
   box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.25);
-  border-radius: 2px;
+  border-radius: 5px;
   flex: 0 0 30%;
   margin: 1vw;
   padding: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .articles-section__list .list-item .nameplate {
@@ -8644,6 +8648,11 @@ body.white .benefits-section .list-item__title {
 .articles-section__list .list-item.blue .nameplate {
   color: #245990;
   border: 1px solid #245990;
+}
+
+.articles-section__list .list-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.85);
 }
 
 .articles-section__list .list-item__img {

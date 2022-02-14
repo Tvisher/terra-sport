@@ -1,41 +1,43 @@
 <header class="header white" id="header">
-    <div class="container">
-        <div class="header__wrapper">
-            <div class="header__logo">
-                <a href="#">
-                    <picture>
-                        <source srcset="@img/logo.svg" media="(max-width: 767.9px)" />
-                        <img src="@img/logo-dark.svg" alt="logo">
-                    </picture>
-                </a>
+    <div class="header-content__block">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#">
+                        <picture>
+                            <source srcset="@img/logo.svg" media="(max-width: 767.9px)" />
+                            <img src="@img/logo-dark.svg" alt="logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="header__nav">
+                    <a href="shedule.html" class="header__schedule btn btnGreen">
+                        <img src="@img/schedules.svg" alt="">
+                        <span>Расписание</span>
+                    </a>
+                    <a href="#" class="header__login btn btnOrange" data-modal-open="modalLogin">
+                        <img src="@img/login.svg" alt="">
+                        <span>Войти</span>
+                    </a>
+                    <a href="site-map.html" class="header__menu menu">
+                        <span style="color: #fff;">Меню</span>
+                        <div class="menu__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="header__nav">
-                <a href="shedule.html" class="header__schedule btn btnGreen">
-                    <img src="@img/schedules.svg" alt="">
-                    <span>Расписание</span>
-                </a>
-                <a href="#" class="header__login btn btnOrange" data-modal-open="modalLogin">
-                    <img src="@img/login.svg" alt="">
-                    <span>Войти</span>
-                </a>
-                <a href="site-map.html" class="header__menu menu">
-                    <span style="color: #fff;">Меню</span>
-                    <div class="menu__burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </a>
-            </div>
+            <ul class="header__breadcrumbs">
+                <li>
+                    <a href="#">Главная страница</a>
+                </li>
+                <li>
+                    <a href="#">Текущая страница</a>
+                </li>
+            </ul>
         </div>
-        <ul class="header__breadcrumbs">
-            <li>
-                <a href="#">Главная страница</a>
-            </li>
-            <li>
-                <a href="#">Текущая страница</a>
-            </li>
-        </ul>
     </div>
     <div class="header-content">
         <div class="header-content__bg">

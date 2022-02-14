@@ -171,8 +171,10 @@ li {
 
 // header
 .header {
-  padding-top: 32px;
   position: relative;
+}
+.header-content__block {
+  padding-top: 32px;
 }
 
 .header__wrapper {
@@ -4587,10 +4589,11 @@ body.white {
     align-items: flex-start;
     flex-direction: column;
     box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.25);
-    border-radius: 2px;
+    border-radius: 5px;
     flex: 0 0 30%;
     margin: 1vw;
     padding: 30px;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
     .nameplate {
       font-size: 14px;
       color: $mainFontColor;
@@ -4611,6 +4614,11 @@ body.white {
     &.blue .nameplate {
       color: $brand-blue;
       border: 1px solid $brand-blue;
+    }
+    &:hover {
+      transform: scale(1.05);
+    box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.85);
+
     }
   }
   .list-item__img {
