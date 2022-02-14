@@ -10,7 +10,10 @@
 
 
 <body class="white">
-    @@include('./html/header-half-img.html')
+    @@include('./html/header-half-img.html',{
+    "main-title":"О компании",
+    "main-img":"@img/branch.jpg"
+    })
     <main class="main">
         <section class="info-content">
             <div class="container">
@@ -946,7 +949,7 @@
         @@include('./html/map.html')
         @@include('./html/adresses.html')
     </main>
-    @@include('./html/footer-white.html')
+    @@include('./html/footer.html')
     @@include('./html/registration-modal.html')
     @@include('./html/login-modal.html')
     <script src='js/app.min.js'></script>
