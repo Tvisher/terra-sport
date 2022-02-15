@@ -362,7 +362,7 @@ phoneInputs.forEach(input => {
 });
 
 
-
+// Аккордион на странице программы
 $(document).ready(function () {
     //прикрепляем клик по заголовкам acc-head
     $('#accordeon .question__title').on('click', f_acc);

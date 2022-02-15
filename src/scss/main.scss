@@ -4951,3 +4951,117 @@ body.white {
     font-size: 14px;
   }
 }
+
+
+
+.products__list {
+  padding-top: 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  .list-item {
+    padding: 15px;
+    flex: 0 1 33.33%;
+  }
+  .product__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    transition: box-shadow .3s ease, transform .3s ease;
+    &:hover {
+      transform:translateY(-5px);
+      box-shadow: 0px 10px 16px #D3D4D8;
+    }
+  }
+  .product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .product__code {
+    font-size: 15px;
+    color: $desc-color;
+  }
+
+  .product__nameplate {
+    font-size: 14px;
+    padding: 3px 7px;
+    border-radius: 4px;
+  }
+  .list-item.orange  .product__nameplate {
+    border: 1px solid $brand-orange;
+    color: $brand-orange;
+  }
+  .list-item.green  .product__nameplate {
+    border: 1px solid $brand-green;
+    color: $brand-green;
+  }
+  .list-item.blue  .product__nameplate {
+    border: 1px solid $brand-blue;
+    color: $brand-blue;
+  }
+  .product__img {
+    margin-bottom: 30px;
+    background-color: #dad3d3;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius:3px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .product__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .product__desc {
+    color: $desc-color;
+    margin-bottom: 10px;
+  }
+  .curent__price,
+  .old__price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .curent__price {
+    font-weight: 700;
+    font-size: 24px;
+    color: $brand-blue;
+    span:first-child {
+      color: $brand-green;
+    }
+  }
+  .old__price {
+    color: $desc-color;
+    span:first-child {
+      font-weight: 700;
+      text-decoration: line-through;
+    }
+  }
+  .product__price {
+    margin-bottom: 30px;
+  }
+  
+  .product__footer {
+    margin-top: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    .product__link:first-child {
+      margin-right: 30px;
+    }
+  }
+}

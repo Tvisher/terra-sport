@@ -5,6 +5,11 @@
   cursor: pointer;
   border-radius: 2px;
   border: none;
+  transition:
+    color .3s ease,
+    background-color .3s ease,
+    transform .3s ease,
+    border-color .3s ease;
 
   // default btn
   &.btnOrange {
@@ -29,5 +34,15 @@
     color: #333333;
     border: 1px solid #ffffff;
     background-color: #ffffff;
+  }
+  &.btnBlue {
+    color: $brand-blue;
+    border: 2px solid $brand-blue;
+    background-color: transparent;
+    &:hover{
+      color: #fff;
+      border: 2px solid $brand-blue;
+      background-color: $brand-blue;
+    }
   }
 }
