@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    @@include('./html/head.html',{
+    "title": "Страница тренера"
+    })
+</head>
+
+
+<body class="white">
+    @@include('./html/header-half-img.html',{
+    "main-title":"Никита Крюк",
+    "main-img":"@img/trainer-img.jpg"
+    })
+
+    @@include('./html/galery-slider.html',{
+    "title": "Тренер в деле"
+    })
+    @@include('./html/test-train.html')
+    @@include('./html/map.html')
+    @@include('./html/adresses.html')
+    </main>
+    @@include('./html/footer.html')
+    @@include('./html/registration-modal.html')
+    @@include('./html/login-modal.html')
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>

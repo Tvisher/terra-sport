@@ -14,6 +14,7 @@ import Swiper, {
 // Проверка поддержки webP
 baseFunction.testWebP();
 
+
 //слайдер на главной в шапке
 const firstScreenSlider = new Swiper('.main__slider', {
     modules: [Navigation, Pagination, EffectFade, Autoplay],
@@ -359,3 +360,23 @@ const phoneInputs = document.querySelectorAll('input[type=tel]');
 phoneInputs.forEach(input => {
     $(input).mask("+7 (999) 999-99-99");
 });
+
+
+
+$(document).ready(function () {
+    //прикрепляем клик по заголовкам acc-head
+    $('#accordeon .question__title').on('click', f_acc);
+});
+function f_acc() {
+    if ($(this).hasClass('active')) {
+        $('#accordeon .question__title').removeClass('active');
+        $(this).next().slideToggle(600);
+        return;
+    }
+    //скрываем все кроме того, что должны открыть
+    $('#accordeon .question__content').not($(this).next()).slideUp(600);
+    $('#accordeon .question__title').removeClass('active');
+    // открываем или скрываем блок под заголовком, по которому кликнули
+    $(this).next().slideToggle(600);
+    $(this).toggleClass('active');
+}

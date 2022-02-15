@@ -4763,6 +4763,20 @@ body.white .programs-blocks {
   padding-top: 50px;
 }
 
+body.white .section__slider-nav svg path {
+  fill: black;
+}
+
+body.white .reviews-section__slider .reviews-section__slide {
+  background-color: #fff;
+  box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.15);
+}
+
+body.white .reviews-section__slider .review__name,
+body.white .reviews-section__slider .review__title {
+  color: #393d46;
+}
+
 *,
 *:before,
 *:after {
@@ -5147,6 +5161,10 @@ li {
   background-color: #245990;
 }
 
+.city-map {
+  padding-top: 50px;
+}
+
 .main__slider-nav {
   display: inline-block;
   position: relative;
@@ -5374,6 +5392,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .shedule__filters-categories {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5473,7 +5492,7 @@ html .ui-button.ui-state-disabled:active {
 .shedule {
   position: relative;
   margin-top: 38px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .shedule__blocks {
@@ -5907,7 +5926,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 #personal {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .porsonal__manage {
@@ -6384,7 +6403,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .test-train {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .test-train__wrapper {
@@ -6411,7 +6430,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .test-train .test-train__content {
-  padding-top: 100px;
+  padding-top: 50px;
   color: #fff;
 }
 
@@ -6547,7 +6566,7 @@ html .ui-button.ui-state-disabled:active {
 .benefits-section,
 .program-setcion,
 .personal-section {
-  padding: 100px 0px;
+  padding: 50px 0px;
   position: relative;
 }
 
@@ -6639,7 +6658,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .programs-section {
-  padding: 100px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -6901,7 +6920,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .photo-galery {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .photo-galery__facet {
@@ -6996,8 +7015,44 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .subscriptions {
-  padding: 100px 0;
+  padding: 50px 0;
   overflow: hidden;
+}
+
+.subscriptions.light .subscriptions__slider .subscriptions__slide {
+  background-color: #fff;
+  border: 1px solid #E1E1E1;
+}
+
+.subscriptions.light .subscriptions__slide.orange .subscription-item__nameplate {
+  color: #f58634;
+  border: 1px solid #f58634;
+}
+
+.subscriptions.light .subscriptions__slide.green .subscription-item__nameplate {
+  color: #a8cf45;
+  border: 1px solid #a8cf45;
+}
+
+.subscriptions.light .subscriptions__slide.blue .subscription-item__nameplate {
+  color: #245990;
+  border: 1px solid #245990;
+}
+
+.subscriptions.light .subscription-item__nameplate {
+  width: fit-content;
+  font-size: 14px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+.subscriptions.light .subscription-item__title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #393d46;
 }
 
 .subscriptions__slider {
@@ -7104,7 +7159,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .reviews-section {
-  padding: 100px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -7219,7 +7274,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .personal-section {
-  padding: 100px 0 185px 0;
+  padding: 50px 0 185px 0;
 }
 
 .personal-section .personal-section__title {
@@ -7356,7 +7411,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .instagram-galery {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .instagram-galery .instagram-galery__wrapper {
@@ -7531,7 +7586,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .programs-blocks {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -7944,7 +7999,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .city-map__wrapper .city-map__contact {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 20px;
   width: 30%;
   position: absolute;
@@ -8108,6 +8163,7 @@ body.white .slide__advantages li {
 .header-content__titile {
   font-size: 48px;
   margin-bottom: 15px;
+  line-height: 120%;
 }
 
 .info-content {
@@ -8403,7 +8459,7 @@ body.white .benefits-section .list-item__title {
 
 .downloads {
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .downloads__list {
@@ -8749,6 +8805,134 @@ body.white .benefits-section .list-item__title {
   color: #f58634;
 }
 
+.stocks {
+  padding-top: 50px;
+}
+
+.stocks__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.stocks__list .stocks__item {
+  flex: 0 0 33.33%;
+  padding: 15px;
+}
+
+.stocks__list .stocks__item-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px;
+  box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.25);
+  border-radius: 5px;
+}
+
+.stocks__list .stocks__item-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 16px #D3D4D8;
+}
+
+.stocks__list .stocks__item-img {
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.stocks__list .stocks__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.stocks__list .stocks__item-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.stocks__list .stocks__item-desc {
+  color: #999eab;
+  margin-bottom: 30px;
+}
+
+.questions__title {
+  margin-bottom: 30px;
+}
+
+.questions__list {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.questions__list .list-item {
+  flex: 0 0 50%;
+  margin-bottom: 30px;
+}
+
+.questions__list .question__title {
+  padding-right: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #393d46;
+  position: relative;
+  margin-right: 30px;
+}
+
+.questions__list .question__title:before {
+  transition: transform 0.3s ease;
+  position: absolute;
+  content: "";
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 13px;
+  height: 2px;
+  background-color: #999eab;
+  border-radius: 3px;
+}
+
+.questions__list .question__title:after {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: absolute;
+  content: "";
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 13px;
+  height: 2px;
+  background-color: #999eab;
+  border-radius: 3px;
+}
+
+.questions__list .question__title.active:after {
+  background-color: #f58634;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.questions__list .question__title.active:before {
+  background-color: #f58634;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.questions__list .question__content {
+  padding-top: 10px;
+  padding-right: 30px;
+  display: none;
+  color: #999eab;
+  font-size: 14px;
+}
+
 @media (max-width: 1366px) {
   .test-train,
   .about-section,
@@ -8786,6 +8970,15 @@ body.white .benefits-section .list-item__title {
 }
 
 @media (max-width: 1280px) {
+  .questions__list .list-item {
+    flex: 0 0 100%;
+  }
+
+  .questions__list .question__title {
+    line-height: 120%;
+    margin-right: 0;
+  }
+
   .shedule__block {
     flex: 0 0 32%;
   }
@@ -9095,6 +9288,10 @@ body.white .benefits-section .list-item__title {
   body.white .club-section__play-btn {
     right: 0%;
   }
+
+  .stocks__list .stocks__item {
+    flex: 0 0 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -9264,6 +9461,19 @@ body.white .benefits-section .list-item__title {
   .city-map__wrapper .city-map__contact .location__shedule span,
   .city-map__wrapper .city-map__contact .location__contacts a {
     font-size: 18px;
+  }
+
+  .stocks__list .stocks__item-wrapper {
+    padding: 15px;
+  }
+
+  .stocks__list .stocks__item {
+    padding: 7.5px;
+  }
+
+  .stocks__list {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
   }
 }
 
@@ -9448,6 +9658,10 @@ body.white .benefits-section .list-item__title {
 }
 
 @media (max-width: 576px) {
+  .header__schedule {
+    margin-left: 0 !important;
+  }
+
   .header__wrapper {
     flex-wrap: wrap;
   }
@@ -9456,7 +9670,7 @@ body.white .benefits-section .list-item__title {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .header__nav {
@@ -9494,8 +9708,8 @@ body.white .benefits-section .list-item__title {
     margin-bottom: 30px;
   }
 
-  .header {
-    padding-top: 20px;
+  .header-content__block {
+    padding-top: 10px;
   }
 
   .main__slider-nav {
@@ -9593,8 +9807,14 @@ body.white .benefits-section .list-item__title {
     margin-bottom: 25px;
   }
 
+  .categories__select {
+    position: static;
+  }
+
   .categories__select .select__content {
-    max-width: 85vw;
+    max-width: initial;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   }
 
   .main-page-title {
@@ -9815,6 +10035,15 @@ body.white .benefits-section .list-item__title {
   .articles-section__list .list-item {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+
+  .stocks__list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .stocks__list .stocks__item {
+    flex: 0 0 100%;
   }
 }
 
