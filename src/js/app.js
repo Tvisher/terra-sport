@@ -221,8 +221,8 @@ const promotionsSectionSlider = new Swiper('.promotions-section__slider', {
     }
 });
 
-OverlayScrollbars(document.querySelectorAll(".post__content"), {});
-OverlayScrollbars(document.querySelector("body"), {});
+
+OverlayScrollbars(document.querySelectorAll(".fast-buy__wrapper, .post__content, .velcro-basket__list, body"), {});
 
 
 //модалки с видео в слайдере на главной  
@@ -380,3 +380,27 @@ function f_acc() {
     $(this).next().slideToggle(600);
     $(this).toggleClass('active');
 }
+
+// Открытие и закрытие боковой корзины 
+const velcroBasket = document.querySelector('#velcro-basket');
+const fastBuyNode = document.querySelector('#fast-buy');
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.closest('[data-basket-btn]')) {
+        velcroBasket.classList.toggle('show');
+        return;
+    }
+    if (velcroBasket.classList.contains('show') && !target.closest('#velcro-basket')) {
+        velcroBasket.classList.remove('show');
+        return;
+    }
+    if (target.closest('#fast-buy-btn')) {
+        e.preventDefault();
+        fastBuyNode.classList.add('show');
+        return;
+    }
+    if (fastBuyNode.classList.contains('show') && target.closest('[data-close-btn]')) {
+        fastBuyNode.classList.remove('show')
+    }
+});
+
