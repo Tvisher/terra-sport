@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    @@include('./html/head.html',{
+    "title": "Абонемент "
+    })
+</head>
+
+<body>
+    @@include('./html/header-standart.html')
+    <main class="main" id="main">
+        <section class="product-page first-section">
+            <div class="container">
+                <div class="product-page__wrapper">
+                    <h1 class="main-page-title product-page__title">
+                        Общий Безлимит
+                    </h1>
+                    <p class="main-page-desc">
+                        Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий
+                    </p>
+                </div>
+                <div class="product green">
+                    <div class="product__wrapper">
+                        <div class="product__img">
+                            <img src="@img/articles-img.jpg" alt="">
+                        </div>
+                        <div class="product__content">
+                            <div class="product__header">
+                                <span class="product__nameplate">Абонимент</span>
+                                <span class="product__code">Арт.: 936F7P8</span>
+                            </div>
+                            <h4 class="product__title">Общий Безлимит</h4>
+                            <div class="product__desc">Назарбаева, 5/3 + Крылова, 106 +Серикбаева 7/5 без ограничений по времени и кол-ву тренировок</div>
+                            <div class="product__price">
+                                <div class="curent__price">
+                                    <span>8000 ₸</span>
+                                    <span>/ месяц</span>
+                                </div>
+                                <div class="old__price">
+                                    <span>8 900 ₸</span>
+                                    <span>старая цена</span>
+                                </div>
+                            </div>
+                            <div class="product__footer">
+                                <a href="#" class="product__link btnOrange btn">Купить</a>
+                                <a href="#" class="product__link btnBlue btn">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__specification">
+                        <div class="specification__wrapper">
+                            <div class="specification__info">
+                                <h4 class="specification__title">Подробное описание</h4>
+                                <p class="specification__text">Технология EXTRA BASS позволяет делать низкочастотные звуки объемнее, насыщеннее и бархатнее. Наушники оснащены мягкими ушными накладками и регулируемым ободом для удобного пользования.</p>
+                                <p class="specification__text">В модель встроены микрофон и пульт управления, которым можно переключать треки, регулировать громкость звука. Наушники имеют стильный и современный дизайн — они созданы для настоящих меломанов.</p>
+                            </div>
+                            <div class="specification__question">
+                                <div class="question__img">
+                                    <img src="@img/question-ico.svg" alt="">
+                                </div>
+                                <div class="question__text">
+                                    <h4 class="question__title">Остались вопросы?</h4>
+                                    <span class="question__desc">Наши специалисты ответят на любой интересующий вопрос</span>
+                                </div>
+                                <a href="#" class="question__link btn btnOrange">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        @@include('./html/map.html')
+        @@include('./html/adresses.html')
+    </main>
+    @@include('./html/footer.html')
+    @@include('./html/registration-modal.html')
+    @@include('./html/login-modal.html')
+    @@include('./html/basket.html')
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>

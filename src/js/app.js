@@ -386,6 +386,8 @@ const velcroBasket = document.querySelector('#velcro-basket');
 const fastBuyNode = document.querySelector('#fast-buy');
 document.addEventListener('click', (e) => {
     const target = e.target;
+    if (!velcroBasket && !fastBuyNode) return;
+
     if (target.closest('[data-basket-btn]')) {
         velcroBasket.classList.toggle('show');
         return;
