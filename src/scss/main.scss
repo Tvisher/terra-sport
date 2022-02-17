@@ -5559,7 +5559,6 @@ body.white {
   }
   .product__img {
     transition: background-color .3s ease-in-out 0s;
-    // background-color: rgb(199, 187, 187);
     animation:imageImpuls 2s ease infinite 0s;
     border-radius:4px;
     flex: 0 0 45%;
@@ -6106,7 +6105,6 @@ body.white {
   color: #393D46;
 }
 .checkout-section__info {
-  // display: flex;
   margin-bottom: 20px;
   strong{
     margin: 0 5px;
@@ -6119,7 +6117,6 @@ body.white {
     margin: 0 5px;
     color: $brand-blue;
   }
-
 }
 .checkout-section__logo {
   width: 98px;
@@ -6131,5 +6128,80 @@ body.white {
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+}
+
+.clubs {
+  padding: 50px 0px;
+  // background-color: #fff !important;
+  .clubs__list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-right: -15px;
+    margin-left: -15px;
+    .list-item {
+      flex: 0 0 33.33%;
+      padding: 15px;
+      align-self: stretch;
+
+    }
+    .list-item__wrapper {
+      height: 100%;
+      border: 1px solid #E1E1E1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  .list-item__img {
+    transition: background-color .3s ease-in-out 0s;
+    animation:imageImpuls 2s ease infinite 0s;
+    border-radius:4px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .list-item__title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 130%;
+    font-size: 20px;
+  }
+  .list-item__benefits {
+    margin-bottom: 30px;
+    li {
+      color:$brand-gray;
+      padding-left: 20px;
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      &:before {
+        position: absolute;
+        content:'';
+        left:5px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color:$brand-gray;
+        height: 3px;
+        width: 3px;
+        border-radius:50%;
+      }
+    }
+  }
+  .list-item__link {
+    align-self: flex-start;
+    margin-top: auto;
   }
 }

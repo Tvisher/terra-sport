@@ -9978,6 +9978,89 @@ body.white .benefits-section .list-item__title {
   object-position: center;
 }
 
+.clubs {
+  padding: 50px 0px;
+}
+
+.clubs .clubs__list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.clubs .clubs__list .list-item {
+  flex: 0 0 33.33%;
+  padding: 15px;
+  align-self: stretch;
+}
+
+.clubs .clubs__list .list-item__wrapper {
+  height: 100%;
+  border: 1px solid #E1E1E1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.clubs .list-item__img {
+  transition: background-color 0.3s ease-in-out 0s;
+  animation: imageImpuls 2s ease infinite 0s;
+  border-radius: 4px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.clubs .list-item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.clubs .list-item__title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 130%;
+  font-size: 20px;
+}
+
+.clubs .list-item__benefits {
+  margin-bottom: 30px;
+}
+
+.clubs .list-item__benefits li {
+  color: #9da3a5;
+  padding-left: 20px;
+  position: relative;
+}
+
+.clubs .list-item__benefits li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.clubs .list-item__benefits li:before {
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #9da3a5;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+
+.clubs .list-item__link {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 @media (max-width: 1366px) {
   .test-train,
   .about-section,
