@@ -222,7 +222,7 @@ const promotionsSectionSlider = new Swiper('.promotions-section__slider', {
 });
 
 
-OverlayScrollbars(document.querySelectorAll(".fast-buy__wrapper, .post__content, .velcro-basket__list, body"), {});
+OverlayScrollbars(document.querySelectorAll(".fast-buy__wrapper, .post__content, .velcro-basket__list"), {});
 
 
 //модалки с видео в слайдере на главной  
@@ -292,7 +292,18 @@ function tabsSwitch(e) {
         const tabId = target.getAttribute('href');
         const showingTab = document.querySelector('[data-tabs-content].show');
         showingTab && showingTab.classList.remove('show');
-        document.querySelector(`${tabId}`).classList.add('show');
+        let currentShowTab = document.querySelector(`${tabId}`);
+        currentShowTab.classList.add('show');
+
+        //Добавление и удаление required у полей формы оформления заказа
+        if (currentShowTab.getAttribute('data-tabs-content') === 'form') {
+            let inputs = currentShowTab.querySelectorAll('input.styles-inputs');
+            inputs.forEach(input => input.setAttribute('required', ''));
+        }
+        if (showingTab.getAttribute('data-tabs-content') === 'form') {
+            let inputs = showingTab.querySelectorAll('input.styles-inputs');
+            inputs.forEach(input => input.removeAttribute('required'));
+        }
     }
     if (target.hasAttribute('data-tabs-list')) {
         e.preventDefault();
@@ -405,4 +416,42 @@ document.addEventListener('click', (e) => {
         fastBuyNode.classList.remove('show')
     }
 });
+
+
+
+// Функция отписывающая методологию работы скрытия и показа некоторых элементов на странице оформления заказа 
+(function () {
+    let deliveryAdressBlock = document.querySelector('.delivery-adress');
+    let deliveryAdressBlockInput = deliveryAdressBlock.querySelector('input');
+    let pickupBlockImplementation = document.querySelector('.pickup-block__implementation');
+    let payVariant = document.querySelectorAll('.pay-variant__label input');
+    let deliveryVariant = document.querySelectorAll('.delivery-method__label input');
+
+    payVariant.forEach(input => {
+        input.addEventListener('change', (e) => {
+            const inputValue = e.target.value;
+            let paymentSpan = document.querySelector('.total-block__params .delivery span');
+            paymentSpan.textContent = inputValue;
+        });
+    });
+    deliveryVariant.forEach(input => {
+        input.addEventListener('change', (e) => {
+            const inputValue = e.target.value;
+            let paymentSpan = document.querySelector('.total-block__params .payment span');
+            paymentSpan.textContent = inputValue;
+            if (inputValue == 'Самовывоз') {
+                deliveryAdressBlock.classList.add('hidden');
+                deliveryAdressBlockInput.removeAttribute('required');
+                pickupBlockImplementation.classList.remove('hidden');
+            }
+            else {
+                pickupBlockImplementation.classList.add('hidden');
+                deliveryAdressBlockInput.setAttribute('required', '');
+                deliveryAdressBlock.classList.remove('hidden');
+            }
+        });
+    });
+}());
+
+
 

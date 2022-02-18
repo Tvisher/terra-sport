@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    @@include('./html/head.html',{
+    "title": "Оформление заказа"
+    })
+</head>
+
+<body class="white">
+    @@include('./html/header-standart.html')
+    <main class="main" id="main">
+        <section class="basket-section ordering">
+            <div class="container">
+                <h2 class="section__title">Оформление заказа</h2>
+                <a href="basket-page.html" class="checkout-section__link">Вернуться в корзину</a>
+                <form action="#" name="ordering-form" id="ordering-form">
+                    <div class="basket-section__content">
+                        <div class="col">
+                            <div class="basket-section__buyer buyer">
+                                <div class="buyer__head">
+                                    <h4 class="standart__title">Покупатель</h4>
+                                    <div class="buyer__tabs-btns">
+                                        <a href="#individual" class="active" data-tabs-switch>Физическое лицо</a>
+                                        <a href="#entity" data-tabs-switch>Юридическое лицо</a>
+                                    </div>
+                                </div>
+                                <div class="buyer__form show" id="individual" data-tabs-content="form">
+                                    <label>
+                                        <span>Фамилия *</span>
+                                        <input type="text" name="surname" required class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>Имя *</span>
+                                        <input type="text" name="name" required class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>Отчество *</span>
+                                        <input type="text" name="patronymic" required class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>Email *</span>
+                                        <input type="email" name="email" required class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>Телефон *</span>
+                                        <input type="tel" name="phone" required class="styles-inputs">
+                                    </label>
+                                    <!-- <div class="form-btn__wrapper">
+                                        <button type="submit" class="btn btnOrange">Продолжить</button>
+                                    </div> -->
+                                </div>
+                                <div class="buyer__form" id="entity" data-tabs-content="form">
+                                    <label>
+                                        <span>Наименование компании *</span>
+                                        <input type="text" name="company-name" class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>Контактное лицо (Фио) *</span>
+                                        <input type="text" name="name" class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>ИИН/БИН *</span>
+                                        <input type="text" name="requisites" class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>Email *</span>
+                                        <input type="email" name="email" class="styles-inputs">
+                                    </label>
+                                    <label>
+                                        <span>Телефон *</span>
+                                        <input type="tel" name="phone" class="styles-inputs">
+                                    </label>
+                                    <!-- <div class="form-btn__wrapper">
+                                        <button type="submit" class="btn btnOrange">Продолжить</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="basket-section__delivery-method delivery-method">
+                                <h4 class="standart__title">Способ доставки</h4>
+                                <div class="delivery-method__wrapper">
+                                    <label class="delivery-method__label">
+                                        <input type="radio" checked name="delivery-method" value="Самовывоз">
+                                        <div class="delivery-method__item">
+                                            <span>Самовывоз</span>
+                                            <span class="price">Бесплатно</span>
+                                        </div>
+                                    </label>
+                                    <!-- <label class="delivery-method__label">
+                                        <input type="radio" name="delivery-method" value="Доставка курьером">
+                                        <div class="delivery-method__item">
+                                            <span>Доставка курьером</span>
+                                            <span class="price">500 ₸</span>
+                                        </div>
+                                    </label>
+                                    <label class="delivery-method__label">
+                                        <input type="radio" name="delivery-method" value="Доставка курьером (Срочная)">
+                                        <div class="delivery-method__item">
+                                            <span>Доставка курьером (Срочная)</span>
+                                            <span class="price">1000 ₸</span>
+                                        </div>
+                                    </label> -->
+                                </div>
+                                <div class="delivery-adress hidden">
+                                    <h4 class="standart__title">Выберите адрес доставки</h4>
+                                    <label class="adress__label">
+                                        <span>Адрес доставки *</span>
+                                        <input type="text" class="styles-inputs" name="adress">
+                                    </label>
+                                </div>
+                                <div class="pickup-block__implementation">
+                                    <h4 class="standart__title">Пункты самовывоза</h4>
+                                    <div class="pickup-block">
+                                        <ul class="pickup-block__list">
+                                            <li class="list-item">
+                                                <label>
+                                                    <input type="radio" checked name="pickup-variant" value="variant-1">
+                                                    <div class="pickup-status">
+                                                        <span>Выбран</span>
+                                                        <span>Выбрать</span>
+                                                    </div>
+                                                    <div class="pickup-item">
+                                                        <h5 class="pickup-item__title">Усть-Каменогорск, проспект Нурсултана Назарбаева, 5/3​</h5>
+                                                        <span>Телефон: +7 (777) 535 55 55</span>
+                                                        <span>Режим работы: 8 - 22</span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="list-item">
+                                                <label>
+                                                    <input type="radio" name="pickup-variant" value="variant-1">
+                                                    <div class="pickup-status">
+                                                        <span>Выбран</span>
+                                                        <span>Выбрать</span>
+                                                    </div>
+                                                    <div class="pickup-item">
+                                                        <h5 class="pickup-item__title">Усть-Каменогорск, улица Серикбаева, 7/5​</h5>
+                                                        <span>Телефон: +7 (777) 535 55 55</span>
+                                                        <span>Режим работы: 8 - 22</span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="list-item">
+                                                <label>
+                                                    <input type="radio" name="pickup-variant" value="variant-1">
+                                                    <div class="pickup-status">
+                                                        <span>Выбран</span>
+                                                        <span>Выбрать</span>
+                                                    </div>
+                                                    <div class="pickup-item">
+                                                        <h5 class="pickup-item__title">Усть-Каменогорск, Потанина, 17</h5>
+                                                        <span>Телефон: +7 (777) 535 55 55</span>
+                                                        <span>Режим работы: 8 - 22</span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <div class="pickup-block__map">
+                                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aadcfe9e51f4d1b15fe4ff2a7c52575e32344efff9d6d0e4720f4d43923f13fb5&amp;source=constructor" width="380" height="480" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="textarea-label">
+                                    <span>Коментарий к заказу</span>
+                                    <textarea class="styles-inputs">
+                                    </textarea>
+                                </label>
+                            </div>
+                            <div class="basket-section__pay-variant pay-variant">
+                                <h4 class="standart__title">Способ оплаты</h4>
+                                <div class="pay-variant__wrapper">
+                                    <label class="pay-variant__label">
+                                        <div class="pay-variant__label-wrapper">
+                                            <input type="radio" checked name="pay-variant" value="Наличный расчёт">
+                                            <div class="pay-variant__item">
+                                                Наличный расчёт
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="pay-variant__label">
+                                        <div class="pay-variant__label-wrapper">
+                                            <input type="radio" name="pay-variant" value="Банковская карта">
+                                            <div class="pay-variant__item">
+                                                Банковская карта
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="pay-variant__label">
+                                        <div class="pay-variant__label-wrapper">
+                                            <input type="radio" name="pay-variant" value="Kaspi">
+                                            <div class="pay-variant__item">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9136 0.0333546C12.4949 0.193623 9.91713 0.996251 7.82444 2.24079C3.9397 4.55109 1.20223 8.38787 0.314676 12.7664C-0.624772 17.4011 0.563874 22.2338 3.55123 25.9247C4.43681 27.0188 6.51255 28.9137 6.69934 28.7984C6.76538 28.7576 6.97789 27.8914 7.16339 26.9065C7.29896 26.1869 7.3417 23.908 7.23851 22.8968C7.13721 21.9029 7.02994 21.3308 6.72302 20.1468C6.54879 19.4749 6.5174 19.1982 6.51717 18.3342C6.51702 17.3813 6.53518 17.2527 6.79466 16.3705C7.16157 15.1229 7.22089 14.7597 7.30947 13.2169C7.39186 11.7824 7.52297 11.0151 7.77428 10.4969C7.86514 10.3095 8.20323 9.87666 8.52558 9.53498C9.32038 8.69255 9.38885 8.54784 9.30964 7.87753C9.27499 7.58464 9.24549 7.0561 9.24405 6.70301C9.24171 6.13051 9.26561 6.01715 9.46526 5.6559C9.74275 5.1538 10.5226 4.42972 11.0782 4.15835C11.5534 3.92625 12.2624 3.84189 12.592 3.97814C13.2756 4.26084 13.1808 5.26701 12.3626 6.41389C11.9544 6.98608 11.6628 7.55269 11.5952 7.90518C11.5165 8.31612 11.7742 8.74504 12.4208 9.27894C12.7272 9.53196 13.0599 9.84645 13.1603 9.97787C13.4828 10.4 13.9454 11.404 14.3822 12.6302C14.6163 13.2874 14.854 13.9135 14.9102 14.0215C15.1336 14.45 15.6828 14.7828 16.4158 14.9337C16.9714 15.0482 18.2792 15.0543 18.748 14.9445C20.1458 14.6173 21.3062 13.7601 21.3062 13.0548C21.3062 12.9053 21.2177 12.4828 21.1096 12.1159C20.9345 11.5215 20.9228 11.4105 21.0019 11.0963C21.2322 10.1823 22.0455 9.1402 22.8363 8.74564C23.838 8.24588 24.7919 8.58462 24.7838 9.43709C24.7813 9.69947 24.7392 9.79275 23.9308 11.3272C23.2672 12.5867 23.2546 12.9718 23.8767 12.9718C24.465 12.9718 25.8373 12.0997 26.6807 11.1899C26.8697 10.9861 27.1931 10.5352 27.3994 10.1881C27.813 9.49193 28.0553 9.27471 28.4815 9.21761C29.0666 9.13921 29.4884 9.79056 29.3248 10.5196C29.1658 11.2277 28.8961 11.6065 27.267 13.4096C25.9083 14.9135 25.4146 15.5392 25.1318 16.1158C24.9674 16.4512 24.9377 16.6144 24.9388 17.1776C24.9413 18.3807 25.2416 19.9955 25.7368 21.4686C26.2608 23.0278 27.3705 25.2374 27.9671 25.9093L28.2352 26.2115L28.6193 25.7282C32.6327 20.6783 33.1203 13.4739 29.827 7.88735C28.4908 5.62055 26.3967 3.53132 24.1207 2.19404C21.4228 0.608796 18.0774 -0.176233 14.9136 0.0333546ZM15.2226 17.2196C14.5682 17.3923 14.0887 18.1448 13.8385 19.3916C13.686 20.1511 13.6162 25.7677 13.7336 27.8181C13.8945 30.627 14.2235 31.488 15.2912 31.8951C15.6272 32.0232 15.7476 32.0269 16.9166 31.9445C19.2254 31.7818 20.3523 31.4642 20.8083 30.8476C21.0954 30.4593 21.0684 28.7747 20.7319 26.0757C20.4785 24.0434 19.8535 20.1131 19.708 19.6367C19.4102 18.6615 18.8751 18.0456 17.9494 17.6127C17.0529 17.1934 15.9334 17.032 15.2226 17.2196ZM9.87726 23.6536C9.6264 24.2197 9.48864 25.4077 9.48674 27.0198C9.48493 28.6055 9.57193 29.4776 9.81349 30.2924C9.95738 30.7778 9.98567 30.8167 10.2928 30.9524C10.7956 31.1744 10.9562 31.1697 11.0745 30.9292C11.5657 29.9305 11.1012 24.414 10.4481 23.4889C10.2529 23.2126 10.0462 23.2723 9.87726 23.6536ZM23.2564 23.6259C22.7242 23.9356 22.784 27.2223 23.3526 28.924C23.6922 29.9399 23.8034 29.9563 24.9923 29.1659C25.9077 28.5573 25.9966 28.4449 25.9966 27.8959C25.9966 26.9435 24.6775 24.304 23.9321 23.765C23.6108 23.5326 23.4675 23.5031 23.2564 23.6259Z" fill="white" />
+                                                </svg>
+                                                <span>Kaspi</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="basket-section__total-block">
+                                <div class="total-block__price">
+                                    <span>Итого</span>
+                                    <span>14 500 ₸</span>
+                                </div>
+                                <div class="total-block__economy">
+                                    <span>Экономия</span>
+                                    <span>15 900 ₸</span>
+                                </div>
+                                <label class="promo-code">
+                                    <span>Есть промокод?</span>
+                                    <input type="text" class="styles-inputs" name="promo-code">
+                                </label>
+                                <div class="total-block__params">
+                                    <div class="payment">
+                                        Доставка: <span>Самовывоз</span>
+                                    </div>
+                                    <div class="delivery">
+                                        Оплата: <span>Наличный расчёт</span>
+                                    </div>
+                                </div>
+                                <div class="total-block__btns">
+                                    <button type="submit" class="btn btnOrange">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        @@include('./html/map.html')
+        @@include('./html/adresses.html')
+    </main>
+    @@include('./html/footer.html')
+    @@include('./html/registration-modal.html')
+    @@include('./html/login-modal.html')
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>
