@@ -11,8 +11,11 @@ import Swiper, {
     Mousewheel
 } from 'swiper';
 
-// Проверка поддержки webP
+// Проверка поддержки webP 
 baseFunction.testWebP();
+//Ширина полосы прокрутки у тека body
+const scrollLineWigth = baseFunction.scrollbarWidth();
+
 
 
 //слайдер на главной в шапке
@@ -422,10 +425,12 @@ document.addEventListener('click', (e) => {
 // Функция отписывающая методологию работы скрытия и показа некоторых элементов на странице оформления заказа 
 (function () {
     let deliveryAdressBlock = document.querySelector('.delivery-adress');
+    if (!deliveryAdressBlock) { return; }
     let deliveryAdressBlockInput = deliveryAdressBlock.querySelector('input');
     let pickupBlockImplementation = document.querySelector('.pickup-block__implementation');
     let payVariant = document.querySelectorAll('.pay-variant__label input');
     let deliveryVariant = document.querySelectorAll('.delivery-method__label input');
+
 
     payVariant.forEach(input => {
         input.addEventListener('change', (e) => {
@@ -452,6 +457,30 @@ document.addEventListener('click', (e) => {
         });
     });
 }());
+
+
+
+// Логика открытия и закрытия меню сайта
+const openMenuBtn = document.querySelector('.header__menu');
+const siteMenu = document.querySelector('#site-menu');
+openMenuBtn.onclick = (e) => {
+    e.preventDefault();
+    siteMenu.classList.add('show');
+    document.body.classList.add('hidden');
+    document.body.style.paddingRight = `${scrollLineWigth}px`;
+};
+const closeSiteMenuBtn = document.querySelector('[data-close-menu]');
+closeSiteMenuBtn.onclick = (e) => {
+    if (siteMenu.classList.contains('show')) {
+        siteMenu.classList.remove('show');
+        document.body.classList.remove('hidden');
+        document.body.style.paddingRight = `0px`;
+    }
+};
+
+
+
+
 
 
 

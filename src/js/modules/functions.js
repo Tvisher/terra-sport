@@ -11,3 +11,12 @@ export function testWebP() {
         document.documentElement.classList.add(className);
     });
 };
+
+
+export function scrollbarWidth() {
+    let documentWidth = parseInt(document.documentElement.clientWidth);
+    let windowsWidth = parseInt(window.innerWidth);
+    let scrollbarWidth = windowsWidth - documentWidth;
+    return Number(scrollbarWidth);
+}
+
