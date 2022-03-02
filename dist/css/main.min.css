@@ -4902,6 +4902,10 @@ body.hidden {
   z-index: 9999;
 }
 
+.nav-menu .header__logo {
+  padding-top: 35px;
+}
+
 .nav-menu.show {
   opacity: 1;
   pointer-events: auto;
@@ -4928,53 +4932,84 @@ body.hidden {
   margin-right: 15px;
 }
 
-.nav-menu .container {
+.nav-menu__scroll-container {
+  height: auto;
   position: relative;
-  height: 100%;
 }
 
-.nav-menu .nav-menu__bg {
+.nav-menu {
+  overflow: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.nav-menu__wrapper {
+  padding-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.nav-menu__wrapper .nav-menu__col {
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+}
+
+.nav-menu__item {
+  margin-bottom: 30px;
+  border-radius: 4px;
+  position: relative;
+  background: #27272D;
+  padding: 60px 30px 100px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu__item li {
+  margin-bottom: 2px;
+}
+
+.nav-menu__item li a {
+  color: #fff;
+  width: fit-content;
+  padding: 3px 0;
+}
+
+.nav-menu__item .nav-menu__title {
+  width: fit-content;
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.nav-menu__item .nav-menu__item-ico {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.nav-menu .nav-menu__bg-img {
-  width: 100%;
-  height: 100%;
+  right: 30px;
+  bottom: 30px;
+  width: 120px;
+  height: 120px;
   overflow: hidden;
 }
 
-.nav-menu .nav-menu__bg-img img {
+.nav-menu__item .nav-menu__item-ico img,
+.nav-menu__item .nav-menu__item-ico svg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
 }
 
-.nav-menu .nav-menu__content {
-  padding: 40px 0;
-  overflow: auto;
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+.nav-menu__item.orange:hover {
+  background-color: #f58634;
 }
 
-.nav-menu .nav-menu__content li:not(:last-child) {
-  margin-bottom: 22px;
+.nav-menu__item.green:hover {
+  background-color: #a8cf45;
 }
 
-.nav-menu .nav-menu__content li a {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 700;
+.nav-menu__item.blue:hover {
+  background-color: #245990;
 }
 
 .btn.ghost {
@@ -10818,6 +10853,14 @@ body.white .benefits-section .list-item__title {
 }
 
 @media (max-width: 980px) {
+  .nav-menu__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu__wrapper .nav-menu__col {
+    flex: 0 0 100%;
+  }
+
   .header__breadcrumbs {
     display: none;
   }
@@ -11457,6 +11500,86 @@ body.white .benefits-section .list-item__title {
 }
 
 @media (max-width: 576px) {
+  .nav-menu__wrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .nav-menu__wrapper .nav-menu__col {
+    padding: 0;
+  }
+
+  .nav-menu .header__logo {
+    justify-content: flex-start;
+  }
+
+  .nav-menu__item .nav-menu__item-ico,
+  .nav-menu__item-list {
+    display: none;
+  }
+
+  .nav-menu__item {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .nav-menu__item .nav-menu__title {
+    margin-bottom: 0;
+  }
+
+  .nav-menu__item-list {
+    padding-top: 20px;
+  }
+
+  .nav-menu .header__logo {
+    max-width: 60%;
+    padding-top: 20px;
+  }
+
+  .nav-menu .close-menu {
+    padding: 0;
+    right: 20px;
+    top: 25px;
+  }
+
+  .nav-menu__item-head {
+    position: relative;
+  }
+
+  .nav-menu__item-head:before {
+    transition: transform 0.3s ease;
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";
+    right: 9px;
+    top: 50%;
+    height: 2px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+
+  .nav-menu__item-head:after {
+    transition: transform 0.3s ease;
+    transform: rotate(-45deg);
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    height: 2px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+
+  .nav-menu__item-head.open:before {
+    transform: rotate(-45deg);
+  }
+
+  .nav-menu__item-head.open:after {
+    transform: rotate(45deg);
+  }
+
   .header__schedule {
     margin-left: 0 !important;
   }

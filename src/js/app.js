@@ -460,7 +460,7 @@ document.addEventListener('click', (e) => {
 
 
 
-// Логика открытия и закрытия меню сайта
+// Логика открытия и закрытия меню сайта а так же некоторая логика работы ссылок внутри меню
 const openMenuBtn = document.querySelector('.header__menu');
 const siteMenu = document.querySelector('#site-menu');
 openMenuBtn.onclick = (e) => {
@@ -477,6 +477,20 @@ closeSiteMenuBtn.onclick = (e) => {
         document.body.style.paddingRight = `0px`;
     }
 };
+const menuLinks = document.querySelectorAll('[data-close-menu-link]');
+menuLinks.forEach(link => {
+    link.onclick = (e) => {
+        siteMenu.classList.remove('show');
+        document.body.classList.remove('hidden');
+        document.body.style.paddingRight = `0px`;
+    }
+});
+$(".nav-menu__item-head").click(function (e) {
+    if (window.innerWidth <= 576) {
+        $(this).parent().find('.nav-menu__item-list').slideToggle("slow");
+        $(this).toggleClass('open');
+    }
+});
 
 
 
