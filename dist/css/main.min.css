@@ -4699,6 +4699,25 @@ html {
   height: 100%;
 }
 
+p::selection {
+  background-color: #a8cf45;
+  color: #fff;
+}
+
+span::selection {
+  background-color: #245990;
+  color: #fff;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection {
+  background-color: #f58634;
+  color: #fff;
+}
+
 body {
   font-family: "Europe";
   font-size: 16px;
@@ -4880,6 +4899,38 @@ li {
 
 button {
   cursor: pointer;
+}
+
+.subscription__data-info .location,
+.subscription__data-info .limit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.subscription__data-info .ico {
+  flex: 0 0 auto;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  margin-right: 1px;
+}
+
+.subscription__data-info .ico svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+body.white .subscription__data-info .location,
+body.white .subscription__data-info .limit {
+  color: #393d46;
+}
+
+body.white .subscription__data-info .ico svg path {
+  fill: #393d46;
 }
 
 body.hidden {

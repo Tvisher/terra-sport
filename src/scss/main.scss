@@ -22,6 +22,25 @@ html {
     font-size: 14px;
   }
 }
+p::selection {
+  background-color:$brand-green;
+
+  color:#fff;
+}
+span::selection {
+  background-color:$brand-blue;
+  color:#fff;
+}
+
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection {
+  background-color:$brand-orange;
+  color:#fff;
+}
 
 body {
   font-family: $mainFont;
@@ -168,6 +187,42 @@ li {
 }
 
 @import "./common.scss";
+
+.subscription__data-info {
+  .location,
+  .limit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color:#fff;
+    margin-bottom: 15px;
+
+  }
+  .ico {
+    flex: 0 0 auto;
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
+    margin-right: 1px;
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+body.white {
+  .subscription__data-info {
+    .location,
+    .limit {
+      color:$mainFontColor;
+    }
+    .ico svg path {
+      fill: $mainFontColor;
+    }
+  }
+}
 
 
 body.hidden {
