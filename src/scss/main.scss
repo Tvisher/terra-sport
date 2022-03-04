@@ -1682,6 +1682,11 @@ html .ui-button.ui-state-disabled:active {
 
   .categories__select {
     position: static;
+    flex: 0 0 100%;
+    margin-right: 0 !important;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
     .select__content {
       max-width: initial;
       width: 100%;
@@ -5219,6 +5224,51 @@ body.white {
   }
 }
 
+.events__filters {
+  padding: 20px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+  .events__filters  {
+    .categories__select:nth-of-type(1) .select__content {
+      right: initial;
+      left: 0;
+    }
+  }
+}
+@media (max-width: 980px) {
+  .events__filters  {
+    width: 100%;
+    .categories__select  {
+      flex: 0 0 100%;
+    }
+    .categories__select:nth-of-type(1) .select__content {
+      right: 0;
+      left: initial;
+    }
+    .shedule__filters-categories {
+      width: 100%;
+    }
+    .categories__select .select__content {
+      width: 100%;
+    }
+    .categories__select:not(:last-child) {
+      margin-bottom: 0;
+    }
+    .categories__select .select__name {
+      padding: 10px 25px 10px 5px;
+    }
+  }
+  .categories__select:not(:last-child) {
+    margin-right: 0;
+  }
+  .products__list {
+    padding-top: 0;
+  }
+}
 
 
 .products__list {
