@@ -8,14 +8,17 @@ import Swiper, {
     EffectFade,
     Autoplay,
     Thumbs,
-    Mousewheel
+    Mousewheel,
+    Grid
 } from 'swiper';
+
+
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 // Проверка поддержки webP 
 baseFunction.testWebP();
 //Ширина полосы прокрутки у тека body
 const scrollLineWigth = baseFunction.scrollbarWidth();
-
 
 
 //слайдер на главной в шапке
@@ -82,8 +85,8 @@ const trainersSectionSlider = new Swiper('.trainers-section__slider', {
 });
 
 const photoGalerySlider = new Swiper('.photo-galery__slider', {
-    modules: [Navigation],
-    spaceBetween: 15,
+    modules: [Navigation, Grid],
+    spaceBetween: 10,
     slideClass: 'photo-galery__slide',
     wrapperClass: 'photo-galery__wrapper',
     speed: 900,
@@ -96,9 +99,13 @@ const photoGalerySlider = new Swiper('.photo-galery__slider', {
         768: {
             spaceBetween: 30,
             slidesPerView: 3,
+            grid: {
+                rows: 2,
+            },
         },
-        440: {
+        580: {
             slidesPerView: 2,
+            spaceBetween: 15,
         }
     }
 });
@@ -140,7 +147,7 @@ const reviewsSectionSlider = new Swiper('.reviews-section__slider', {
 });
 
 const instagramGalerySlider = new Swiper('.instagram-galery__slider', {
-    modules: [Navigation],
+    modules: [Navigation, Grid],
     spaceBetween: 15,
     slideClass: 'instagram-galery__slide',
     wrapperClass: 'instagram-galery__wrapper',
@@ -151,13 +158,20 @@ const instagramGalerySlider = new Swiper('.instagram-galery__slider', {
         prevEl: '.section__slider-button-prev.instagram-arrows',
     },
     breakpoints: {
-        768: {
+        1240: {
             spaceBetween: 30,
             slidesPerView: 3,
         },
-        650: {
+        768: {
+            spaceBetween: 30,
             slidesPerView: 2,
+            grid: {
+                rows: 2,
+            },
         },
+        // 650: {
+        //     slidesPerView: 2,
+        // },
     }
 });
 
@@ -461,14 +475,18 @@ document.addEventListener('click', (e) => {
 
 
 // Логика открытия и закрытия меню сайта а так же некоторая логика работы ссылок внутри меню
-const openMenuBtn = document.querySelector('.header__menu');
+const openMenuBtn = document.querySelectorAll('.header__menu');
 const siteMenu = document.querySelector('#site-menu');
-openMenuBtn.onclick = (e) => {
-    e.preventDefault();
-    siteMenu.classList.add('show');
-    document.body.classList.add('hidden');
-    document.body.style.paddingRight = `${scrollLineWigth}px`;
-};
+
+openMenuBtn.forEach(btn => {
+    btn.onclick = (e) => {
+        e.preventDefault();
+        siteMenu.classList.add('show');
+        document.body.classList.add('hidden');
+        document.body.style.paddingRight = `${scrollLineWigth}px`;
+    };
+});
+
 const closeSiteMenuBtn = document.querySelector('[data-close-menu]');
 closeSiteMenuBtn.onclick = (e) => {
     if (siteMenu.classList.contains('show')) {
@@ -491,6 +509,23 @@ $(".nav-menu__item-head").click(function (e) {
         $(this).toggleClass('open');
     }
 });
+
+
+
+//Фиксация шапки при скролле
+const header = document.querySelector('header');
+const fixedHeader = document.querySelector('[data-fixed-head]');
+const fixHeader = (e) => {
+    if (window.pageYOffset > header.clientHeight + 50 && !fixedHeader.classList.contains('fixed')) {
+        fixedHeader.classList.add('fixed');
+    }
+    if (window.pageYOffset < header.clientHeight + 50 && fixedHeader.classList.contains('fixed')) {
+        fixedHeader.classList.remove('fixed');
+    }
+};
+fixHeader();
+window.addEventListener('scroll', fixHeader);
+
 
 
 

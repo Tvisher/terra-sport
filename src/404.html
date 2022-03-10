@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    @@include('./html/head.html',{
+    "title": "404"
+    })
+</head>
+
+<body class="white">
+    @@include('./html/header-standart.html')
+    @@include('./html/menu.html')
+
+    <main class="main" id="main">
+        <section class="error-page">
+            <div class="container">
+                <div class="error-page__wrapper">
+                    <div class="error-page__content">
+                        <h1 class="error-page__title">
+                            Упс, такой страницы нет
+                        </h1>
+                        <span class="error-page__desc">Возможно ее никогда и небыло...</span>
+                        <a href="index.html" class="error-page__link">
+                            <span>Главная страница</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_371_6210)">
+                                    <g clip-path="url(#clip1_371_6210)">
+                                        <path d="M14.3518 7.65739L14.3518 3.96252C14.3375 3.34817 14.087 2.76296 13.6525 2.32843C13.2179 1.8939 12.6327 1.64344 12.0184 1.62907L8.32351 1.62906C8.05827 1.629 7.80387 1.73431 7.61627 1.92182C7.42868 2.10932 7.32325 2.36367 7.32319 2.62891C7.32312 2.89415 7.42843 3.14855 7.61594 3.33615C7.80345 3.52375 8.0578 3.62917 8.32304 3.62923L10.9445 3.62971L2.35223 12.2437C2.16469 12.4312 2.05934 12.6856 2.05934 12.9508C2.05934 13.216 2.16469 13.4704 2.35223 13.6579V13.6579C2.53977 13.8454 2.79412 13.9508 3.05934 13.9508C3.32455 13.9508 3.57891 13.8454 3.76644 13.6579L12.3498 5.05288L12.3517 7.65786C12.3562 7.92003 12.4636 8.16992 12.6506 8.35371C12.8376 8.5375 13.0893 8.64048 13.3515 8.64048C13.6137 8.64048 13.8654 8.5375 14.0524 8.35371C14.2395 8.16992 14.3468 7.92003 14.3514 7.65786L14.3518 7.65739Z" fill="#26292F" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_371_6210">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                    <clipPath id="clip1_371_6210">
+                                        <rect width="16" height="16" fill="white" transform="translate(-3.3335 8) rotate(-45)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="error-page__image">
+                        <img src="@img/404.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./html/footer.html')
+    @@include('./html/registration-modal.html')
+    @@include('./html/login-modal.html')
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>

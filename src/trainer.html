@@ -10,10 +10,110 @@
 
 
 <body class="white">
-    @@include('./html/header-half-img.html',{
-    "main-title":"Никита Крюк",
-    "main-img":"@img/trainer-img.jpg"
-    })
+    <header class="header white" id="header">
+        <div class="header-content__block">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a href="#">
+                            <picture>
+                                <source srcset="@img/logo.svg" media="(max-width: 767.9px)" />
+                                <img src="@img/logo-dark.svg" alt="logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="header__nav">
+                        <a href="shedule.html" class="header__schedule btn btnGreen">
+                            <img src="@img/schedules.svg" alt="">
+                            <span>Расписание</span>
+                        </a>
+                        <a href="#" class="header__login btn btnOrange" data-modal-open="modalLogin">
+                            <img src="@img/login.svg" alt="">
+                            <span>Войти</span>
+                        </a>
+                        <a href="site-map.html" class="header__menu menu">
+                            <span style="color: #fff;">Меню</span>
+                            <div class="menu__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="header__breadcrumbs">
+                    <li>
+                        <a href="#">Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="#">Текущая страница</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="header-content">
+            <div class="header-content__bg">
+                <img src="@img/trainer-img.jpg" alt="">
+            </div>
+            <div class="header-content__wrapper">
+                <div class="container">
+                    <div class="header-content__text">
+                        <h1 class="header-content__titile">Никита Крюк</h1>
+                        <ul class="slide__advantages">
+                            <li>Безлимитное посещение: Тренажерного зала, зала бокса, фитнес зала</li>
+                            <li>Прасторная парковка</li>
+                            <li>Сауна, просторные душевые, солярий, детская комната</li>
+                        </ul>
+                        <div class="slide__more__btns">
+                            <a href="#" class="slide__more btn btnOrange">
+                                Подробнее
+                            </a>
+                            <a href="#" class="btn btnOrange ghost">
+                                Записаться к тренеру
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__footer">
+            <div class="container">
+                <div class="header__footer-wrapper">
+                    <div class="header__footer-socials">
+                        <ul class="socials__wrap">
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3885 2.66699H10.6102C6.22974 2.66699 2.66602 6.23072 2.66602 10.6111V21.3895C2.66602 25.7699 6.22974 29.3337 10.6102 29.3337H21.3885C25.769 29.3337 29.3327 25.7699 29.3327 21.3895V10.6111C29.3326 6.23072 25.7689 2.66699 21.3885 2.66699ZM26.65 21.3895C26.65 24.2953 24.2943 26.651 21.3885 26.651H10.6102C7.70435 26.651 5.34868 24.2953 5.34868 21.3895V10.6111C5.34868 7.70528 7.70435 5.34966 10.6102 5.34966H21.3885C24.2943 5.34966 26.65 7.70528 26.65 10.6111V21.3895ZM15.9996 9.10339C12.1966 9.10339 9.10265 12.1973 9.10265 16.0003C9.10265 19.8032 12.1966 22.8972 15.9996 22.8972C19.8026 22.8972 22.8965 19.8033 22.8965 16.0003C22.8965 12.1973 19.8026 9.10339 15.9996 9.10339ZM15.9996 20.2146C13.6721 20.2146 11.7853 18.3278 11.7853 16.0003C11.7853 13.6728 13.6721 11.7861 15.9996 11.7861C18.3271 11.7861 20.2139 13.6728 20.2139 16.0003C20.2139 18.3278 18.327 20.2146 15.9996 20.2146ZM24.5624 9.15518C24.5624 10.0679 23.8224 10.8078 22.9097 10.8078C21.997 10.8078 21.2571 10.0679 21.2571 9.15518C21.2571 8.24245 21.997 7.50254 22.9097 7.50254C23.8224 7.50254 24.5624 8.24245 24.5624 9.15518Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9053 23.9917C17.793 23.9917 17.793 22.7115 17.793 22.2149C17.793 21.3264 18.6806 20.438 19.5683 20.438C20.456 20.438 21.9783 21.9617 23.119 23.1033C24.0067 23.9917 24.0067 23.9917 24.8943 23.9917C25.782 23.9917 27.5573 23.9917 27.5573 23.9917C27.5573 23.9917 29.3327 23.9242 29.3327 22.2149C29.3327 21.6596 28.7246 20.7179 26.6697 18.6611C24.8943 16.8843 23.9836 17.802 26.6697 14.219C28.3056 12.037 29.496 10.0603 29.2919 9.48989C29.0966 8.94529 24.5464 8.07818 24.0067 8.88843C22.2313 11.5537 21.9055 12.2067 21.3436 13.3306C20.456 15.1074 20.3681 15.9959 19.5683 15.9959C18.7614 15.9959 18.6806 14.2714 18.6806 13.3306C18.6806 10.3934 19.1058 8.31628 17.793 8C17.793 8 16.0176 8 15.1299 8C13.7008 8 12.4669 8.88843 12.4669 8.88843C12.4669 8.88843 11.3653 9.74843 11.5793 9.77686C11.8438 9.81239 13.3546 9.40905 13.3546 10.6653C13.3546 11.5537 13.3546 12.4421 13.3546 12.4421C13.3546 12.4421 13.3626 15.9959 12.4669 15.9959C11.5793 15.9959 9.80392 12.4421 8.02857 9.77686C7.33175 8.73118 7.1409 8.88843 6.25323 8.88843C5.30165 8.88843 4.47878 8.92574 3.59022 8.92574C2.70255 8.92574 2.58892 9.49167 2.70255 9.77686C4.47789 14.219 5.75347 17.0087 9.12662 20.5233C12.2202 23.7474 14.2867 23.9189 16.0176 23.9917C16.4615 24.0104 16.0176 23.9917 16.9053 23.9917Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.08244 17.906L12.3991 26.396L16.7169 21.9746L24.1201 28L29.3327 4L2.66602 15.3742L9.08244 17.906ZM21.7126 10.8858L13.5504 18.5094L12.5338 22.4329L10.6557 17.6242L21.7126 10.8858Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="socials__text">Мы в социальных сетях</span>
+                    </div>
+                    <div class="main-screen__desc">
+                        Команда TERRASPORT – это коллектив энергичных, амбициозных людей, любящих свою работу и внимательно относящихся к каждому гостю нашего
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     @@include('./html/menu.html')
     @@include('./html/galery-slider.html',{
     "title": "Тренер в деле"

@@ -13,6 +13,7 @@
   "author": "tvisher",
   "license": "ISC",
   "dependencies": {
+    "@fancyapps/ui": "^4.0.26",
     "gulp-cli": "^2.3.0",
     "jquery": "^3.6.0",
     "modal-video": "^2.4.6"
