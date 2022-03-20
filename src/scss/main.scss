@@ -1400,6 +1400,29 @@ html .ui-button.ui-state-disabled:active {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
+    .location__btn  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        path {
+          fill: #fff !important;
+        }
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+      transition: border-color .3s ease, background-color .3s ease;
+      background-color: transparent;
+      text-transform: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      border: 2px solid transparent;
+      width: fit-content;
+      margin-top: 30px;
+    }
   }
   .location__title {
     font-weight: 700;
@@ -1423,6 +1446,16 @@ html .ui-button.ui-state-disabled:active {
   }
 
   .location.orange {
+    .location__btn {
+      background-color: $brand-orange;
+      &:hover{
+        color:$brand-orange;
+        background-color: #fff !important;
+        svg path {
+          fill: $brand-orange !important;
+        }
+      }
+    }
     .location__shedule-title,
     .location__contacts-title {
       color: $brand-orange;
@@ -1431,6 +1464,10 @@ html .ui-button.ui-state-disabled:active {
       fill: $brand-orange;
     }
     &:hover {
+      .location__btn {
+        background-color: $brand-orange;
+        border-color :#fff;
+      }
       background-color: $brand-orange;
       .location__shedule-title,
       .location__title,
@@ -1447,6 +1484,19 @@ html .ui-button.ui-state-disabled:active {
   }
 
   .location.green {
+    .location__btn {
+      background-color: $brand-green;
+      &:hover{
+        color:$brand-green;
+        background-color: #fff;
+        svg path {
+          fill: $brand-green !important;
+        }
+      }
+    }
+    .location__btn {
+      background-color: $brand-green;
+    }
     .location__shedule-title,
     .location__contacts-title {
       color: $brand-green;
@@ -1455,6 +1505,9 @@ html .ui-button.ui-state-disabled:active {
       fill: $brand-green;
     }
     &:hover {
+      .location__btn {
+        border-color :#fff;
+      }
       background-color: $brand-green;
       .location__shedule-title,
       .location__title,
@@ -1470,6 +1523,19 @@ html .ui-button.ui-state-disabled:active {
     }
   }
   .location.blue {
+    .location__btn {
+      background-color: $brand-blue;
+      &:hover{
+        color:$brand-blue;
+        background-color: #fff;
+        svg path {
+          fill: $brand-blue !important;
+        }
+      }
+    }
+    .location__btn {
+      background-color: $brand-blue;
+    }
     .location__shedule-title,
     .location__contacts-title {
       color: $brand-blue;
@@ -1478,6 +1544,9 @@ html .ui-button.ui-state-disabled:active {
       fill: $brand-blue;
     }
     &:hover {
+      .location__btn {
+        border-color :#fff;
+      }
       background-color: $brand-blue;
       .location__shedule-title,
       .location__title,
@@ -2652,6 +2721,9 @@ html .ui-button.ui-state-disabled:active {
     }
   }
   .slide__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     transition: background 0.3s ease;
     width: 100%;
     height: 100%;
@@ -2695,6 +2767,7 @@ html .ui-button.ui-state-disabled:active {
     &:active {
       transform: translateY(5px);
     }
+    margin-top: auto;
     transition: transform 0.3s ease;
   }
 
@@ -2965,6 +3038,11 @@ html .ui-button.ui-state-disabled:active {
       transform: scale(1.05) translateZ(0);
       box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.4);
     }
+    .product__wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
   .subscription-item__img {
     margin-bottom: 20px;
@@ -2973,6 +3051,9 @@ html .ui-button.ui-state-disabled:active {
     height: 100%;
     overflow: hidden;
     border-radius: 10px;
+    a {
+      height: 100%;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -3024,6 +3105,11 @@ html .ui-button.ui-state-disabled:active {
     &:active {
       transform: translateY(5px);
     }
+  }
+  .product__link  {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
   }
 }
 
@@ -7221,11 +7307,79 @@ body.white {
   margin-left: -15px;
 }
 
+.news-detail {
+  .galery-page__list-item {
+    .list-item__wrapper {
+      &::before {
+        transition: opacity .3s ease;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M53.3307 53.3327H42.6641M10.6641 21.3327V10.666V21.3327ZM10.6641 10.666H21.3307H10.6641ZM10.6641 10.666L23.9974 23.9993L10.6641 10.666ZM53.3307 21.3327V10.666V21.3327ZM53.3307 10.666H42.6641H53.3307ZM53.3307 10.666L39.9974 23.9993L53.3307 10.666ZM10.6641 42.666V53.3327V42.666ZM10.6641 53.3327H21.3307H10.6641ZM10.6641 53.3327L23.9974 39.9993L10.6641 53.3327ZM53.3307 53.3327L39.9974 39.9993L53.3307 53.3327ZM53.3307 53.3327V42.666V53.3327Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20%;
+      }
+    }
+    &:nth-of-type(3n+1)  {
+      .list-item__wrapper {
+        &::before {
+          background-color: $brand-orange; 
+        }
+    }
+    }
+    &:nth-of-type(3n+2) {
+      .list-item__wrapper {
+        &::before {
+          background-color: $brand-green; 
+        }
+    }
+    }
+    &:nth-of-type(3n+3)  {
+      .list-item__wrapper {
+        &::before {
+          background-color: $brand-blue; 
+        }
+    }
+    }
+    &:hover {
+      .list-item__wrapper {
+        &::before {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+    
+}
+
 .galery-page__list-item {
+  position: relative;
   cursor: pointer;
   padding: 15px;
   flex: 0 0 33.33%;
   .list-item__wrapper {
+    &::before {
+      transition: opacity .3s ease;
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M37.6569 37.6569C39.1571 36.1566 40 34.1217 40 32C40 29.8783 39.1571 27.8434 37.6569 26.3431C36.1566 24.8429 34.1217 24 32 24C29.8783 24 27.8434 24.8429 26.3431 26.3431C24.8429 27.8434 24 29.8783 24 32C24 34.1217 24.8429 36.1566 26.3431 37.6569C27.8434 39.1571 29.8783 40 32 40C34.1217 40 36.1566 39.1571 37.6569 37.6569Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M6.55469 32.0007C9.95202 21.182 20.0614 13.334 32 13.334C43.9414 13.334 54.048 21.182 57.4454 32.0007C54.048 42.8193 43.9414 50.6673 32 50.6673C20.0614 50.6673 9.95202 42.8193 6.55469 32.0007Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20%;
+    }
+  
     overflow: hidden;
     height: 0;
     padding-top: 58%;
@@ -7243,6 +7397,60 @@ body.white {
       object-fit: cover; 
     }
   }
+  .card-title {
+    transition:  background-color .3s ease;
+    z-index: 2;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-weight: 400;
+  }
+
+  &:nth-of-type(3n+1)  {
+    .card-title {
+          background-color: $brand-orange !important; 
+    }
+    .list-item__wrapper {
+      &::before {
+        background-color: $brand-orange; 
+      }
+  }
+  }
+  &:nth-of-type(3n+2) {
+    .card-title {
+          background-color: $brand-green !important; 
+    }
+    .list-item__wrapper {
+      &::before {
+        background-color: $brand-green; 
+      }
+  }
+  }
+  &:nth-of-type(3n+3)  {
+    .card-title {
+          background-color: $brand-blue !important; 
+    }
+    .list-item__wrapper {
+      &::before {
+        background-color: $brand-blue; 
+      }
+  }
+  }
+  &:hover {
+    .list-item__wrapper {
+      &::before {
+        opacity: 0.9;
+      }
+    }
+    .card-title {
+      background-color:transparent !important;
+    }
+  }
+
 }
 
 @media (max-width: 980px) {

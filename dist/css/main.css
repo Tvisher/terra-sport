@@ -6949,6 +6949,35 @@ html .ui-button.ui-state-disabled:active {
   font-size: 18px;
 }
 
+.adresses__list .list__ittem .location__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  background-color: transparent;
+  text-transform: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 30px;
+}
+
+.adresses__list .list__ittem .location__btn svg {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.adresses__list .list__ittem .location__btn svg path {
+  fill: #fff !important;
+}
+
 .adresses__list .location__title {
   font-weight: 700;
   font-size: 21px;
@@ -6973,6 +7002,19 @@ html .ui-button.ui-state-disabled:active {
   transition: color 0.4 ease;
 }
 
+.adresses__list .location.orange .location__btn {
+  background-color: #f58634;
+}
+
+.adresses__list .location.orange .location__btn:hover {
+  color: #f58634;
+  background-color: #fff !important;
+}
+
+.adresses__list .location.orange .location__btn:hover svg path {
+  fill: #f58634 !important;
+}
+
 .adresses__list .location.orange .location__shedule-title,
 .adresses__list .location.orange .location__contacts-title {
   color: #f58634;
@@ -6987,6 +7029,11 @@ html .ui-button.ui-state-disabled:active {
   color: #fff;
 }
 
+.adresses__list .location.orange:hover .location__btn {
+  background-color: #f58634;
+  border-color: #fff;
+}
+
 .adresses__list .location.orange:hover .location__shedule-title,
 .adresses__list .location.orange:hover .location__title,
 .adresses__list .location.orange:hover .location__contacts-title,
@@ -6997,6 +7044,23 @@ html .ui-button.ui-state-disabled:active {
 
 .adresses__list .location.orange:hover svg path {
   fill: #fff;
+}
+
+.adresses__list .location.green .location__btn {
+  background-color: #a8cf45;
+}
+
+.adresses__list .location.green .location__btn:hover {
+  color: #a8cf45;
+  background-color: #fff;
+}
+
+.adresses__list .location.green .location__btn:hover svg path {
+  fill: #a8cf45 !important;
+}
+
+.adresses__list .location.green .location__btn {
+  background-color: #a8cf45;
 }
 
 .adresses__list .location.green .location__shedule-title,
@@ -7013,6 +7077,10 @@ html .ui-button.ui-state-disabled:active {
   color: #fff;
 }
 
+.adresses__list .location.green:hover .location__btn {
+  border-color: #fff;
+}
+
 .adresses__list .location.green:hover .location__shedule-title,
 .adresses__list .location.green:hover .location__title,
 .adresses__list .location.green:hover .location__contacts-title,
@@ -7023,6 +7091,23 @@ html .ui-button.ui-state-disabled:active {
 
 .adresses__list .location.green:hover svg path {
   fill: #fff;
+}
+
+.adresses__list .location.blue .location__btn {
+  background-color: #245990;
+}
+
+.adresses__list .location.blue .location__btn:hover {
+  color: #245990;
+  background-color: #fff;
+}
+
+.adresses__list .location.blue .location__btn:hover svg path {
+  fill: #245990 !important;
+}
+
+.adresses__list .location.blue .location__btn {
+  background-color: #245990;
 }
 
 .adresses__list .location.blue .location__shedule-title,
@@ -7037,6 +7122,10 @@ html .ui-button.ui-state-disabled:active {
 .adresses__list .location.blue:hover {
   background-color: #245990;
   color: #fff;
+}
+
+.adresses__list .location.blue:hover .location__btn {
+  border-color: #fff;
 }
 
 .adresses__list .location.blue:hover .location__shedule-title,
@@ -8378,6 +8467,12 @@ html .ui-button.ui-state-disabled:active {
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.4);
 }
 
+.subscriptions__slider .subscriptions__slide .product__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .subscriptions__slider .subscription-item__img {
   margin-bottom: 20px;
   width: 100%;
@@ -8385,6 +8480,10 @@ html .ui-button.ui-state-disabled:active {
   height: 100%;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.subscriptions__slider .subscription-item__img a {
+  height: 100%;
 }
 
 .subscriptions__slider .subscription-item__img img {
@@ -8450,6 +8549,12 @@ html .ui-button.ui-state-disabled:active {
 
 .subscriptions__slider .subscription-item__link:active {
   transform: translateY(5px);
+}
+
+.subscriptions__slider .product__link {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .reviews-section {
@@ -11933,7 +12038,40 @@ body.white .benefits-section .list-item__title {
   margin-left: -15px;
 }
 
+.news-detail .galery-page__list-item .list-item__wrapper::before {
+  transition: opacity 0.3s ease;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M53.3307 53.3327H42.6641M10.6641 21.3327V10.666V21.3327ZM10.6641 10.666H21.3307H10.6641ZM10.6641 10.666L23.9974 23.9993L10.6641 10.666ZM53.3307 21.3327V10.666V21.3327ZM53.3307 10.666H42.6641H53.3307ZM53.3307 10.666L39.9974 23.9993L53.3307 10.666ZM10.6641 42.666V53.3327V42.666ZM10.6641 53.3327H21.3307H10.6641ZM10.6641 53.3327L23.9974 39.9993L10.6641 53.3327ZM53.3307 53.3327L39.9974 39.9993L53.3307 53.3327ZM53.3307 53.3327V42.666V53.3327Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+}
+
+.news-detail .galery-page__list-item:nth-of-type(3n+1) .list-item__wrapper::before {
+  background-color: #f58634;
+}
+
+.news-detail .galery-page__list-item:nth-of-type(3n+2) .list-item__wrapper::before {
+  background-color: #a8cf45;
+}
+
+.news-detail .galery-page__list-item:nth-of-type(3n+3) .list-item__wrapper::before {
+  background-color: #245990;
+}
+
+.news-detail .galery-page__list-item:hover .list-item__wrapper::before {
+  opacity: 0.9;
+}
+
 .galery-page__list-item {
+  position: relative;
   cursor: pointer;
   padding: 15px;
   flex: 0 0 33.33%;
@@ -11944,6 +12082,22 @@ body.white .benefits-section .list-item__title {
   height: 0;
   padding-top: 58%;
   position: relative;
+}
+
+.galery-page__list-item .list-item__wrapper::before {
+  transition: opacity 0.3s ease;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M37.6569 37.6569C39.1571 36.1566 40 34.1217 40 32C40 29.8783 39.1571 27.8434 37.6569 26.3431C36.1566 24.8429 34.1217 24 32 24C29.8783 24 27.8434 24.8429 26.3431 26.3431C24.8429 27.8434 24 29.8783 24 32C24 34.1217 24.8429 36.1566 26.3431 37.6569C27.8434 39.1571 29.8783 40 32 40C34.1217 40 36.1566 39.1571 37.6569 37.6569Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M6.55469 32.0007C9.95202 21.182 20.0614 13.334 32 13.334C43.9414 13.334 54.048 21.182 57.4454 32.0007C54.048 42.8193 43.9414 50.6673 32 50.6673C20.0614 50.6673 9.95202 42.8193 6.55469 32.0007Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
 }
 
 .galery-page__list-item .list-item__img {
@@ -11959,6 +12113,51 @@ body.white .benefits-section .list-item__title {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.galery-page__list-item .card-title {
+  transition: background-color 0.3s ease;
+  z-index: 2;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.galery-page__list-item:nth-of-type(3n+1) .card-title {
+  background-color: #f58634 !important;
+}
+
+.galery-page__list-item:nth-of-type(3n+1) .list-item__wrapper::before {
+  background-color: #f58634;
+}
+
+.galery-page__list-item:nth-of-type(3n+2) .card-title {
+  background-color: #a8cf45 !important;
+}
+
+.galery-page__list-item:nth-of-type(3n+2) .list-item__wrapper::before {
+  background-color: #a8cf45;
+}
+
+.galery-page__list-item:nth-of-type(3n+3) .card-title {
+  background-color: #245990 !important;
+}
+
+.galery-page__list-item:nth-of-type(3n+3) .list-item__wrapper::before {
+  background-color: #245990;
+}
+
+.galery-page__list-item:hover .list-item__wrapper::before {
+  opacity: 0.9;
+}
+
+.galery-page__list-item:hover .card-title {
+  background-color: transparent !important;
 }
 
 @media all and (min-width: 1024px) {
