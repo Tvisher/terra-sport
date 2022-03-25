@@ -157,6 +157,9 @@ li {
 .first-section {
   padding: 50px 0;
 }
+b {
+  display: inline;
+}
 
 .main-page-title {
   font-size: 48px;
@@ -5389,6 +5392,10 @@ body.white {
     padding: 15px;
   }
   .stocks__item-wrapper {
+    a {
+      margin-top: 15px;
+    }
+    height: 100%;
     transition: transform .3s ease, box-shadow .3s ease;
     &:hover{
       transform: translateY(-5px);
@@ -7625,9 +7632,21 @@ text-transform: lowercase;
   font-weight: bold;
 }
 .promotions-section__slide.home {
+  .slide__content {
+    height: 100%;
+  }
+  .slide__desc {
+    color: #fff;
+  }
+  color: #fff;
   background: #27272d;
   box-shadow: none;
-}
-.promotions-section__slide.home .slide__title {
-  color: #fff;
+  border-radius:5px;
+  .slide__title {
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+  a {
+    margin-top: auto;
+  }
 }
