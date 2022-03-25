@@ -5,6 +5,7 @@
 @import "vendors/vendors";
 
 html {
+  scroll-behavior: smooth;
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
   color: $mainFontColor;

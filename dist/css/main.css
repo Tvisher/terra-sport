@@ -5632,6 +5632,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 html {
+  scroll-behavior: smooth;
   line-height: 1.6;
   font-size: 16px;
   color: #393d46;
