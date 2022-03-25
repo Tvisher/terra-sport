@@ -505,7 +505,7 @@ menuLinks.forEach(link => {
 });
 $(".nav-menu__item-head").click(function (e) {
     if (window.innerWidth <= 576) {
-        $(this).parent().find('.nav-menu__item-list').slideToggle("slow");
+        $(this).next().slideToggle("slow");
         $(this).toggleClass('open');
     }
 });
