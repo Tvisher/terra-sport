@@ -12044,7 +12044,7 @@ body.white .benefits-section .list-item__title {
   align-items: flex-start;
 }
 
-header-content__block.fixed .header__wrapper {
+.header-content__block.fixed .header__wrapper {
   flex-wrap: nowrap;
 }
 
