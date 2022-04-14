@@ -255,11 +255,6 @@ body {
       }
     }
   }
-<<<<<<< HEAD
-
-  &.trener-page {}
-=======
->>>>>>> d7673a1324c503ed3edaec6a2f28009ee7109ba4
 }
 
 
@@ -1507,11 +1502,7 @@ html .ui-button.ui-state-disabled:active {
       color: #fff;
     }
   }
-<<<<<<< HEAD
 
-  // background-color: #fafafa;
-=======
->>>>>>> d7673a1324c503ed3edaec6a2f28009ee7109ba4
   padding: 70px 0;
 }
 
@@ -4765,13 +4756,6 @@ body.white {
       }
 
       transition: all .3s ease;
-<<<<<<< HEAD
-
-      &.swiper-slide-thumb-active {
-        // border: px solid $brand-orange;
-      }
-=======
->>>>>>> d7673a1324c503ed3edaec6a2f28009ee7109ba4
     }
   }
 }
@@ -4783,11 +4767,13 @@ body.white {
     color: $mainFontColor;
   }
 }
-body.gray  {
+
+body.gray {
   .promotions-section__slider .section__slider-nav svg path {
     fill: #fff;
   }
 }
+
 .promotions-section {
   overflow: hidden;
   padding: 50px 0;
@@ -4803,13 +4789,6 @@ body.gray  {
   }
 }
 
-<<<<<<< HEAD
-.promotions-section__wrapper {
-  overflow: hidden;
-}
-
-=======
->>>>>>> d7673a1324c503ed3edaec6a2f28009ee7109ba4
 .promotions-section__slider {
   overflow: initial;
   padding-bottom: 20px;
@@ -6226,7 +6205,7 @@ body.white {
 
   .stocks__item-wrapper {
     a {
-      margin-top:auto;
+      margin-top: auto;
     }
 
     height: 100%;
@@ -8557,7 +8536,7 @@ body.white {
   transition: transform .4s ease;
 
   &.fixed {
-  -webkit-transform: translateZ(0) translateY(0);
+    -webkit-transform: translateZ(0) translateY(0);
     transform: translateY(0) translateZ(0);
   }
 }
@@ -8758,14 +8737,11 @@ body.white {
 }
 
 @media (max-width: 576px) {
-<<<<<<< HEAD
-  .galery-page__list-item {
-=======
   .btn {
     padding: 1em 1em;
   }
-  .galery-page__list-item{
->>>>>>> d7673a1324c503ed3edaec6a2f28009ee7109ba4
+
+  .galery-page__list-item {
     flex: 0 0 100%;
     padding: 10px 0;
   }
@@ -8881,13 +8857,17 @@ body.white {
     margin-top: auto;
   }
 }
-<<<<<<< HEAD
+
+.stocks__item-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 
 
-
-
-.header-content__block.fixed {
+header-content__block.fixed {
   .header__wrapper {
     flex-wrap: nowrap;
   }
@@ -8989,12 +8969,7 @@ body.white {
     margin: 0px 5px;
   }
 }
-=======
-.stocks__item-content {
-  height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+
+section:empty {
+  display: none;
 }
-section:empty { display: none };
->>>>>>> d7673a1324c503ed3edaec6a2f28009ee7109ba4
