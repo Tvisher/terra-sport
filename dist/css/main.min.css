@@ -6375,6 +6375,19 @@ body.hidden {
   margin-top: 3vh;
 }
 
+.slide__video {
+  text-align: center;
+  margin-top: 3vh;
+  display: none;
+}
+
+.slide-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
 .slide__more__btns {
   display: flex;
   align-items: flex-end;
@@ -10328,6 +10341,10 @@ body.white .benefits-section .list-item__title {
 .products__list .product__footer .product__link {
   flex: 0 0 48%;
   text-align: center;
+  padding: 1em 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .products__list .hot-offer__wrapper {
@@ -12090,7 +12107,7 @@ body.white .useless__block-socials path {
 }
 
 .useless__block-btn a {
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 6px 16px;
   font-size: 12px;
   color: #fff;
@@ -13858,6 +13875,65 @@ section:empty {
   .galery-page__list {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .header__nav {
+    margin-left: 0;
+  }
+
+  .footer__logo-wrapper img {
+    margin: auto;
+  }
+
+  .main__slider .slide__content {
+    padding-top: 10px;
+  }
+
+  .slide__play-btn,
+  .main__slider .slide__image img {
+    display: none;
+  }
+
+  .main-screen {
+    min-height: initial;
+    padding-top: 30px;
+  }
+
+  .main-screen__bg {
+    max-height: initial;
+  }
+
+  .main__slider .swiper-wrapper {
+    padding-bottom: 80px;
+  }
+
+  .main__slider-nav {
+    top: initial;
+    bottom: 130px;
+  }
+
+  .main-screen__desc {
+    position: static;
+    order: 3;
+    margin: 15px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    box-orient: vertical;
+  }
+
+  .main__slider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide__video {
+    display: block;
   }
 }
 
