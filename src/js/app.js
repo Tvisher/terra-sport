@@ -66,6 +66,33 @@ const programsSectionSlider = new Swiper('.programs-section__slider', {
     }
 });
 
+const benefitsSectionSlider = new Swiper('.benefits-section__wrapper', {
+    modules: [Navigation],
+    spaceBetween: 15,
+    speed: 900,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.section__slider-button-next',
+        prevEl: '.section__slider-button-prev',
+    },
+    breakpoints: {
+        1320: {
+            slidesPerView: 4,
+        },
+        1025: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 2,
+        },
+        560: {
+            spaceBetween: 30,
+        },
+
+
+    }
+});
+
 const trainersSectionSlider = new Swiper('.trainers-section__slider', {
     modules: [Navigation],
     spaceBetween: 15,
