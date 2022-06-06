@@ -5716,7 +5716,7 @@ body.gray .adresses__list .social-list__link {
 
 body.white section,
 body.white footer {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 body.white .test-train .custom__checkbox span,
@@ -5726,7 +5726,7 @@ body.white .test-train .transform-text.fixed {
 }
 
 body.white .test-train .test-train__form .custom__checkbox span::after {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 body.white .section__title {
@@ -5976,7 +5976,7 @@ body.hidden {
   margin-bottom: 30px;
   border-radius: 4px;
   position: relative;
-  background: #27272D;
+  background: #27272d;
   padding: 60px 30px 140px;
   transition: background-color 0.3s ease;
 }
@@ -8424,7 +8424,7 @@ html .ui-button.ui-state-disabled:active {
 
 .subscriptions.light .subscriptions__slider .subscriptions__slide {
   background-color: #fff;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
 }
 
 .subscriptions.light .subscriptions__slide.orange .subscription-item__nameplate {
@@ -9120,7 +9120,7 @@ body.white .subscriptions__slider .curent__price::before {
 
 .programs-blocks__list .list-item .list-item__desc {
   font-size: 16px;
-  color: #999EAB;
+  color: #999eab;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -moz-box;
@@ -9199,7 +9199,7 @@ body.white .subscriptions__slider .curent__price::before {
 
 .trainers-section .trainer__desc {
   font-size: 14px;
-  color: #999EAB;
+  color: #999eab;
   margin-bottom: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -9282,7 +9282,7 @@ body.white .subscriptions__slider .curent__price::before {
 
 .subscriptions.white .subscriptions__slider .subscriptions__slide {
   background: #fff;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
 }
 
 .galery-section {
@@ -9444,7 +9444,7 @@ body.gray .promotions-section__slider .section__slider-nav svg path {
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 16px rgba(193, 198, 238, 0.25);
   border-radius: 2px;
   padding: 30px;
@@ -9454,7 +9454,7 @@ body.gray .promotions-section__slider .section__slider-nav svg path {
 
 .promotions-section__slide:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 16px #D3D4D8;
+  box-shadow: 0px 10px 16px #d3d4d8;
 }
 
 .promotions-section__slide .slide__img {
@@ -9602,7 +9602,7 @@ body.gray .promotions-section__slider .section__slider-nav svg path {
 }
 
 .header__footer {
-  background: #27272D;
+  background: #27272d;
   z-index: 2;
   position: relative;
   height: 130px;
@@ -10007,7 +10007,7 @@ body.white .benefits-section .list-item__title {
   transition: box-shadow 0.4s ease;
   display: flex;
   align-items: center;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   width: 30%;
   margin: 1vw;
@@ -10166,10 +10166,10 @@ body.white .benefits-section .list-item__title {
 .rental__list .tab-btn {
   transition: all 0.2s ease;
   margin-bottom: 30px;
-  color: #BFBFBF;
+  color: #bfbfbf;
   padding: 5px 12px;
   border-radius: 20px;
-  background: #E1E1E1;
+  background: #e1e1e1;
 }
 
 .rental__list .tab-btn.active {
@@ -10373,7 +10373,7 @@ body.white .benefits-section .list-item__title {
 
 .stocks__list .stocks__item-wrapper:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 16px #D3D4D8;
+  box-shadow: 0px 10px 16px #d3d4d8;
 }
 
 .stocks__list .stocks__item-img {
@@ -10503,14 +10503,14 @@ body.white .benefits-section .list-item__title {
   flex-direction: column;
   height: 100%;
   padding: 30px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .products__list .product__wrapper:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 16px #D3D4D8;
+  box-shadow: 0px 10px 16px #d3d4d8;
 }
 
 .products__list .product__header {
@@ -10681,7 +10681,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .velcro-basket {
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
   transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
   max-width: 600px;
@@ -10692,11 +10692,11 @@ body.white .benefits-section .list-item__title {
   bottom: 0;
   right: 0;
   top: 0;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .velcro-basket.show {
-  box-shadow: 0px 10px 16px #D3D4D8;
+  box-shadow: 0px 10px 16px #d3d4d8;
   transform: translateX(0);
 }
 
@@ -10767,8 +10767,8 @@ body.white .benefits-section .list-item__title {
   align-items: stretch;
   justify-content: space-between;
   padding: 30px;
-  border-bottom: 1px solid #E1E1E1;
-  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .velcro-basket .velcro-basket__title {
@@ -10879,7 +10879,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .velcro-basket .velcro-basket__head {
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .velcro-basket .velcro-basket__footer {
@@ -10887,8 +10887,8 @@ body.white .benefits-section .list-item__title {
 }
 
 .velcro-basket .velcro-basket__footer-wrapper {
-  border-top: 1px solid #E1E1E1;
-  border-bottom: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
   padding: 15px 30px;
   display: flex;
   align-items: center;
@@ -10982,7 +10982,7 @@ body.white .benefits-section .list-item__title {
 
 .velcro-basket .styles-inputs,
 .velcro-basket .fast-buy__comment {
-  background: #E1E1E1;
+  background: #e1e1e1;
   margin-bottom: 20px;
 }
 
@@ -11166,7 +11166,7 @@ body.white .benefits-section .list-item__title {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   padding: 46px 0px 0px 0px;
 }
 
@@ -11266,13 +11266,13 @@ body.white .benefits-section .list-item__title {
 
 .basket-section__content .col:first-child {
   flex: 0 0 66%;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   margin-right: 30px;
 }
 
 .basket-section__content .col:last-child {
   flex: 0 0 33%;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   position: -webkit-sticky;
   position: sticky;
   top: 30px;
@@ -11282,7 +11282,7 @@ body.white .benefits-section .list-item__title {
   display: flex;
   padding: 30px;
   align-items: center;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   justify-content: space-between;
 }
 
@@ -11320,7 +11320,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .basket-section__item:not(:last-child) {
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .basket-section__item .curent__price,
@@ -11488,7 +11488,7 @@ body.white .benefits-section .list-item__title {
   text-align: center;
   max-width: 850px;
   width: 100%;
-  color: #393D46;
+  color: #393d46;
 }
 
 .checkout-section__info {
@@ -11550,7 +11550,7 @@ body.white .benefits-section .list-item__title {
 
 .clubs .clubs__list .list-item__wrapper {
   height: 100%;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -11689,7 +11689,7 @@ body.white .benefits-section .list-item__title {
 .basket-section.ordering .basket-section__buyer,
 .basket-section.ordering .basket-section__delivery-method {
   padding: 30px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
 }
 
 .basket-section.ordering .basket-section__buyer {
@@ -11755,7 +11755,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .basket-section.ordering .styles-inputs {
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 
 .basket-section.ordering .form-btn__wrapper {
@@ -11810,7 +11810,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .delivery-method__item {
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   display: flex;
   align-items: center;
@@ -11833,11 +11833,11 @@ body.white .benefits-section .list-item__title {
 
 .pickup-block__list {
   flex: 0 0 50%;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
 }
 
 .pickup-block__list .list-item {
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .pickup-block__list .list-item label {
@@ -11861,7 +11861,7 @@ body.white .benefits-section .list-item__title {
 
 .pickup-block__list .list-item label input:checked + .pickup-status {
   color: #fff;
-  background-color: #A8CF45;
+  background-color: #a8cf45;
 }
 
 .pickup-block__list .list-item label input:checked + .pickup-status span:first-child {
@@ -11874,9 +11874,9 @@ body.white .benefits-section .list-item__title {
 
 .pickup-block__list .list-item label .pickup-status {
   transition: background-color 0.3s ease, color 0.3s ease;
-  color: #A8CF45;
+  color: #a8cf45;
   padding: 4px 8px;
-  border: 1px solid #A8CF45;
+  border: 1px solid #a8cf45;
   border-radius: 4px;
 }
 
@@ -11937,11 +11937,11 @@ body.white .benefits-section .list-item__title {
 }
 
 .pay-variant__label-wrapper:hover {
-  box-shadow: 0px 10px 16px #D3D4D8;
+  box-shadow: 0px 10px 16px #d3d4d8;
 }
 
 .basket-section__pay-variant {
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   padding: 30px;
 }
 
@@ -11971,7 +11971,7 @@ body.white .benefits-section .list-item__title {
 }
 
 .pay-variant__label .pay-variant__item {
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
@@ -12162,15 +12162,15 @@ body.white .benefits-section .list-item__title {
   background-size: 20%;
 }
 
-.news-detail .galery-page__list-item:nth-of-type(3n+1) .list-item__wrapper::before {
+.news-detail .galery-page__list-item:nth-of-type(3n + 1) .list-item__wrapper::before {
   background-color: #f58634;
 }
 
-.news-detail .galery-page__list-item:nth-of-type(3n+2) .list-item__wrapper::before {
+.news-detail .galery-page__list-item:nth-of-type(3n + 2) .list-item__wrapper::before {
   background-color: #a8cf45;
 }
 
-.news-detail .galery-page__list-item:nth-of-type(3n+3) .list-item__wrapper::before {
+.news-detail .galery-page__list-item:nth-of-type(3n + 3) .list-item__wrapper::before {
   background-color: #245990;
 }
 
@@ -12236,27 +12236,27 @@ body.white .benefits-section .list-item__title {
   font-weight: 400;
 }
 
-.galery-page__list-item:nth-of-type(3n+1) .card-title {
+.galery-page__list-item:nth-of-type(3n + 1) .card-title {
   background-color: #f58634 !important;
 }
 
-.galery-page__list-item:nth-of-type(3n+1) .list-item__wrapper::before {
+.galery-page__list-item:nth-of-type(3n + 1) .list-item__wrapper::before {
   background-color: #f58634;
 }
 
-.galery-page__list-item:nth-of-type(3n+2) .card-title {
+.galery-page__list-item:nth-of-type(3n + 2) .card-title {
   background-color: #a8cf45 !important;
 }
 
-.galery-page__list-item:nth-of-type(3n+2) .list-item__wrapper::before {
+.galery-page__list-item:nth-of-type(3n + 2) .list-item__wrapper::before {
   background-color: #a8cf45;
 }
 
-.galery-page__list-item:nth-of-type(3n+3) .card-title {
+.galery-page__list-item:nth-of-type(3n + 3) .card-title {
   background-color: #245990 !important;
 }
 
-.galery-page__list-item:nth-of-type(3n+3) .list-item__wrapper::before {
+.galery-page__list-item:nth-of-type(3n + 3) .list-item__wrapper::before {
   background-color: #245990;
 }
 
@@ -12480,7 +12480,7 @@ section:empty {
   border-radius: 8px;
   padding: 18px 25px;
   border: 1px solid transparent;
-  background-color: #27272D;
+  background-color: #27272d;
   width: 95%;
   margin-right: 10px;
   color: #fff;
@@ -12490,7 +12490,7 @@ section:empty {
   color: #fff;
   padding: 14px 20px;
   border: 1px solid transparent;
-  background-color: #27272D;
+  background-color: #27272d;
   border-radius: 8px;
   height: 56px;
   width: 80px;
@@ -12745,7 +12745,7 @@ section:empty {
     border-radius: 4px;
     display: flex !important;
     padding: 0.78em 1.2em;
-    background: linear-gradient(60.64deg, #FBDA81 0%, #F15735 25.52%, #E70262 53.65%, #A50BA3 77.6%, #3243EF 100%);
+    background: linear-gradient(60.64deg, #fbda81 0%, #f15735 25.52%, #e70262 53.65%, #a50ba3 77.6%, #3243ef 100%);
   }
 }
 
@@ -12893,9 +12893,14 @@ section:empty {
     display: none;
   }
 
+  .header__schedule,
+  .header__login {
+    padding: 0.78em;
+  }
+
   .header__schedule span,
   .header__login span {
-    display: none;
+    font-size: 12px;
   }
 
   .header__schedule img,
@@ -13750,7 +13755,11 @@ section:empty {
   }
 
   .header__nav .btn {
-    margin: 0 10px;
+    margin: 0 5px;
+  }
+
+  .useless__block {
+    margin: 0 5px;
   }
 
   .header__nav .btn {
