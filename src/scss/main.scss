@@ -1482,7 +1482,6 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .shedule__block.empty {
-  // position: relative;
   display: flex;
   border: 1px solid #e1e1e1;
   align-items: center;
@@ -1515,7 +1514,7 @@ html .ui-button.ui-state-disabled:active {
 
 .adresses__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -1524,7 +1523,7 @@ html .ui-button.ui-state-disabled:active {
     display: flex;
     flex-direction: column;
     transition: background 0.4s ease;
-    width: 31%;
+    width: 22%;
     margin: 15px;
     background-color: #f5f5f5;
     color: $mainFontColor;
@@ -1563,9 +1562,8 @@ html .ui-button.ui-state-disabled:active {
 
   .location__title {
     font-weight: 700;
-    font-size: 21px;
+    font-size: 18px;
     margin-bottom: 30px;
-    max-width: 95%;
   }
 
   .location__shedule-title,
@@ -2651,33 +2649,6 @@ html .ui-button.ui-state-disabled:active {
     .modal__title {
       font-size: 36px;
     }
-
-    .modal__close {
-      cursor: pointer;
-      position: relative;
-      height: 35px;
-      width: 35px;
-      right: -25px;
-      top: -25px;
-
-      span {
-        width: 18px;
-        height: 2px;
-        border-radius: 2px;
-        background-color: $brand-orange;
-        position: absolute;
-        top: 50%;
-        left: 20%;
-      }
-
-      span:nth-of-type(1) {
-        transform: rotate(45deg);
-      }
-
-      span:nth-of-type(2) {
-        transform: rotate(-45deg);
-      }
-    }
   }
 
   .personal-data__submit {
@@ -2689,6 +2660,33 @@ html .ui-button.ui-state-disabled:active {
     margin: 20px 0;
     text-align: center;
     color: #999eab;
+  }
+}
+
+.modal__close {
+  cursor: pointer;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  right: -25px;
+  top: -25px;
+
+  span {
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $brand-orange;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+  }
+
+  span:nth-of-type(1) {
+    transform: rotate(45deg);
+  }
+
+  span:nth-of-type(2) {
+    transform: rotate(-45deg);
   }
 }
 
@@ -8326,7 +8324,7 @@ body.white {
   }
 
   .main-page-desc {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -9052,7 +9050,6 @@ section:empty {
 }
 
 .menu-search {
-  // width: 100%;
   border-radius: 8px;
   padding: 18px 25px;
   border: 1px solid transparent;
@@ -9087,5 +9084,90 @@ section:empty {
 .nav-menu__item {
   .nav-menu__title {
     pointer-events: none;
+  }
+}
+
+.nav-menu__search.white {
+  padding-top: 0;
+  margin: 20px 0;
+  .menu-search,
+  .search-btn {
+    background-color: #fff;
+    border: 1px solid rgba(39, 39, 45, 0.8);
+    color: #27272d;
+  }
+
+  .search-btn svg path {
+    fill: rgba(39, 39, 45, 0.8);
+  }
+}
+
+.modal-form-content {
+  position: relative;
+  border-radius: 5px;
+  max-width: 800px !important;
+  padding: 20px;
+  .test-train .test-train__form .custom__checkbox span,
+  .test-train .test-train__desc,
+  .test-train .test-train__title,
+  .test-train .icons-list__item span {
+    color: #27272d !important;
+  }
+  .test-train__content {
+    padding-top: 0;
+  }
+  .test-train .test-train__form .test-train__label span.fixed {
+    color: #27272d !important;
+  }
+  .modal__close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.location__title a {
+  color: #393d46;
+}
+
+body.gray {
+  .location__title a {
+    color: #fff;
+  }
+}
+
+.location__adresses a {
+  color: #fff;
+}
+
+.programs-blocks__list .list-item .list-item__title,
+.trainers-section .trainer__name a,
+.trainers-section .trainer__info a,
+.trainers-section .trainer__info a .products__list .product__title a {
+  color: #393d46;
+}
+
+body.white {
+  .location__adresses a {
+    color: #393d46;
+  }
+}
+
+.footer__development .ym-advanced-informer {
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .footer__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__development .ym-advanced-informer {
+    margin: auto;
+  }
+  .adresses__list {
+    justify-content: center;
   }
 }
