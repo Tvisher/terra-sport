@@ -9171,3 +9171,17 @@ body.white {
     justify-content: center;
   }
 }
+.nav-menu__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu__item-link {
+  padding: 20px 40px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  @media (max-width: 992px) {
+    order: 100;
+  }
+}
